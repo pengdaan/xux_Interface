@@ -8,3 +8,15 @@ def result_json(result):
         return js
     except:
         print (result)
+
+def DP_order(result):
+    try:
+        # 将json对象转换成python对象
+        json_to_python = json.loads(result)
+        # print  type(json_to_python)
+        order = json_to_python['data']
+        #print type(dp_order)
+        dp_order=order['order_sn']
+        return dp_order
+    except:
+        print (result)

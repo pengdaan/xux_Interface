@@ -2,6 +2,10 @@
 __author__ = 'Administrator'
 import time
 import datetime
+import test_case
+import setting.api_signs
+import setting.result_jsons
+import setting.DBConns
 times= int(time.time())
 dtime=datetime.datetime.now()
 def addHTime():#当前时间戳增加1小时
@@ -70,6 +74,7 @@ data_UserOrderListDP={
      'order_cate_id':'[2001,2006]'
 }
 '''点评取消订单'''
+
 cancelOrder_data={
      'api_key':'8d46b75a4a0456a35302d2893ed072a3',
      'timestamp':times,

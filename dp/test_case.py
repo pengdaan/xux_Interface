@@ -4,7 +4,7 @@ import unittest
 import sys,os
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,parentdir)
-import requests,json,time
+import requests,time
 import test_data
 import setting.api_signs
 import setting.result_jsons
@@ -36,6 +36,8 @@ class Test(interface_dp.MyTest):
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
                         self.assertEqual(self.msgs, 'SUCCESS')
+                        order_dp=setting.result_jsons.DP_order(self.result)
+                        print order_dp
 
                 else:
                         print 'NO msg'
@@ -45,6 +47,7 @@ class Test(interface_dp.MyTest):
 
     def test_UserOrderListDP_sucess(self):
         '''获取用户订单列表-点评项目'''
+
         api_key=setting.DBConns.Api_secret(**test_data.data_UserOrderListDP)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")

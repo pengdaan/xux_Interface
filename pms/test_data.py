@@ -126,6 +126,15 @@ Pms_updateStatus={
 
 }
 
+'''检查活动名称是否重复接口'''
+NameRepeat_data={
+
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionName":"2017-01-19 18:25:49Test_DJTuan"}'
+
+}
+
 
 
 
