@@ -17,6 +17,14 @@ class MyTest(unittest.TestCase):
         self.shipWithoutCoupon_url='http://www.xiaoshuxiong.com/api/ocoupon/shipWithoutCoupon'
         self.query_url='http://www.xiaoshuxiong.com/api/delivery/query'
         self.ByCouponCode_url='http://www.xiaoshuxiong.com/api/ocoupon/getByCouponCode'
+        self.UserOrderNums_url='http://www.xiaoshuxiong.com/api/order/getUserOrderNums'
+        self.de_AllStatus_url='http://www.xiaoshuxiong.com/api/delivery/getAllStatus'
+        self.AllStatus_url='http://www.xiaoshuxiong.com/api/order/getAllStatus'
+        self.OrderPromotionList_url='http://order.api.xiaoshuxiong.com/order/getOrderPromotionList'
+        self.G_dingdan_url='http://www.xiaoshuxiong.com/api/source/get'
+        self.ProductId_url='http://www.xiaoshuxiong.com/api/order/getOrderByProductId'
+        self.add_XUJ_url='http://www.xiaoshuxiong.com/api/ocoupon/add'
+        self.verify_url='http://www.xiaoshuxiong.com/api/ocoupon/verify'
 
 
 

@@ -117,6 +117,7 @@ query_data={
     'supplierId':'13'
 
 }
+
 CouponCode_data={
     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
     'timestamp':times,
@@ -124,12 +125,68 @@ CouponCode_data={
 
 }
 
+'''根据订单分类获取分类订单总数'''
+UserOrderNums_data={
+      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+      'uid':'43507844',
+      'order_cate_id':'[2001,2002,2003,2004]'
 
+}
 
+'''获取所有的发货单状态'''
+De_AllStatus_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times
 
+}
 
+'''获取所有的订单状态（综合状态）'''
+AllStatus_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times
 
+}
 
+'''获取用户购买的促销订单信息'''
+OrderPromotionList_data={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'timestamp':times,
+    'uid':'43507844',
+    'promotion_id':'492',
+    'promotion_type':'1'
+
+}
+
+'''获取订单来源参数列表'''
+G_dingdan_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+
+}
+
+'''通过商品id获取订单列表'''
+ProductId_data={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'uid':'43507844',
+    'goods_id':'777',
+    'product_id':'10750'
+
+}
+
+'''重复发送消费券接口'''
+add_XUJ_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'data':'{"supplierId":100,"orderId":"24763","coupons":["GT48371264"]}'
+}
+
+'''验证使用消费券'''
+verify_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'data':'{"supplierId":100,"orderId":"LY58414143629719","couponIds":["GT3213123"]}'
+
+}
 
 
 

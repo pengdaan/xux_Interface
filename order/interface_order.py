@@ -12,6 +12,8 @@ class MyTest(unittest.TestCase):
         self.UserLimitedSpecialOrderNum_url='http://order.api.xiaoshuxiong.com/order/getUserLimitedSpecialOrderNum'
         self.receiveOrderReturn_url='http://order.api.xiaoshuxiong.com/order/receiveOrderReturn'
         self.OrderGoodsNumTour_url='http://order.api.xiaoshuxiong.com/order/getOrderGoodsNumTour'
+        self.OrderBySn_url='http://order.api.xiaoshuxiong.com/order/getOrderBySn'
+        self.normalShip_url='http://order.api.xiaoshuxiong.com/delivery/normalShip'
 
 
     def tearDown(self):

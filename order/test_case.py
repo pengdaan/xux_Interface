@@ -138,6 +138,61 @@ class Test(interface_order.MyTest):
             print 'NO msg'
 
 
+    def test_OrderBySn_sucess(self):#现在这个没有调通
+        '''根据订单号获取订单详情接口'''
+        api_key=setting.DBConns.Api_secret(**test_data.OrderBySn_data)#返回api_key
+        if api_key == None:
+            print(u"api_key 不存在，请检查接口数据！")
+        else:
+            api_secrets=setting.DBConns.secret(api_key)#返回api_secret
+            if api_secrets !=0:
+                payload= test_data.OrderBySn_data
+                api_sign=setting.api_signs.api_signs(payload,api_secrets)
+                payload.setdefault('api_sign',api_sign)
+                r=requests.post(self.OrderBySn_url, params=payload)
+              #  print payload
+                self.code=r.status_code
+                self.result=r.text
+                js=setting.result_jsons.result_json(self.result)
+                if js.has_key('msg')==True:
+                        self.msgs=js.get('msg')
+                        self.assertEquals(self.code,200)
+                        self.assertEqual(self.msgs, 'SUCCESS')
+                else:
+                        print 'NO msg'
+            else:
+                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+
+
+    def test_normalShip_sucess(self):
+        '''订单直接分单发货'''
+        api_key=setting.DBConns.Api_secret(**test_data.normalShip_data)#返回api_key
+        if api_key == None:
+            print(u"api_key 不存在，请检查接口数据！")
+        else:
+            api_secrets=setting.DBConns.secret(api_key)#返回api_secret
+            if api_secrets !=0:
+                payload=test_data.normalShip_data
+                api_sign=setting.api_signs.api_signs(payload,api_secrets)
+                payload.setdefault('api_sign',api_sign)
+                r=requests.post(self.normalShip_url, params=payload)
+                self.code=r.status_code
+                self.result=r.text
+                js=setting.result_jsons.result_json(self.result)
+                if js.has_key('msg')==True:
+                        self.msgs=js.get('msg')
+                        self.assertEquals(self.code,200)
+                        self.assertEqual(self.msgs, 'SUCCESS')
+                else:
+                        print 'NO msg'
+            else:
+                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+
+
+
+
+
+
 
 
 if __name__=='__main__':

@@ -2,10 +2,6 @@
 __author__ = 'Administrator'
 import time
 import datetime
-import test_case
-import setting.api_signs
-import setting.result_jsons
-import setting.DBConns
 times= int(time.time())
 dtime=datetime.datetime.now()
 def addHTime():#当前时间戳增加1小时
@@ -20,7 +16,6 @@ def addTime():#当前时间戳增加15分钟
     dtime2= dtime + datetime.timedelta(hours=0.25)
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
-
 
 
 add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取当前时间。
@@ -78,7 +73,6 @@ data_UserOrderListDP={
 cancelOrder_data={
      'api_key':'8d46b75a4a0456a35302d2893ed072a3',
      'timestamp':times,
-     'order_sn':'DP48414730126849',
      'uid':'43507844',
 
 }
@@ -86,7 +80,6 @@ cancelOrder_data={
 applyRefund_data={
     'timestamp':times,
     'uid':'43507844',
-    'order_sn':'DP48414731026869',
     'suggest_reason':'122',
     'api_key':'8d46b75a4a0456a35302d2893ed072a3',
 
@@ -97,6 +90,20 @@ OrderBySnDianping_data={
     'order_sn':'DP48414731026869',
 }
 
+
+
+'''更新订单支付状态'''
+data_updatePayStatus = {
+    'api_key':'b47d4503ce201db6df525911812dd089',
+    'timestamp':times,
+    'order_sn':'DP08414562386338',
+    'order_amount':'10',
+    'trade_no':'2015122921001003610003783823',
+    'pay_serial_no':'2015122964844',
+    'pay_id':'1',
+    'order_status':'1',
+
+}
 
 
 
