@@ -17,8 +17,6 @@ def addTime():#当前时间戳增加15分钟
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
 
-
-
 add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取当前时间。
 promotionNames=str(add_time) + 'Test_AddPms'
 
@@ -135,7 +133,13 @@ NameRepeat_data={
 
 }
 
+'''发放优惠卷接口'''
+batchSend_data={
 
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":495,"num":10,"mark":"","type":0,"userIds":[1160],"adminId":1}'
+}
 
 
 

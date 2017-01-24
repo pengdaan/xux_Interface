@@ -12,7 +12,7 @@ import setting.result_jsons
 import setting.DBConns
 from order import test_data
 from order import interface_order
-
+import create_data
 times= int(time.time())
 
 class Test(interface_order.MyTest):
@@ -163,19 +163,25 @@ class Test(interface_order.MyTest):
             else:
                 print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
 
-
     def test_normalShip_sucess(self):
-        '''旅游根据订单分类获取分类订单总数接口检查'''
+        '''订单直接分单发货'''
+        order_sns=create_data.updatePayStatus()
+       # print order_sns
+        order_sn=create_data.Updatexux_Order(order_sns)#更新订单状态为已审核
+        payloads=test_data.normalShip_data
+        payloads.setdefault('order_sn',order_sns)
+       # print payloads
         api_key=setting.DBConns.Api_secret(**test_data.normalShip_data)#返回api_key
+
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.secret(api_key)#返回api_secret
             if api_secrets !=0:
-                payload=test_data.normalShip_data
+                payload=payloads
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.normalShip_data_url, params=payload)
+                r=requests.post(self.normalShip_url, params=payload)
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)

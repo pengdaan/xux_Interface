@@ -7,11 +7,8 @@ import setting.result_jsons
 import setting.DBConns
 import time
 times= int(time.time())
-
-
 orderXUX_url="http://order.api.xiaoshuxiong.com/Order/createOrderXsx"
 updatePayStatus_url='http://www.xiaoshuxiong.com/api/order/updatePayStatus'
-
 
 def xux_order(result):
     try:
@@ -23,7 +20,6 @@ def xux_order(result):
         XUXorder=data_2['order_sn']
         return XUXorder
     except:
-
         print (result)
 
 def createOrderXsx():
@@ -33,9 +29,7 @@ def createOrderXsx():
         #print payload
         result=r.text
         print xux_order(result)
-        return  xux_order(result)
-
-
+        return xux_order(result)
 
 def updatePayStatus():
         '''更新订单支付状态'''
@@ -59,37 +53,10 @@ def updatePayStatus():
                 return order_sns
 
 
-def Updatexux_Order(XUXorder): #通过修改数据库更改订单状态为已审核状态，只能改普通的直邮订单
-
-    XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%s' WHERE order_sn='%s'"%times%XUXorder
+def Updatexux_Order(XUXorder):
+    #通过修改数据库更改订单状态为已审核状态，只能改普通的直邮订单
+    XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%(time)s' WHERE order_sn='%(order)s'"%{'time':times,"order":XUXorder}
     mysql = setting.DBConns.Mysql()
     mysql.get_one(XUXorders)
+    mysql.commit()
 
-
-order11=updatePayStatus()
-aa=setting.DBConns.Updatexux_Order(order11)
-print aa
-
-# def Updatexux_Order():
-#     Orders=updatePayStatus()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#createOrderXsx()
-
-updatePayStatus()

@@ -96,8 +96,8 @@ OrderBySn_data={
 normalShip_data={
         'api_key':'b47d4503ce201db6df525911812dd089',
         'timestamp':times,
-        'order_sn':'LY58414141329699',
-        'wms_info':'[{"shipping_id": "12","invoice_no": "EMS12345678","type": 1},{"shipping_id": "13","invoice_no": "EMS654321","type": 2}]'
+       # 'order_sn':'XS58414242231559',
+        'wms_info':'[{"shipping_id": "13","invoice_no": "EMS12345678","type": 1},{"shipping_id": "13","invoice_no": "EMS654321","type": 2}]'
 
 
 

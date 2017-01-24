@@ -81,6 +81,31 @@ class Mysql(object):
         return sql_result
 
 
+    def update_data(self, sql_command, cmd_param=None):
+        """"Get one sql command execute result.
+        Args:
+            sql_command: sql command
+            cmd_param  : sql command paramaters
+        Returns:
+            dict
+        """
+        if cmd_param:
+            count = self._mysql_cursor.execute(sql_command, cmd_param)
+        else:
+            count = self._mysql_cursor.execute(sql_command)
+        # if count:
+        #     sql_result = self._mysql_cursor.fetchoneDict()
+        # else:
+        #     sql_result = None
+        # return sql_result
+
+    def commit(self):
+        try:
+            return self._mysql_conn.commit()
+        except(AttributeError,MySQLdb.OperationalError):
+            return self._mysql_conn.commit()
+
+
 def secret(api_key): #这里只需要查询Api_secret是否存在，存在的话就return到验签里面去就好了
 
     Api_key = "SELECT * FROM mall_app WHERE api_key='%s'"%api_key
@@ -129,6 +154,7 @@ def Updatexux_Order(XUXorder): #通过修改数据库更改订单状态为已审
     print XUXorders
     mysql = Mysql()
     mysql.get_one(XUXorders)
+    mysql.commit()
 
 
 
