@@ -103,7 +103,7 @@ class Test(interface_dp.MyTest):
         '''取用户申请退款-点评项目'''
         payloads=test_data.applyRefund_data
         order_sns=create_data.updatePayStatus()#生成订单号
-        print order_sns
+        #print order_sns
         payloads.setdefault('order_sn',order_sns) #插入订单号
         api_key=setting.DBConns.Api_secret(**test_data.applyRefund_data)#返回api_key
         if api_key == None:

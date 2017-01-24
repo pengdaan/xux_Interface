@@ -165,7 +165,7 @@ class Test(interface_order.MyTest):
 
 
     def test_normalShip_sucess(self):
-        '''订单直接分单发货'''
+        '''旅游根据订单分类获取分类订单总数接口检查'''
         api_key=setting.DBConns.Api_secret(**test_data.normalShip_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
@@ -175,7 +175,7 @@ class Test(interface_order.MyTest):
                 payload=test_data.normalShip_data
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.normalShip_url, params=payload)
+                r=requests.post(self.normalShip_data_url, params=payload)
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)

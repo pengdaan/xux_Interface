@@ -2,8 +2,10 @@
 # 数据库配置文件
 import Config
 import MySQLdb
-import pymysql
+import time
 from DBUtils.PooledDB import PooledDB
+
+times= int(time.time())
 # 为返回字典格式推荐将连接池的cursorclass设置
 from MySQLdb.cursors import DictCursor
 
@@ -99,7 +101,7 @@ def pmssecret(api_key): #这里只需要查询Api_secret是否存在，存在的
     Api_key = "SELECT * FROM mall_promotion_sign WHERE api_key='%s'"%api_key
     api_secret = "SELECT api_secret FROM mall_promotion_sign WHERE api_key='%s'"%api_key
     mysql = Mysql()
-    datas=mysql.get_all(Api_key )
+    datas=mysql.get_all(Api_key)
 
     if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
         data=mysql.get_one(api_secret)
@@ -119,6 +121,15 @@ def Api_secret(**test_data):#这里要做的事情应该是处理data里面的�
         return api_key
     else:
         return None
+
+
+def Updatexux_Order(XUXorder): #通过修改数据库更改订单状态为已审核状态，只能改普通的直邮订单
+
+    XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%(time)s' WHERE order_sn='%(order)s'"%{'time':times,"order":XUXorder}
+    print XUXorders
+    mysql = Mysql()
+    mysql.get_one(XUXorders)
+
 
 
 

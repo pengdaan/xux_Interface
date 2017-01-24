@@ -105,6 +105,21 @@ normalShip_data={
 
 
 
+'''更新订单支付状态'''
+data_updatePayStatus = {
+    'api_key':'b47d4503ce201db6df525911812dd089',
+    'timestamp':times,
+    'order_amount':'40',
+    'trade_no':'2015122921001003610003783823',
+    'pay_serial_no':'2015122964844',
+    'pay_id':'1',
+    'order_status':'1',
+
+}
+
+
+
+
 
 
 
