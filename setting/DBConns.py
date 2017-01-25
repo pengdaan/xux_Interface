@@ -111,7 +111,7 @@ def secret(api_key): #这里只需要查询Api_secret是否存在，存在的话
     Api_key = "SELECT * FROM mall_app WHERE api_key='%s'"%api_key
     api_secret = "SELECT api_secret FROM mall_app WHERE api_key='%s'"%api_key
     mysql = Mysql()
-    datas=mysql.get_all(Api_key )
+    datas=mysql.get_all(Api_key)
 
     if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
         data=mysql.get_one(api_secret)

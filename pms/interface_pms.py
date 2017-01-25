@@ -13,6 +13,7 @@ class MyTest(unittest.TestCase):
         self.PmsUpdatestatus_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/code/updateStatus'
         self.NameRepeat_url= 'http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/checkNameRepeat'
         self.BatchSend_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/code/batchSend'
+        self.Pmssend_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/code/send'
 
 
 
