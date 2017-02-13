@@ -131,7 +131,7 @@ class Test(interface_dp.MyTest):
 
 
     def test_OrderBySnDianping_sucess(self):
-        '''取用订单详情-点评项目'''
+        '''获取订单详情-点评项目'''
         api_key=setting.DBConns.Api_secret(**test_data.OrderBySnDianping_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")

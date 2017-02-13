@@ -10,7 +10,6 @@ def addHTime():#当前时间戳增加1小时
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
 
-
 def addTime():#当前时间戳增加15分钟
     dtime=datetime.datetime.now()
     dtime2= dtime + datetime.timedelta(hours=0.25)
@@ -99,8 +98,8 @@ CreateDepositMission_data={
              '"products":[{"endPrice":"0.1","fixPrice":"0.1","goodsId":"777","groupPrice":"0.2","ladder":[{"personNumber":"1","price":"0.2"},{"personNumber":"2","price":"0.2"}],"productId":0},{"endPrice":0.1,"fixPrice":0.1,"goodsId":"777","groupPrice":0.2,"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10750"}],"supportPromotion":0,"operator":1,"supportSpecial":1,"detail":"","sortOrder":0}'
 
 
-
 }
+
 '''修改定金团接口'''
 updateDepositMission_data={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
@@ -113,14 +112,13 @@ updateDepositMission_data={
         '"fromAt":1484648399,'
         '"toAt":1484648999,'
         '"virtualHit":0,'
-        '"products":[{"endPrice":"0.1","fixPrice":"0.1","goodsId":"777","groupPrice":"0.2","ladder":[{"personNumber":"1","price":"0.2"},{"personNumber":"2","price":"0.2"}],"productId":0},{"endPrice":0.1,"fixPrice":0.1,"goodsId":"777","groupPrice":0.2,"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10750"}],"supportPromotion":0,"operator":1,"supportSpecial":1,"detail":"","sortOrder":0,"id":327}'
+        '"products":[{"endPrice":"0.1","fixPrice":"0.1","goodsId":"777","groupPrice":"0.2","ladder":[{"personNumber":"1","price":"0.2"},{"personNumber":"2","price":"0.2"}],"productId":0},{"endPrice":0.1,"fixPrice":0.1,"goodsId":"777","groupPrice":0.2,"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10750"}],"supportPromotion":0,"operator":1,"supportSpecial":1,"detail":"","sortOrder":0,"id":363}'
 }
 '''更新优惠劵状态'''
 Pms_updateStatus={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
     'timestamp':times,
-    'data':'{"promotionCode":"37076723","status":2,"orderId":"24594"}'
-
+    'data':'{"promotionCode":"78684921","status":2,"orderId":"24594"}'
 
 }
 
@@ -134,7 +132,6 @@ NameRepeat_data={
 }
 
 
-#暂时不用了
 '''批量发放优惠卷接口'''
 batchSend_data={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
@@ -142,7 +139,6 @@ batchSend_data={
     'data':'{"promotionId":495,"num":1,"mark":"","type":0,"userIds":[1160],"adminId":1}'
 }
 
-#暂时不用了
 '''发放优惠卷接口'''
 Pmssend_data={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',

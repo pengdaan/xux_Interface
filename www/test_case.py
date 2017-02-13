@@ -48,6 +48,7 @@ class Test(interface_www.MyTest):
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.secret(api_key)#返回api_secret
+            print api_secrets
             if api_secrets !=0:
                 payload=test_data.updateRemindMsg_data
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
@@ -223,7 +224,7 @@ class Test(interface_www.MyTest):
 
 
     def test_updatePayStatus_sucess(self):
-        '''更新订单支付状态'''
+        '''更新订单支付状态更新订单支付状态'''
         api_key=setting.DBConns.Api_secret(**test_data.data_updatePayStatus)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
@@ -274,6 +275,8 @@ class Test(interface_www.MyTest):
 
     def test_hipWithoutCoupon_sucess(self):
         '''不输入消费券直接发货'''
+
+        #这个接口需要添加一个旅游订单
         api_key=setting.DBConns.Api_secret(**test_data.shipWithoutCoupon_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")

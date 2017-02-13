@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>xux_Interface Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { white-space: pre-wrap;word-wrap: break-word; }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 2ex;
+    margin-bottom: 3ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    /* width: 500px;*/
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 99%;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #74A474; }
+.failClass  { background-color: #FDD283; }
+.errorClass { background-color: #FF6600; }
+.passCase   { color: #6c6; }
+.failCase   { color: #FF6600; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+#div_base {
+            position:absolute;
+            top:0%;
+            left:5%;
+            right:5%;
+            width: auto;
+            height: auto;
+            margin: -15px 0 0 0;
+}
+</style>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+<div id="div_base">
+
+<div class='page-header'>
+<h1>xux_Interface Test Report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-02-10 11:31:19</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:11.323000</p>
+<p class='attribute'><strong>Status:</strong> Pass 6 Failure 35 Error 4</p>
+
+</div>
+<p class='description'>Implementation Example whith:</p>
+
+
+
+<div class="btn-group btn-group-sm">
+<button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button>
+<button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>
+<button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>
+</div>
+<p></p>
+<table id='result_table' class="table table-bordered">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>测试套件/测试用例</td>
+    <td>总数</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>查看</td>
+</tr>
+
+<tr class='failClass'>
+    <td>dp.test_case.Test: 点评接口</td>
+    <td>5</td>
+    <td>3</td>
+    <td>2</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',5)">详情</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_OrderBySnDianping_sucess: 获取订单详情-点评项目</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        fail</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: {
+          "code": 1001200, 
+          "data": [], 
+          "msg": "找不到相应订单"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\dp\test_case.py", line 151, in test_OrderBySnDianping_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'\u627e\u4e0d\u5230\u76f8\u5e94\u8ba2\u5355' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_UserOrderListDP_sucess: 获取用户订单列表-点评项目</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: {
+          "code": 0, 
+          "data": {
+                    "order_list": [], 
+                    "pager": {
+                              "page_num": 1, 
+                              "page_size": 20, 
+                              "total_size": "0"
+                    }
+          }, 
+          "msg": "SUCCESS"
+}
+(200, u'SUCCESS')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_applyRefund_sucess: 取用户申请退款-点评项目</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        fail</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: {"code":0,"msg":"SUCCESS","data":{"order_sn":"DP68412697457808","order_amount":"10.00"}}
+{'timestamp': 1486697477, 'api_key': '8d46b75a4a0456a35302d2893ed072a3', 'order_sn': u'DP68412697457808', 'uid': '43507844', 'suggest_reason': '122'}
+{
+          "code": 10031003, 
+          "data": [], 
+          "msg": "参数错误: 退款原因id不存在"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\dp\test_case.py", line 125, in test_applyRefund_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'\u53c2\u6570\u9519\u8bef: \u9000\u6b3e\u539f\u56e0id\u4e0d\u5b58\u5728' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cancelOrder_sucess: 取消订单-点评</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: {"code":0,"msg":"SUCCESS","data":{"order_sn":"DP68412697457828","order_amount":"10.00"}}
+{
+          "code": 0, 
+          "data": [], 
+          "msg": "SUCCESS"
+}
+(200, u'SUCCESS')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_post_orderDP_sucess: 创建点评订单接口检查</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        pass</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: {
+          "code": 0, 
+          "data": {
+                    "order_amount": "10.00", 
+                    "order_sn": "DP68412697457848"
+          }, 
+          "msg": "SUCCESS"
+}
+DP68412697457848
+(200, u'SUCCESS')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>ly.test_case.Test: 旅游接口</td>
+    <td>4</td>
+    <td>0</td>
+    <td>4</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',4)">详情</a></td>
+</tr>
+
+<tr id='ft2.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_OrderByGoTime_sucess: 旅游通过出行日期查询已支付的订单接口检查</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        fail</a>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.1: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\ly\test_case.py", line 62, in test_OrderByGoTime_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_OrderBySnTour_sucess: 旅游获取用户所有的订单列表接口检查</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
+        fail</a>
+
+    <div id='div_ft2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.2: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\ly\test_case.py", line 37, in test_OrderBySnTour_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_UserOrderListTour_success: 旅游获取用户所有的订单列表接口检查</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.3')" >
+        fail</a>
+
+    <div id='div_ft2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.3: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\ly\test_case.py", line 89, in test_UserOrderListTour_success
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft2.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_UserOrderNums_sucess: 旅游根据订单分类获取分类订单总数接口检查</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.4')" >
+        fail</a>
+
+    <div id='div_ft2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.4: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\ly\test_case.py", line 114, in test_UserOrderNums_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>order.test_case.Test</td>
+    <td>7</td>
+    <td>2</td>
+    <td>5</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',7)">详情</a></td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_OrderBySn_sucess: 根据订单号获取订单详情接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        fail</a>
+
+    <div id='div_ft3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.1: dff442870ed63a73eddf15ea1903b252
+{
+          "code": 404, 
+          "data": [], 
+          "msg": "找不到相应订单"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\order\test_case.py", line 162, in test_OrderBySn_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'\u627e\u4e0d\u5230\u76f8\u5e94\u8ba2\u5355' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_OrderGoodsNumTour_sucess: 获取用户购买的商品数量</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
+        pass</a>
+
+    <div id='div_pt3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.2: {
+          "code": 0, 
+          "data": {
+                    "passenger": [], 
+                    "user": 0
+          }, 
+          "msg": "SUCCESS"
+}
+(200, u'SUCCESS')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_UserLimitedSpecialOrderNum_sucess: 获取用户商品下单商品数量</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
+        pass</a>
+
+    <div id='div_pt3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.3: 4a5c4b33f83f6a41efed0f36d01e407e
+{
+          "code": 0, 
+          "data": {
+                    "count": 0
+          }, 
+          "msg": "SUCCESS"
+}
+(200, u'SUCCESS')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_applyRefund_sucess: 取用户申请退款-点评项目</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.4')" >
+        fail</a>
+
+    <div id='div_ft3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.4: {
+          "code": 10031003, 
+          "data": [], 
+          "msg": "参数错误: 退款原因id不存在"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\order\test_case.py", line 39, in test_applyRefund_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'\u53c2\u6570\u9519\u8bef: \u9000\u6b3e\u539f\u56e0id\u4e0d\u5b58\u5728' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.5' class='none'>
+    <td class='failCase'><div class='testcase'>test_createOrderXsx_sucess: 小树熊下单接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.5')" >
+        fail</a>
+
+    <div id='div_ft3.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.5: {
+          "code": "99000003", 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\order\test_case.py", line 137, in test_createOrderXsx_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.6' class='none'>
+    <td class='failCase'><div class='testcase'>test_normalShip_sucess: 订单直接分单发货</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.6')" >
+        fail</a>
+
+    <div id='div_ft3.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.6: {"code":"99000003","msg":"Signature Verification Failed","data":[]}
+None
+{"code":"99000003","msg":"Signature Verification Failed","data":[]}
+None
+{
+          "code": "99000003", 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\order\test_case.py", line 193, in test_normalShip_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.7' class='none'>
+    <td class='failCase'><div class='testcase'>test_receiveOrderReturn_sucess: 接收open域回推要出发订单信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.7')" >
+        fail</a>
+
+    <div id='div_ft3.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.7: {
+          "code": "403", 
+          "data": [], 
+          "msg": "Access Denied"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\order\test_case.py", line 119, in test_receiveOrderReturn_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Access Denied' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>pms.test_case.Test: PMS接口</td>
+    <td>10</td>
+    <td>0</td>
+    <td>6</td>
+    <td>4</td>
+    <td><a href="javascript:showClassDetail('c4',10)">详情</a></td>
+</tr>
+
+<tr id='ft4.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_NameRepeat_sucess: 检查活动名称是否重复接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+        fail</a>
+
+    <div id='div_ft4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.1: dbe4568d7dafe2a31507e4248e0b18d0
+{
+          "code": -103, 
+          "msg": "【无效请求】没有指定的key"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 173, in test_NameRepeat_sucess
+    self.assertEqual(self.msgs, 'ok')
+AssertionError: u'\u3010\u65e0\u6548\u8bf7\u6c42\u3011\u6ca1\u6709\u6307\u5b9a\u7684key' != 'ok'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_Pmsadd_sucess: Pms添加优惠劵</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.2')" >
+        fail</a>
+
+    <div id='div_ft4.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.2: dbe4568d7dafe2a31507e4248e0b18d0
+{
+          "code": -103, 
+          "msg": "【无效请求】没有指定的key"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 40, in test_Pmsadd_sucess
+    self.assertEqual(self.msgs, 'ok')
+AssertionError: u'\u3010\u65e0\u6548\u8bf7\u6c42\u3011\u6ca1\u6709\u6307\u5b9a\u7684key' != 'ok'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_Pmsoperate_sucess: Pms操作优惠活动（开启、关闭）接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.3')" >
+        fail</a>
+
+    <div id='div_ft4.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.3: dbe4568d7dafe2a31507e4248e0b18d0
+{
+          "code": -103, 
+          "msg": "【无效请求】没有指定的key"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 67, in test_Pmsoperate_sucess
+    self.assertEqual(self.msgs, 'ok')
+AssertionError: u'\u3010\u65e0\u6548\u8bf7\u6c42\u3011\u6ca1\u6709\u6307\u5b9a\u7684key' != 'ok'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_Pmssend_sucess: 发放优惠卷接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.4')" >
+        error</a>
+
+    <div id='div_ft4.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.4: 2017-02-10 11:31:18Test_AddPms
+pms_id ä¸å­å¨
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 221, in test_Pmssend_sucess
+    api_sign=setting.api_signs.api_signs(payload,api_secrets)
+  File "D:\xux_Interface\setting\api_signs.py", line 8, in api_signs
+    for (key,value) in payload.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_Pmssend_sucess: 发放优惠卷接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.5')" >
+        error</a>
+
+    <div id='div_ft4.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.5: 2017-02-10 11:31:18Test_AddPms
+pms_id ä¸å­å¨
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\interface_pms.py", line 25, in tearDown
+    print(self.code,self.msgs)
+AttributeError: 'Test' object has no attribute 'code'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.6' class='none'>
+    <td class='failCase'><div class='testcase'>test_Pmsupdate_sucess: 修改优惠劵状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.6')" >
+        fail</a>
+
+    <div id='div_ft4.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.6: dbe4568d7dafe2a31507e4248e0b18d0
+{
+          "code": -103, 
+          "msg": "【无效请求】没有指定的key"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 146, in test_Pmsupdate_sucess
+    self.assertEqual(self.msgs, 'ok')
+AssertionError: u'\u3010\u65e0\u6548\u8bf7\u6c42\u3011\u6ca1\u6709\u6307\u5b9a\u7684key' != 'ok'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_batchSend_sucess: 批量发放优惠卷接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.7')" >
+        error</a>
+
+    <div id='div_ft4.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.7: 2017-02-10 11:31:18Test_AddPms
+pms_id ä¸å­å¨
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 192, in test_batchSend_sucess
+    api_sign=setting.api_signs.api_signs(payload,api_secrets)
+  File "D:\xux_Interface\setting\api_signs.py", line 8, in api_signs
+    for (key,value) in payload.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_batchSend_sucess: 批量发放优惠卷接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.8')" >
+        error</a>
+
+    <div id='div_ft4.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.8: 2017-02-10 11:31:18Test_AddPms
+pms_id ä¸å­å¨
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\interface_pms.py", line 25, in tearDown
+    print(self.code,self.msgs)
+AttributeError: 'Test' object has no attribute 'code'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.9' class='none'>
+    <td class='failCase'><div class='testcase'>test_createDepositMission_sucess: 添加定金团活动</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.9')" >
+        fail</a>
+
+    <div id='div_ft4.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.9: dbe4568d7dafe2a31507e4248e0b18d0
+{
+          "code": -103, 
+          "msg": "【无效请求】没有指定的key"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 93, in test_createDepositMission_sucess
+    self.assertEqual(self.msgs, 'ok')
+AssertionError: u'\u3010\u65e0\u6548\u8bf7\u6c42\u3011\u6ca1\u6709\u6307\u5b9a\u7684key' != 'ok'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft4.10' class='none'>
+    <td class='failCase'><div class='testcase'>test_updateDepositMission_sucess: 修改定金团活动</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.10')" >
+        fail</a>
+
+    <div id='div_ft4.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft4.10: dbe4568d7dafe2a31507e4248e0b18d0
+{
+          "code": -103, 
+          "msg": "【无效请求】没有指定的key"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\pms\test_case.py", line 119, in test_updateDepositMission_sucess
+    self.assertEqual(self.msgs, 'ok')
+AssertionError: u'\u3010\u65e0\u6548\u8bf7\u6c42\u3011\u6ca1\u6709\u6307\u5b9a\u7684key' != 'ok'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>www.test_case.Test: www接口</td>
+    <td>19</td>
+    <td>1</td>
+    <td>18</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',19)">详情</a></td>
+</tr>
+
+<tr id='ft5.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_AllStatus_sucess: 获取所有的订单状态（综合状态）</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        fail</a>
+
+    <div id='div_ft5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.1: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 374, in test_AllStatus_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.2' class='none'>
+    <td class='failCase'><div class='testcase'>test_ChildOrderTour_sucess: 根据订单号获取订单列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.2')" >
+        fail</a>
+
+    <div id='div_ft5.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.2: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 167, in test_ChildOrderTour_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_CouponCode_sucess: 获取用户购买的商品数量</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.3')" >
+        fail</a>
+
+    <div id='div_ft5.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.3: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 219, in test_CouponCode_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_De_AllStatus_sucess: 获取所有的发货单状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.4')" >
+        fail</a>
+
+    <div id='div_ft5.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.4: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 349, in test_De_AllStatus_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.5' class='none'>
+    <td class='failCase'><div class='testcase'>test_G_dingdan_sucess: 获取订单来源参数列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.5')" >
+        fail</a>
+
+    <div id='div_ft5.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.5: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 426, in test_G_dingdan_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.6' class='none'>
+    <td class='failCase'><div class='testcase'>test_OrderByProductId_sucess: 通过商品id获取订单列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.6')" >
+        fail</a>
+
+    <div id='div_ft5.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.6: {'api_key': 'd81b8598bc36a686cc8cbbd26599bd92', 'api_sign': '9A27B7089F1DE0DBD18ED1FA7251D4B7', 'uid': '43507844', 'goods_id': '777', 'product_id': '10750'}
+{
+          "code": "1001200", 
+          "data": [], 
+          "msg": "无相关订单"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 270, in test_OrderByProductId_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'\u65e0\u76f8\u5173\u8ba2\u5355' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.7' class='none'>
+    <td class='failCase'><div class='testcase'>test_OrderPromotionList_sucess: 获取用户购买的促销订单信息</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.7')" >
+        fail</a>
+
+    <div id='div_ft5.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.7: {
+          "code": "403", 
+          "data": [], 
+          "msg": "Access Denied"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 400, in test_OrderPromotionList_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Access Denied' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.8' class='none'>
+    <td class='failCase'><div class='testcase'>test_OutOrderSn_sucess: 对接要出发回调设置外部订单号</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.8')" >
+        fail</a>
+
+    <div id='div_ft5.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.8: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 141, in test_OutOrderSn_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.9' class='none'>
+    <td class='failCase'><div class='testcase'>test_ProductId_sucess: 通过商品id获取订单列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.9')" >
+        fail</a>
+
+    <div id='div_ft5.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.9: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 452, in test_ProductId_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt5.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_PromotionNums_sucess: 获取秒杀订单实际秒杀购买数</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.10')" >
+        pass</a>
+
+    <div id='div_pt5.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.10: {
+          "code": 0, 
+          "data": {
+                    "Numbers": 0
+          }, 
+          "msg": "SUCCESS"
+}
+(200, u'SUCCESS')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.11' class='none'>
+    <td class='failCase'><div class='testcase'>test_RemindMsg_sucess: 获取订单客服留言接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.11')" >
+        fail</a>
+
+    <div id='div_ft5.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.11: {
+          "code": 7010002, 
+          "data": [], 
+          "msg": " 订单不存在"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 90, in test_RemindMsg_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u' \u8ba2\u5355\u4e0d\u5b58\u5728' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.12' class='none'>
+    <td class='failCase'><div class='testcase'>test_UserOrderNums_sucess: 根据订单分类获取分类订单总数</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.12')" >
+        fail</a>
+
+    <div id='div_ft5.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.12: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 323, in test_UserOrderNums_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.13' class='none'>
+    <td class='failCase'><div class='testcase'>test_add_XUJ_sucess: 重复发送消费券接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.13')" >
+        fail</a>
+
+    <div id='div_ft5.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.13: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 478, in test_add_XUJ_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.14' class='none'>
+    <td class='failCase'><div class='testcase'>test_createOrderTour_sucess: 旅游创建订单</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.14')" >
+        fail</a>
+
+    <div id='div_ft5.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.14: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 116, in test_createOrderTour_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.15' class='none'>
+    <td class='failCase'><div class='testcase'>test_hipWithoutCoupon_sucess: 不输入消费券直接发货</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.15')" >
+        fail</a>
+
+    <div id='div_ft5.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.15: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 297, in test_hipWithoutCoupon_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.16' class='none'>
+    <td class='failCase'><div class='testcase'>test_query_sucess: 获取用户购买的商品数量</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.16')" >
+        fail</a>
+
+    <div id='div_ft5.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.16: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 193, in test_query_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.17' class='none'>
+    <td class='failCase'><div class='testcase'>test_updatePayStatus_sucess: 更新订单支付状态更新订单支付状态</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.17')" >
+        fail</a>
+
+    <div id='div_ft5.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.17: {
+          "code": 1008, 
+          "data": [], 
+          "msg": "找不到相应的订单"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 244, in test_updatePayStatus_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'\u627e\u4e0d\u5230\u76f8\u5e94\u7684\u8ba2\u5355' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.18' class='none'>
+    <td class='failCase'><div class='testcase'>test_updateRemindMsg_sucess: 更新订单客服留言接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.18')" >
+        fail</a>
+
+    <div id='div_ft5.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.18: dff442870ed63a73eddf15ea1903b252
+{
+          "code": 7010002, 
+          "data": [], 
+          "msg": " 订单不存在"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 64, in test_updateRemindMsg_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u' \u8ba2\u5355\u4e0d\u5b58\u5728' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.19' class='none'>
+    <td class='failCase'><div class='testcase'>test_verify_sucess: 验证使用消费券</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.19')" >
+        fail</a>
+
+    <div id='div_ft5.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft5.19: {
+          "code": 99000003, 
+          "data": [], 
+          "msg": "Signature Verification Failed"
+}
+Traceback (most recent call last):
+  File "D:\xux_Interface\www\test_case.py", line 504, in test_verify_sucess
+    self.assertEqual(self.msgs, 'SUCCESS')
+AssertionError: u'Signature Verification Failed' != 'SUCCESS'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>总计</td>
+    <td>45</td>
+    <td>6</td>
+    <td>35</td>
+    <td>4</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</div>
+</body>
+</html>

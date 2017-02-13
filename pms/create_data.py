@@ -87,11 +87,23 @@ def Pms_code():
         data_2=data_1['results']
         data_3=data_2[0]
         data_4=data_3['codeList']
-        print data_4
+       # print data_4
         return data_4
     except:
         print (result)
 
+#Pms_code()
+'''修改优惠劵状态'''
+promotionCodes=Pms_code()
+Pms_updateStatus={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionCode":"'+str(promotionCodes)+'","status":2,"orderId":"24594"}'
 
 
-Pms_code()
+}
+
+
+
+
+
