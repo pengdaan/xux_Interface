@@ -29,7 +29,7 @@ dingjintuanTitle = str(add_time)+'Test_DJTuan'
 applyRefund_data={
     'timestamp':times,
     'uid':'43507844',
-    'order_sn':'DP48414731026869',
+  #  'order_sn':'DP48414731026869',
     'suggest_reason':'122',
     'api_key':'8d46b75a4a0456a35302d2893ed072a3',
 
@@ -48,8 +48,9 @@ UserLimitedSpecialOrderNum_data={
 
 '''接收open域回推要出发订单信息'''
 receiveOrderReturn_data={
-    'order_sn':'LY48414722526789',
-    't':'1484722585',
+    'order_sn':'LY78414068037549',
+    'out_order_sn':'8052089464254',
+    't':times,
     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
      'type':'0',
     'status':'1'

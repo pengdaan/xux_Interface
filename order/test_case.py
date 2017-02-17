@@ -13,20 +13,25 @@ import setting.DBConns
 from order import test_data
 from order import interface_order
 import create_data
+import dp.create_data
 times= int(time.time())
 
 class Test(interface_order.MyTest):
 
 
-    def test_applyRefund_sucess(self):#现在还调不通
-        '''取用户申请退款-点评项目'''
+    def test_applyRefund_sucess(self):
+        '''用户申请退款-点评项目'''
+        payloads= test_data.applyRefund_data
+        order_sns=dp.create_data.updatePayStatu()#生成订单号
+        payloads.setdefault('order_sn',order_sns) #插入订单号
+        #print payloads
         api_key=setting.DBConns.Api_secret(**test_data.applyRefund_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.secret(api_key)#返回api_secret
             if api_secrets !=0:
-                payload= test_data.applyRefund_data
+                payload= payloads
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.applyRefund_url, params=payload)

@@ -15,9 +15,6 @@ class MyTest(unittest.TestCase):
 
 
 
-
-
-
     def tearDown(self):
        # pass
 

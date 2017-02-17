@@ -106,7 +106,7 @@ class Test(interface_pms.MyTest):
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.updateDepositMission_url , params=payload)
-              #  print payload
+                print payload
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)

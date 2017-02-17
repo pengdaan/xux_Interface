@@ -73,7 +73,7 @@ class Test(interface_dp.MyTest):
     def test_cancelOrder_sucess(self):
         '''取消订单-点评'''
         payloads=test_data.cancelOrder_data
-        order_sns=create_data.test_post_orderDP()#生成订单号
+        order_sns=create_data.post_orderDP()#生成订单号
         payloads.setdefault('order_sn',order_sns) #插入订单号
         #print payloads
         api_key=setting.DBConns.Api_secret(**test_data.cancelOrder_data)#返回api_key
@@ -112,7 +112,7 @@ class Test(interface_dp.MyTest):
             api_secrets=setting.DBConns.secret(api_key)#返回api_secret
             if api_secrets !=0:
                 payload=payloads
-                print payload
+               # print payload
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.applyRefund_url, params=payload)
@@ -123,7 +123,6 @@ class Test(interface_dp.MyTest):
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
                         self.assertEqual(self.msgs, 'SUCCESS')
-
                 else:
                         print 'NO msg'
             else:

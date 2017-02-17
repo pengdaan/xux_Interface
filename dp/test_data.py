@@ -27,7 +27,7 @@ dingjintuanTitle = str(add_time)+'Test_DJTuan'
 
 #点评相关接口
 
-#成功创建订单
+#成功创建订单，不发卷
 data_OrderDPSuces={
          'uid':'43507844',
         'timestamp':times,
@@ -55,6 +55,21 @@ data_OrderDPSuces={
                    '"goods_attr":"默认属性:均码"}]'
 }
 
+#成功创建订单,发卷
+data_OrderDPSuce={
+    "timestamp":times,
+    "uid": "43507844",
+    "consignee": "么么22",
+    "mobile": "13728142737",
+    "shop_id": "1",
+    "products": "[{\"product_id\":\"10860\",\"goods_id\":\"870\",\"product_sn\":\"product2017021610860\",\"goods_name\":\"\\u6d4b\\u8bd5\\u5546\\u54c1_02(\\u53d1\\u5377)\",\"cat_id\":\"483\",\"shop_price\":\"10.00\",\"goods_thumb\":\"\\/\\/cdn-dianping.mama.cn\\/upload\\/http:\\/\\/cdn-dianping.mama.cn\\/upload\\/201702\\/20170206\\/2a572c38539179823fc795d455e9b526.jpg\",\"supplier_id\":\"1\",\"without_return\":\"0\",\"goods_number\":\"1\",\"use_coupon\":\"3\",\"end_return_time\":\"0\",\"return_anytime\":\"0\",\"goods_attr_id\":\"3080|3081\",\"goods_attr\":\"\\u989c\\u8272:\\u7ea2\\u8272|\\u7801\\u6570:38\"}]",
+    "source": "wap",
+    "shop_city": "1",
+    "pay_expire": "7200",
+    "version": "2.1",
+    "api_key": "8d46b75a4a0456a35302d2893ed072a3",
+
+}
 
 '''点评验卷接口'''
 data_DPverif={
