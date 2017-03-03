@@ -22,7 +22,7 @@ class Test(interface_order.MyTest):
     def test_applyRefund_sucess(self):
         '''用户申请退款-点评项目'''
         payloads= test_data.applyRefund_data
-        order_sns=dp.create_data.updatePayStatu()#生成订单号
+        order_sns=dp.create_data.updatePayDPStatu(status=2)#生成订单号
         payloads.setdefault('order_sn',order_sns) #插入订单号
         #print payloads
         api_key=setting.DBConns.Api_secret(**test_data.applyRefund_data)#返回api_key

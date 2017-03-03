@@ -135,7 +135,7 @@ class Test(interface_pms.MyTest):
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.PmsUpdatestatus_url , params=payload)
-              #  print payload
+                #print payload
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)
@@ -233,6 +233,33 @@ class Test(interface_pms.MyTest):
             else:
                 print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
 
+
+
+    def test_createPromotion_sucess(self):
+        '''添加砍价活动'''
+        api_key=setting.DBConns.Api_secret(**test_data.createPromotion_data)#返回api_key
+        if api_key == None:
+            print(u"api_key 不存在，请检查接口数据！")
+        else:
+            api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
+            print api_secrets
+            if api_secrets !=0:
+                payload=test_data.createPromotion_data
+                api_sign=setting.api_signs.api_signs(payload,api_secrets)
+                payload.setdefault('api_sign',api_sign)
+                r=requests.post(self.createPromotion_url , params=payload)
+              #  print payload
+                self.code=r.status_code
+                self.result=r.text
+                js=setting.result_jsons.result_json(self.result)
+                if js.has_key('msg')==True:
+                        self.msgs=js.get('msg')
+                        self.assertEquals(self.code,200)
+                        self.assertEqual(self.msgs, 'ok')
+                else:
+                        print 'NO msg'
+            else:
+                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
 
 
 if __name__=='__main__':

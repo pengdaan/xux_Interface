@@ -156,7 +156,7 @@ def post_CorderDP():
                 return DP_order(results)
 
 
-def updatePayStatus():
+def updatePaySt():
         '''更新订单支付状态'''
         payloads=test_data.data_updatePayStatus
         order_sns=post_orderDP()#生成订单号
@@ -178,7 +178,7 @@ def updatePayStatus():
                 return order_sns
 
 
-def updatePayStatu():
+def updatePayStatus():
         '''更新订单支付状态(点评发卷)'''
         payloads=test_data.data_updatePayStatus
         order_sns=post_CorderDP()#生成订单号
@@ -198,3 +198,5 @@ def updatePayStatu():
                 #print r.text
                 #print order_sns
                 return order_sns
+
+

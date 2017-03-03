@@ -5,6 +5,8 @@ import datetime
 import random
 times= int(time.time())
 dtime=datetime.datetime.now()
+import create_data
+
 def addHTime():#当前时间戳增加1小时
     dtime=datetime.datetime.now()
     dtime2= dtime + datetime.timedelta(hours=1)
@@ -104,12 +106,20 @@ ChildOrderTour_data={
 }
 
 '''不输入消费券直接发货'''
+# def orderId():
+#     import create_data
+#     orderId=create_data.reateOrderTour()
+#     return orderId
+
+orderId=create_data.reateOrderTour(status=2)
+print orderId
+order_sn=create_data.reateOrderTour(status=1)
+print order_sn
 shipWithoutCoupon_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
      'timestamp':times,
-     'data':'{"supplierId":110,"orderId":24916}'
-
-
+     'order_sn':''+ str(order_sn) + ' ',
+     'data':'{"supplierId":110,"orderId":'+ str(orderId) + '}'
 }
 '''查询发货单列表'''
 query_data={

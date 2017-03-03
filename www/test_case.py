@@ -10,6 +10,7 @@ import setting.api_signs
 import setting.result_jsons
 import setting.DBConns
 import interface_www
+import create_data
 
 times= int(time.time())
 
@@ -97,6 +98,7 @@ class Test(interface_www.MyTest):
     def test_createOrderTour_sucess(self):
         '''旅游创建订单'''
         api_key=setting.DBConns.Api_secret(**test_data.createOrderTour_data)#返回api_key
+        print api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
@@ -275,7 +277,10 @@ class Test(interface_www.MyTest):
 
     def test_hipWithoutCoupon_sucess(self):
         '''不输入消费券直接发货'''
-
+        order_sn=test_data.order_sn
+        create_data.updatePayDPStatu(order_sn)
+        print test_data.shipWithoutCoupon_data
+        #还需要调用订单审核的接口·接口还没上线·临时的话可以弄一个sql修改·但是不怎么科学
         #这个接口需要添加一个旅游订单
         api_key=setting.DBConns.Api_secret(**test_data.shipWithoutCoupon_data)#返回api_key
         if api_key == None:

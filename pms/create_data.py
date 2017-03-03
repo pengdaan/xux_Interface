@@ -73,6 +73,7 @@ def batchSend():
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(BatchSend_url , params=payload)
+               # print payload
                 return r.text
             else:
                 print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
@@ -92,7 +93,6 @@ def Pms_code():
     except:
         print (result)
 
-#Pms_code()
 '''修改优惠劵状态'''
 promotionCodes=Pms_code()
 Pms_updateStatus={
