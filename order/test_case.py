@@ -14,6 +14,8 @@ from order import test_data
 from order import interface_order
 import create_data
 import dp.create_data
+import common.common
+import common.common_data
 times= int(time.time())
 
 class Test(interface_order.MyTest):
@@ -22,7 +24,9 @@ class Test(interface_order.MyTest):
     def test_applyRefund_sucess(self):
         '''用户申请退款-点评项目'''
         payloads= test_data.applyRefund_data
-        order_sns=dp.create_data.updatePayDPStatu(status=2)#生成订单号
+        #order_sns=dp.create_data.updatePayDPStatu(status=2)#生成订单号
+        order=common.common.order()
+        order_sns=order.updatePayDPStatu(status=2)
         payloads.setdefault('order_sn',order_sns) #插入订单号
         #print payloads
         api_key=setting.DBConns.Api_secret(**test_data.applyRefund_data)#返回api_key
@@ -172,9 +176,13 @@ class Test(interface_order.MyTest):
 
     def test_normalShip_sucess(self):
         '''订单直接分单发货'''
-        order_sns=create_data.updatePayStatus()
-       # print order_sns
-        order_sn=create_data.Updatexux_Order(order_sns)#更新订单状态为已审核
+        order=common.common.order()
+        order_sns=order.updatePayDPStatu(status=3)
+        #order_sns=create_data.updatePayStatus()
+        #print order_sns
+        #order_sn=create_data.Updatexux_Order(order_sns)#更新订单状态为已审核
+        order.Updatexux_Order(order_sns)#更新订单状态为已审核
+        #print  order.Updatexux_Order(order_sns)
         payloads=test_data.normalShip_data
         payloads.setdefault('order_sn',order_sns)
        # print payloads

@@ -9,3 +9,6 @@ update_dpStatus='dff442870ed63a73eddf15ea1903b252'
 
 '''旅游下单secrets'''
 ly_secrets='9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o'
+
+'''pms添加优惠劵secrets'''
+pms_secrets='dbe4568d7dafe2a31507e4248e0b18d0'

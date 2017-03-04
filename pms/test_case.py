@@ -23,6 +23,7 @@ class Test(interface_pms.MyTest):
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
+            print api_secrets
             if api_secrets !=0:
                 payload=test_data.test_Addpms
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
@@ -185,7 +186,7 @@ class Test(interface_pms.MyTest):
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
-            #print api_secrets
+            print api_secrets
             if api_secrets !=0:
                 payload=pms_id
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
