@@ -8,7 +8,6 @@ import setting.result_jsons
 import setting.DBConns
 import all_secrets
 import common_data
-import pms.test_data
 times= int(time.time())
 
 class order:
@@ -109,12 +108,12 @@ class order:
     def Pmsadd(self):
         '''Pms添加优惠劵'''
         api_secrets=all_secrets.pms_secrets
-        payload=pms.test_data.test_Addpms
+        payload=common_data.test_Addpms
         api_sign=setting.api_signs.api_signs(payload,api_secrets)
         payload.setdefault('api_sign',api_sign)
         requests.post(common_data.PMSadd_url, params=payload)
-        print pms.test_data.promotionNames
-        return str(pms.test_data.promotionNames)
+        print common_data.promotionNames
+        return str(common_data.promotionNames)
 
 
     def updatePayDPStatu(self,status=None):
@@ -214,6 +213,24 @@ class order:
             return batchSend_data
         else:
             print 'pms_id 不存在'
+
+    def DJT_code(self,title):
+        #获取定金团活动的活动id
+        DJT_ids_01="SELECT id FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
+        DJT_ids_02="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+        mysql = setting.DBConns.Mysql()
+        datas=mysql.get_one(DJT_ids_01)
+        if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
+            DJT_id=datas['id']
+            #print DJT_id
+            return DJT_id
+        elif(datas== None):
+            datas=mysql.get_one(DJT_ids_02)
+            DJT_id=datas['id']
+            return DJT_id
+        else:
+            print datas
+
 
 
 # '''修改优惠劵状态'''

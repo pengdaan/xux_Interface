@@ -11,6 +11,7 @@ import setting.result_jsons
 import setting.DBConns
 import interface_pms
 import create_data
+import common.common
 times= int(time.time())
 
 class Test(interface_pms.MyTest):
@@ -101,13 +102,13 @@ class Test(interface_pms.MyTest):
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
-            print api_secrets
+            #print api_secrets
             if api_secrets !=0:
                 payload=test_data.updateDepositMission_data
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.updateDepositMission_url , params=payload)
-                print payload
+                #print payload
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)
@@ -208,7 +209,9 @@ class Test(interface_pms.MyTest):
 
     def test_Pmssend_sucess(self):
         '''发放优惠卷接口'''
-        pmsNames=create_data.Pmsadd()
+        #pmsNames=create_data.Pmsadd()
+        order=common.common.order()
+        pmsNames=order.Pmsadd()
         pms_id=create_data.Pmsname_one(pmsNames)
         api_key=setting.DBConns.Api_secret(**test_data.Pmssend_data)#返回api_key
         if api_key == None:

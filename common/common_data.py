@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import time
+import datetime
 times= int(time.time())
 createOrderTour_url='http://www.xiaoshuxiong.com/api/order/createOrderTour'
 updatePayStatus_url='http://www.xiaoshuxiong.com/api/order/updatePayStatus'
@@ -131,4 +132,59 @@ batchSend_data={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
     'timestamp':times,
     'data':'{"promotionId":495,"num":1,"mark":"","type":0,"userIds":[1181],"adminId":1}'
+}
+
+
+times= int(time.time())
+dtime=datetime.datetime.now()
+def addHTime():#当前时间戳增加1小时
+    dtime=datetime.datetime.now()
+    dtime2= dtime + datetime.timedelta(hours=1)
+    timestamp=int(time.mktime(dtime2.timetuple()))
+    return timestamp
+
+def addTime():#当前时间戳增加15分钟
+    dtime=datetime.datetime.now()
+    dtime2= dtime + datetime.timedelta(hours=0.25)
+    timestamp=int(time.mktime(dtime2.timetuple()))
+    return timestamp
+
+add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取当前时间。
+promotionNames=str(add_time) + 'Test_AddPms'
+
+Title=str(add_time)+'Test_AddPms'
+dingjintuanTitle = str(add_time)+'Test_DJTuan'
+
+
+#PMS相关接口
+
+'''增加优惠劵 '''
+test_Addpms={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{'
+           '"promotionName":"' + str(promotionNames) + '",'
+           '"sendNumLimit":2,'
+           '"sendNum":0,"startDateLimit":2,'
+           '"dateExpireNum":1,'
+           '"getNumLimit":0,'
+           '"adminId":1,"suppliersId":0,'
+           '"promotionTitle":"' + str(Title) + '",'
+           '"promotionDetail":"",'
+           '"receiveLimit":1,'
+           '"type":0,'
+           '"rangeType":0,'
+           '"chargePer":0.9,'
+           '"supplierChargePer":0.1,'
+           '"promotionRange":[],'
+           '"supportMsGoods":1,'
+           '"linkUrl":"",'
+           '"selfType":"1",'
+           '"supportDistributeGoods":1,'
+           '"promotionType":1,'
+           '"discountMoney":10,'
+           '"useMinMoney":20,'
+           '"goodsNumber":0'
+           '}'
+
 }

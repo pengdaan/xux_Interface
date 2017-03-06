@@ -7,6 +7,7 @@ times= int(time.time())
 dtime=datetime.datetime.now()
 import create_data
 
+
 def addHTime():#当前时间戳增加1小时
     dtime=datetime.datetime.now()
     dtime2= dtime + datetime.timedelta(hours=1)
@@ -110,7 +111,6 @@ ChildOrderTour_data={
 #     import create_data
 #     orderId=create_data.reateOrderTour()
 #     return orderId
-
 orderId=create_data.reateOrderTour(status=2)
 print orderId
 order_sn=create_data.reateOrderTour(status=1)

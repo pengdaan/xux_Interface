@@ -2,6 +2,9 @@
 __author__ = 'Administrator'
 import time
 import datetime
+import sys
+sys.path.append('D:\\xux_Interface\\common')
+import common.common
 import setting.DBConns
 times= int(time.time())
 dtime=datetime.datetime.now()
@@ -101,21 +104,22 @@ CreateDepositMission_data={
 
 }
 
-def DJT_code():
-    #获取定金团活动的活动id
-    DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
-    mysql = setting.DBConns.Mysql()
-    datas=mysql.get_one(DJT_ids)
-    if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
-        DJT_id=datas['id']
-        #print DJT_id
-        return DJT_id
-    else:
-        print datas
+# def DJT_code():
+#     #获取定金团活动的活动id
+#     DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+#     mysql = setting.DBConns.Mysql()
+#     datas=mysql.get_one(DJT_ids)
+#     if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
+#         DJT_id=datas['id']
+#         #print DJT_id
+#         return DJT_id
+#     else:
+#         print datas
 #dingjintuanTitle='2017-02-16 10:41:20Test_DJTuan'
-update_code=DJT_code()
+#update_code=DJT_code()
 #print update_code
-
+order=common.common.order()
+update_code=order.DJT_code(dingjintuanTitle)
 '''修改定金团接口'''
 updateDepositMission_data={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
@@ -163,7 +167,7 @@ batchSend_data={
 Pmssend_data={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
     'timestamp':times,
-    'data':'{"promotionId":495,"num":10,"mark":"","type":1,"userId":1160,"adminId":1}'
+    'data':'{"promotionId":495,"num":10,"mark":"","type":1,"userId":1181,"adminId":1}'
 }
 
 '''创建砍价团'''
