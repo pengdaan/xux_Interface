@@ -10,8 +10,8 @@ import setting.api_signs
 import setting.result_jsons
 import setting.DBConns
 import interface_pms
-import create_data
-import common.common
+import common.common_Order
+import common.common_data
 times= int(time.time())
 
 class Test(interface_pms.MyTest):
@@ -124,16 +124,13 @@ class Test(interface_pms.MyTest):
 
     def test_Pmsupdate_sucess(self):
         '''修改优惠劵状态'''
-       # api_key=setting.DBConns.Api_secret(**test_data.Pms_updateStatus)#返回api_key
-        api_key=setting.DBConns.Api_secret(**create_data.Pms_updateStatus)#返回api_key
+        api_key=setting.DBConns.Api_secret(**test_data.Pms_updateStatus)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
-            #print api_secrets
             if api_secrets !=0:
-                #payload=test_data.Pms_updateStatus
-                payload=create_data.Pms_updateStatus
+                payload=test_data.Pms_updateStatus
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.PmsUpdatestatus_url , params=payload)
@@ -180,14 +177,16 @@ class Test(interface_pms.MyTest):
 
     def test_batchSend_sucess(self):
         '''批量发放优惠卷接口'''
-        pmsNames=create_data.Pmsadd()
-        pms_id=create_data.Pmsname_all(pmsNames)
+        order=common.common_Order.order()
+        pmsNames=order.Pmsadd()
+        pms_id=order.Pmsname_all(pmsNames)
+        #pms_id=create_data.Pmsname_all(pmsNames)
         api_key=setting.DBConns.Api_secret(**test_data.batchSend_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
-            print api_secrets
+            #print api_secrets
             if api_secrets !=0:
                 payload=pms_id
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
@@ -209,16 +208,15 @@ class Test(interface_pms.MyTest):
 
     def test_Pmssend_sucess(self):
         '''发放优惠卷接口'''
-        #pmsNames=create_data.Pmsadd()
-        order=common.common.order()
+        order=common.common_Order.order()
         pmsNames=order.Pmsadd()
-        pms_id=create_data.Pmsname_one(pmsNames)
+        pms_id=order.Pmsname_one(pmsNames)
+        #pms_id=create_data.Pmsname_one(pmsNames)
         api_key=setting.DBConns.Api_secret(**test_data.Pmssend_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
             api_secrets=setting.DBConns.pmssecret(api_key)#返回api_secret
-            #print api_secrets
             if api_secrets !=0:
                 payload=pms_id
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)

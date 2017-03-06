@@ -3,10 +3,11 @@ __author__ = 'Administrator'
 import time
 import datetime
 import random
+import sys
+sys.path.append('D:\\xux_Interface\\common')
+import common.common_Order
 times= int(time.time())
 dtime=datetime.datetime.now()
-import create_data
-
 
 def addHTime():#当前时间戳增加1小时
     dtime=datetime.datetime.now()
@@ -14,13 +15,11 @@ def addHTime():#当前时间戳增加1小时
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
 
-
 def addTime():#当前时间戳增加15分钟
     dtime=datetime.datetime.now()
     dtime2= dtime + datetime.timedelta(hours=0.25)
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
-
 
 
 add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取当前时间。
@@ -107,14 +106,11 @@ ChildOrderTour_data={
 }
 
 '''不输入消费券直接发货'''
-# def orderId():
-#     import create_data
-#     orderId=create_data.reateOrderTour()
-#     return orderId
-orderId=create_data.reateOrderTour(status=2)
-print orderId
-order_sn=create_data.reateOrderTour(status=1)
-print order_sn
+order=common.common_Order.order()
+ly_results=order.reateOrderTour()
+orderId=order.order_id(ly_results)
+order_sn=order.order_sn(ly_results)
+
 shipWithoutCoupon_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
      'timestamp':times,

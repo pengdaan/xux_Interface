@@ -10,7 +10,8 @@ import setting.api_signs
 import setting.result_jsons
 import setting.DBConns
 import interface_www
-import create_data
+
+import common.common_Order
 
 times= int(time.time())
 
@@ -278,10 +279,10 @@ class Test(interface_www.MyTest):
     def test_hipWithoutCoupon_sucess(self):
         '''不输入消费券直接发货'''
         order_sn=test_data.order_sn
-        create_data.updatePayDPStatu(order_sn)
-        print test_data.shipWithoutCoupon_data
-        #还需要调用订单审核的接口·接口还没上线·临时的话可以弄一个sql修改·但是不怎么科学
-        #这个接口需要添加一个旅游订单
+        print order_sn
+        order=common.common_Order.order()
+        order.updatePayDPStatu(status=4,ly_order=str(order_sn))
+        order.Updatexux_Order(order_sn)
         api_key=setting.DBConns.Api_secret(**test_data.shipWithoutCoupon_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
@@ -292,7 +293,6 @@ class Test(interface_www.MyTest):
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.shipWithoutCoupon_url, params=payload)
-                #print payload
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)
@@ -318,7 +318,6 @@ class Test(interface_www.MyTest):
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.UserOrderNums_url, params=payload)
-                #print payload
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)
@@ -344,7 +343,6 @@ class Test(interface_www.MyTest):
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.de_AllStatus_url, params=payload)
-                #print payload
                 self.code=r.status_code
                 self.result=r.text
                 js=setting.result_jsons.result_json(self.result)

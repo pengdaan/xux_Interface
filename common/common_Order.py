@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-import sys,os
-parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0,parentdir)
 import requests,json,time
 import setting.api_signs
 import setting.result_jsons
@@ -52,9 +49,8 @@ class order:
             print (result)
 
 
-    def Pms_code(self):
+    def Pms_code(self,result):
         # 将json对象转换成python对象
-        result=order.batchSend(self)
         json_to_python = json.loads(result)
         data_1 = json_to_python['data']
         data_2=data_1['results']
@@ -71,7 +67,7 @@ class order:
          mysql.get_one(XUXorders)
          mysql.commit()
 
-    def reateOrderTour(self,status=None):
+    def reateOrderTour(self):
         '''旅游创建订单'''
         api_secrets=all_secrets.ly_secrets
         payload=common_data.createOrderTour_data
@@ -79,10 +75,11 @@ class order:
         payload.setdefault('api_sign',api_sign)
         r=requests.post(common_data.createOrderTour_url, params=payload)
         results= r.text
-        if status==1:
-            return order.order_sn(self,results)
-        elif status==2:
-            return order.order_id(self,results)
+        return results
+        # if status==1:
+        #     return order.order_sn(self,results)
+        # elif status==2:
+        #     return order.order_id(self,results)
 
     def createOrderXsx(self):
         '''小树熊下单接口'''
@@ -112,11 +109,11 @@ class order:
         api_sign=setting.api_signs.api_signs(payload,api_secrets)
         payload.setdefault('api_sign',api_sign)
         requests.post(common_data.PMSadd_url, params=payload)
-        print common_data.promotionNames
+        #print common_data.promotionNames
         return str(common_data.promotionNames)
 
 
-    def updatePayDPStatu(self,status=None):
+    def updatePayDPStatu(self,status=None,ly_order=None):
         '''更新订单支付状态'''
         api_secrets=all_secrets.update_dpStatus
         payloads=common_data.data_updatePayStatus
@@ -136,9 +133,9 @@ class order:
             payload=payloads
             api_sign=setting.api_signs.api_signs(payload,api_secrets)
             payload.setdefault('api_sign',api_sign)
-             #r=requests.post(updatePayStatus_url, params=payload)
-             # #print r.text
-             # #print order_sns
+            #r=requests.post(updatePayStatus_url, params=payload)
+            # #print r.text
+            # #print order_sns
             requests.post(common_data.updatePayStatus_url, params=payload)
             return order_sns
         #小树熊订单
@@ -153,31 +150,37 @@ class order:
             requests.post(common_data.updatePayStatus_url, params=payload)
             #r=requests.post(updatePayStatus_url, params=payload)
             # print r.text
-            print order_sns
+            #print order_sns
             return order_sns
         #旅游订单'
-        elif status==4:
-            order_sn=order.reateOrderTour(self,status=1)
+        elif (status==4)and(ly_order!=None):
+            order_sn=ly_order
             api_secrets=all_secrets.update_dpStatus
-            payloads=common_data.data_updatePayStatus
+            payloads=common_data.data_updatePayStatus_ly
             payloads.setdefault('order_sn',order_sn) #插入订单号
             payload=payloads
+            print payload
             api_sign=setting.api_signs.api_signs(payload,api_secrets)
             payload.setdefault('api_sign',api_sign)
             r=requests.post(common_data.updatePayStatus_url, params=payload)
             results= r.text
             print results
-            print order_sn
+            return order_sn
 
-    def batchSend(self):
+    def batchSend(self,status=1):
         '''批量发放优惠卷接口'''
         api_secrets=all_secrets.pms_secrets
         payload=common_data.batchSend_data
         api_sign=setting.api_signs.api_signs(payload,api_secrets)
         payload.setdefault('api_sign',api_sign)
-        r=requests.post(common_data.BatchSend_url , params=payload)
+        if status==1:
+            requests.post(common_data.BatchSend_url , params=payload)
+        elif status==2:
+            r=requests.post(common_data.BatchSend_url , params=payload)
+            results=r.text
+            return results
 
-        # print payload
+
 
 
     def Pmsname_one(self,pmsName):
@@ -198,7 +201,7 @@ class order:
             print 'pms_id 不存在'
 
     def Pmsname_all(self,pmsName):
-        #获取Pms活动的活动id
+        #获取Pms优惠卷的所有优惠卷id
         PmsId="SELECT * FROM mall_promotion where promotion_name='%s'"%pmsName
         mysql = setting.DBConns.Mysql()
         datas=mysql.get_one(PmsId)
@@ -216,20 +219,36 @@ class order:
 
     def DJT_code(self,title):
         #获取定金团活动的活动id
-        DJT_ids_01="SELECT id FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
-        DJT_ids_02="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+        DJT_ids="SELECT * FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
+        #DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
         mysql = setting.DBConns.Mysql()
-        datas=mysql.get_one(DJT_ids_01)
+        datas=mysql.get_one(DJT_ids)
         if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
-            DJT_id=datas['id']
-            #print DJT_id
-            return DJT_id
-        elif(datas== None):
-            datas=mysql.get_one(DJT_ids_02)
-            DJT_id=datas['id']
-            return DJT_id
+           DJT_id=datas['id']
+           #print DJT_id
+           return DJT_id
         else:
-            print datas
+            DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+            datas=mysql.get_one(DJT_ids)
+            DJT_id=datas['id']
+            return DJT_id
+
+
+def DJT_code(title):
+        #获取定金团活动的活动id
+        DJT_ids="SELECT * FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
+        #DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+        mysql = setting.DBConns.Mysql()
+        datas=mysql.get_one(DJT_ids)
+        if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
+           DJT_id=datas['id']
+           #print DJT_id
+           return DJT_id
+        else:
+            DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+            datas=mysql.get_one(DJT_ids)
+            DJT_id=datas['id']
+            return DJT_id
 
 
 

@@ -10,8 +10,8 @@ import setting.api_signs
 import setting.result_jsons
 import setting.DBConns
 import interface_dp
-import create_data
-import common.common
+
+import common.common_Order
 import common.common_data
 
 times= int(time.time())
@@ -76,7 +76,7 @@ class Test(interface_dp.MyTest):
         '''取消订单-点评'''
         payloads=test_data.cancelOrder_data
         #order_sns=create_data.post_orderDP()#生成订单号
-        order=common.common.order()
+        order=common.common_Order.order()
         order_sns=order.orderDP(order_data=common.common_data.data_OrderDPSuces)
         print order_sns
         payloads.setdefault('order_sn',order_sns) #插入订单号
@@ -107,10 +107,8 @@ class Test(interface_dp.MyTest):
     def test_applyRefund_sucess(self):
         '''取用户申请退款-点评项目'''
         payloads=test_data.applyRefund_data
-        order=common.common.order()
+        order=common.common_Order.order()
         order_sns=order.updatePayDPStatu(status=2)
-        #order_sns=create_data.updatePayStatus()#生成订单号
-        #print order_sns
         payloads.setdefault('order_sn',order_sns) #插入订单号
         api_key=setting.DBConns.Api_secret(**test_data.applyRefund_data)#返回api_key
         if api_key == None:

@@ -4,8 +4,7 @@ import time
 import datetime
 import sys
 sys.path.append('D:\\xux_Interface\\common')
-import common.common
-import setting.DBConns
+import common.common_Order
 times= int(time.time())
 dtime=datetime.datetime.now()
 def addHTime():#当前时间戳增加1小时
@@ -104,21 +103,8 @@ CreateDepositMission_data={
 
 }
 
-# def DJT_code():
-#     #获取定金团活动的活动id
-#     DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
-#     mysql = setting.DBConns.Mysql()
-#     datas=mysql.get_one(DJT_ids)
-#     if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
-#         DJT_id=datas['id']
-#         #print DJT_id
-#         return DJT_id
-#     else:
-#         print datas
-#dingjintuanTitle='2017-02-16 10:41:20Test_DJTuan'
-#update_code=DJT_code()
-#print update_code
-order=common.common.order()
+
+order=common.common_Order.order()
 update_code=order.DJT_code(dingjintuanTitle)
 '''修改定金团接口'''
 updateDepositMission_data={
@@ -135,16 +121,21 @@ updateDepositMission_data={
         '"products":[{"endPrice":"0.1","fixPrice":"0.1","goodsId":"777","groupPrice":"0.2","ladder":[{"personNumber":"1","price":"0.2"},{"personNumber":"2","price":"0.2"}],"productId":0},{"endPrice":0.1,"fixPrice":0.1,"goodsId":"777","groupPrice":0.2,"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10750"}],"supportPromotion":0,"operator":1,"supportSpecial":1,"detail":"","sortOrder":0,"id":"' + str(update_code) + '"}'
 }
 
-#print updateDepositMission_data
 
 
-'''更新优惠劵状态'''
+
+'''修改优惠劵状态'''
+
+results=order.batchSend(status=2)
+promotionCodes=order.Pms_code(results)
 Pms_updateStatus={
     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
     'timestamp':times,
-    'data':'{"promotionCode":"78684921","status":2,"orderId":"24594"}'
+    'data':'{"promotionCode":"'+str(promotionCodes)+'","status":2,"orderId":"24594"}'
+
 
 }
+
 
 '''检查活动名称是否重复接口'''
 NameRepeat_data={
@@ -215,5 +206,8 @@ createPromotion_data1={
               '"virtualHit": 380'
               '}'
 }
+
+
+
 
 
