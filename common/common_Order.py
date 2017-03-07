@@ -193,7 +193,7 @@ class order:
             Pmssend_data={
                 'api_key':'647b00ec1fe6990b1b97263b05341b6b',
                 'timestamp':times,
-                'data':'{"promotionId":"' + str(pms_id) + '","num":10,"mark":"","type":1,"userId":1160,"adminId":1}'
+                'data':'{"promotionId":"' + str(pms_id) + '","num":10,"mark":"","type":1,"userId":1181,"adminId":1}'
             }
             # print Pmssend_data
             return Pmssend_data
@@ -210,7 +210,7 @@ class order:
             batchSend_data={
                 'api_key':'647b00ec1fe6990b1b97263b05341b6b',
                 'timestamp':times,
-                'data':'{"promotionId":"' + str(pms_id) + '","num":1,"mark":"","type":0,"userIds":[1160],"adminId":1}'
+                'data':'{"promotionId":"' + str(pms_id) + '","num":1,"mark":"","type":0,"userIds":[1181],"adminId":1}'
             }
             # print Pmssend_data
             return batchSend_data

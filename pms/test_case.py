@@ -211,7 +211,7 @@ class Test(interface_pms.MyTest):
         order=common.common_Order.order()
         pmsNames=order.Pmsadd()
         pms_id=order.Pmsname_one(pmsNames)
-        #pms_id=create_data.Pmsname_one(pmsNames)
+        #print pms_id,'pms_id'
         api_key=setting.DBConns.Api_secret(**test_data.Pmssend_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
