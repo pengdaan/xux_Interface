@@ -15,6 +15,9 @@ class MyTest(unittest.TestCase):
         self.BatchSend_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/code/batchSend'
         self.Pmssend_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/code/send'
         self. createPromotion_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/common/createPromotion'
+        self.Pmsinfo_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/info'
+        self.Pms_pcodeList_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/user/pcodeList'
+        self.Pms_listGoodsPromotion_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/user/listGoodsPromotion'
 
 
 

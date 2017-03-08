@@ -25,6 +25,7 @@ class MyTest(unittest.TestCase):
         self.ProductId_url='http://www.xiaoshuxiong.com/api/order/getOrderByProductId'
         self.add_XUJ_url='http://www.xiaoshuxiong.com/api/ocoupon/add'
         self.verify_url='http://www.xiaoshuxiong.com/api/ocoupon/verify'
+        self.ship_url='http://www.xiaoshuxiong.com/api/ocoupon/ship'
 
 
 

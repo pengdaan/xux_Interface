@@ -207,7 +207,35 @@ createPromotion_data1={
               '}'
 }
 
+'''获取指定优惠活动信息接口'''
+Pmsinfo_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":495}'
+}
+'''获取用户的优惠券列表接口'''
+pcodeList_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"userId":1181,"useType":0,"page":{"size":10,"num":1}}'
+}
 
-
+'''获取用户有效的优惠券列表接口'''
+listGoodsPromotion_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"uid":1181,'
+           '"goodsInfos":[{"brandId":"3",'
+           '"catId":"25","storeId":"19",'
+           '"supplierId":"128",'
+           '"goodsId":"777",'
+           '"skuId":"10750",'
+           '"skuNum":1,'
+           '"skuPrice":40,'
+           '"isDistribution":0,'
+           '"promotionId":0,'
+           '"promotionType":0'
+           '}]}'
+}
 
 

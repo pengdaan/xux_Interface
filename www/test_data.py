@@ -182,11 +182,12 @@ ProductId_data={
 
 coupon=random.randint(1000000, 10000000)
 coupons='CS'+str(coupon)
+coupons_ship='TS'+str(coupon)
 '''重复发送消费券接口'''
 add_XUJ_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
      'timestamp':times,
-     'data':'{"supplierId":100,"orderId":"24763","coupons":["'+str(coupons)+'"]}'
+     'data':'{"supplierId":110,"orderId":"'+ str(orderId) + '","coupons":["'+str(coupons)+'"]}'
 }
 
 
@@ -197,6 +198,16 @@ verify_data={
      'data':'{"supplierId":100,"orderId":"LY58414143629719","couponIds":["25946404"]}'
 
 }
+
+
+'''发送消费券【旅游不发货直接发卷】'''
+ship_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'data':'{"supplierId":110,"orderId":"'+ str(orderId) + '","coupons":["'+str(coupons_ship)+'"]}'
+
+}
+
 
 
 

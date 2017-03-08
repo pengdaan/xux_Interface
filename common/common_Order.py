@@ -76,10 +76,7 @@ class order:
         r=requests.post(common_data.createOrderTour_url, params=payload)
         results= r.text
         return results
-        # if status==1:
-        #     return order.order_sn(self,results)
-        # elif status==2:
-        #     return order.order_id(self,results)
+
 
     def createOrderXsx(self):
         '''小树熊下单接口'''
@@ -159,7 +156,7 @@ class order:
             payloads=common_data.data_updatePayStatus_ly
             payloads.setdefault('order_sn',order_sn) #插入订单号
             payload=payloads
-            print payload
+            #print payload
             api_sign=setting.api_signs.api_signs(payload,api_secrets)
             payload.setdefault('api_sign',api_sign)
             r=requests.post(common_data.updatePayStatus_url, params=payload)
