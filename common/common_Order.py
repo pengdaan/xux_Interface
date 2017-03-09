@@ -87,7 +87,7 @@ class order:
         print order.xux_order(self,result)
         return order.xux_order(self,result)
 
-    def orderDP(self,order_data=common_data.data_OrderDPSuces):
+    def orderDP(self,order_data=None):
         '''新的点评下单方法，弃用旧的方法，secrets写死的方式，不走查库的方法'''
         api_secrets=all_secrets.dp_secrets
         payload=order_data
@@ -110,7 +110,7 @@ class order:
         return str(common_data.promotionNames)
 
 
-    def updatePayDPStatu(self,status=None,ly_order=None):
+    def updatePayDPStatu(self,status=None,ly_order=None,DP_order=None):
         '''更新订单支付状态'''
         api_secrets=all_secrets.update_dpStatus
         payloads=common_data.data_updatePayStatus
@@ -124,15 +124,19 @@ class order:
             requests.post(common_data.updatePayStatus_url, params=payload)
             return order_sns
         #发卷订单
-        elif status==2:
-            order_sns=order.orderDP(self,common_data.data_OrderDPSuce)#生成订单号
+        elif (status==2)and(DP_order!=None):
+            order_sns=DP_order
+            #print order_sns,order_sns
+            payloads=common_data.data_updatePayStatus
+            #order_sns=order.orderDP(self,common_data.data_OrderDPSuce)#生成订单号
             payloads.setdefault('order_sn',order_sns) #插入订单号
             payload=payloads
+            #print payload,'payload'
             api_sign=setting.api_signs.api_signs(payload,api_secrets)
             payload.setdefault('api_sign',api_sign)
-            #r=requests.post(updatePayStatus_url, params=payload)
-            # #print r.text
-            # #print order_sns
+            #r=requests.post(common_data.updatePayStatus_url, params=payload)
+            #print r.text
+            #print order_sns
             requests.post(common_data.updatePayStatus_url, params=payload)
             return order_sns
         #小树熊订单
@@ -161,7 +165,7 @@ class order:
             payload.setdefault('api_sign',api_sign)
             r=requests.post(common_data.updatePayStatus_url, params=payload)
             results= r.text
-            print results
+            #print results
             return order_sn
 
     def batchSend(self,status=1):
@@ -216,36 +220,23 @@ class order:
 
     def DJT_code(self,title):
         #获取定金团活动的活动id
-        DJT_ids="SELECT * FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
-        #DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+        #DJT_ids="SELECT * FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
+        DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
         mysql = setting.DBConns.Mysql()
         datas=mysql.get_one(DJT_ids)
-        if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
-           DJT_id=datas['id']
-           #print DJT_id
-           return DJT_id
-        else:
-            DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
-            datas=mysql.get_one(DJT_ids)
-            DJT_id=datas['id']
-            return DJT_id
+        DJT_id=datas['id']
+        return DJT_id
+        # if (datas!= None):#判断该定金团是否存在，存在为1 不存在为0
+        #    DJT_id=datas['id']
+        #    #print DJT_id
+        #    return DJT_id
+        # else:
+        #     DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
+        #     datas=mysql.get_one(DJT_ids)
+        #     DJT_id=datas['id']
+        #     return DJT_id
 
 
-def DJT_code(title):
-        #获取定金团活动的活动id
-        DJT_ids="SELECT * FROM mall_promotion_info WHERE title='%(title)s'"%{'title':title}
-        #DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
-        mysql = setting.DBConns.Mysql()
-        datas=mysql.get_one(DJT_ids)
-        if (datas!= None):#判断该订单是否存在，存在为1 不存在为0
-           DJT_id=datas['id']
-           #print DJT_id
-           return DJT_id
-        else:
-            DJT_ids="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
-            datas=mysql.get_one(DJT_ids)
-            DJT_id=datas['id']
-            return DJT_id
 
 
 

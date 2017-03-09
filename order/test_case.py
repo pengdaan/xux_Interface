@@ -18,38 +18,6 @@ times= int(time.time())
 
 class Test(interface_order.MyTest):
 
-
-    def test_applyRefund_sucess(self):
-        '''用户申请退款-点评项目'''
-        payloads= test_data.applyRefund_data
-        order=common.common_Order.order()
-        order_sns=order.updatePayDPStatu(status=2)
-        payloads.setdefault('order_sn',order_sns) #插入订单号
-        #print payloads
-        api_key=setting.DBConns.Api_secret(**test_data.applyRefund_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                payload= payloads
-                api_sign=setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.applyRefund_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
-
-
     def test_UserLimitedSpecialOrderNum_sucess(self):
         '''获取用户商品下单商品数量'''
         api_key=setting.DBConns.Api_secret(**test_data.UserLimitedSpecialOrderNum_data)#返回api_key
@@ -201,11 +169,6 @@ class Test(interface_order.MyTest):
                         print 'NO msg'
             else:
                 print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
-
-
-
-
-
 
 
 

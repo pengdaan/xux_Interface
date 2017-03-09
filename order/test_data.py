@@ -17,23 +17,11 @@ def addTime():#当前时间戳增加15分钟
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
 
-
-
 add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取当前时间。
 promotionNames=str(add_time) + 'Test_AddPms'
 
 Title=str(add_time)+'Test_AddPms'
 dingjintuanTitle = str(add_time)+'Test_DJTuan'
-
-'''用户申请退款-点评项目'''
-applyRefund_data={
-    'timestamp':times,
-    'uid':'43507844',
-  #  'order_sn':'DP48414731026869',
-    'suggest_reason':'122',
-    'api_key':'8d46b75a4a0456a35302d2893ed072a3',
-
-}
 
 '''获取用户商品下单商品数量'''
 UserLimitedSpecialOrderNum_data={

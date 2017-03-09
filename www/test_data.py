@@ -106,16 +106,16 @@ ChildOrderTour_data={
 }
 
 '''不输入消费券直接发货'''
-order=common.common_Order.order()
-ly_results=order.reateOrderTour()
-orderId=order.order_id(ly_results)
-order_sn=order.order_sn(ly_results)
+order_shipWithoutCoupon=common.common_Order.order()
+shipWithoutCoupon_results=order_shipWithoutCoupon.reateOrderTour()
+shipWithoutCoupon_orderId=order_shipWithoutCoupon.order_id(shipWithoutCoupon_results)
+shipWithoutCoupon_order_sn=order_shipWithoutCoupon.order_sn(shipWithoutCoupon_results)
 
 shipWithoutCoupon_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
      'timestamp':times,
-     'order_sn':''+ str(order_sn) + ' ',
-     'data':'{"supplierId":110,"orderId":'+ str(orderId) + '}'
+     'order_sn':''+ str(shipWithoutCoupon_order_sn) + ' ',
+     'data':'{"supplierId":110,"orderId":'+ str(shipWithoutCoupon_orderId) + '}'
 }
 '''查询发货单列表'''
 query_data={
@@ -180,15 +180,41 @@ ProductId_data={
 
 }
 
+order_add=common.common_Order.order()
+add_results=order_add.reateOrderTour()
+add_orderId=order_add.order_id(add_results)
+order_sn_add=order_add.order_sn(add_results)
 coupon=random.randint(1000000, 10000000)
 coupons='CS'+str(coupon)
-coupons_ship='TS'+str(coupon)
+coupons_ship_1='TS'+str(coupon)
 '''重复发送消费券接口'''
 add_XUJ_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
      'timestamp':times,
-     'data':'{"supplierId":110,"orderId":"'+ str(orderId) + '","coupons":["'+str(coupons)+'"]}'
+     'data':'{"supplierId":110,"orderId":"'+ str(add_orderId) + '","coupons":["'+str(coupons)+'"]}'
 }
+ship_data_1={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'data':'{"supplierId":110,"orderId":"'+ str(add_orderId) + '","coupons":["'+str(coupons_ship_1)+'"]}'
+
+}
+
+
+order_ship=common.common_Order.order()
+ship_results=order_ship.reateOrderTour()
+ship_orderId=order_ship.order_id(ship_results)
+ship_order_sn=order_ship.order_sn(ship_results)
+coupon=random.randint(1000000, 10000000)
+coupons_ship='CS'+str(coupon)
+'''发送消费券【旅游不发货直接发卷】'''
+ship_data={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'data':'{"supplierId":110,"orderId":"'+ str(ship_orderId) + '","coupons":["'+str(coupons_ship)+'"]}'
+
+}
+
 
 
 '''验证使用消费券'''
@@ -200,13 +226,6 @@ verify_data={
 }
 
 
-'''发送消费券【旅游不发货直接发卷】'''
-ship_data={
-     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-     'timestamp':times,
-     'data':'{"supplierId":110,"orderId":"'+ str(orderId) + '","coupons":["'+str(coupons_ship)+'"]}'
-
-}
 
 
 

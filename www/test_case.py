@@ -269,8 +269,8 @@ class Test(interface_www.MyTest):
 
     def test_hipWithoutCoupon_sucess(self):
         '''不输入消费券直接发货'''
-        order_sn=test_data.order_sn
-        print order_sn
+        order_sn=test_data.shipWithoutCoupon_order_sn
+        #print order_sn
         order=common.common_Order.order()
         order.updatePayDPStatu(status=4,ly_order=str(order_sn))
         order.Updatexux_Order(order_sn)
@@ -452,9 +452,10 @@ class Test(interface_www.MyTest):
 
     def test_add_XUJ_sucess(self):
         '''重复发送消费券接口'''
-        order_sn=test_data.order_sn
+        order_sn=test_data.order_sn_add
         order=common.common_Order.order()
         order.updatePayDPStatu(status=4,ly_order=str(order_sn))
+        order.Updatexux_Order(order_sn)
         api_key=setting.DBConns.Api_secret(**test_data.add_XUJ_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
@@ -462,7 +463,7 @@ class Test(interface_www.MyTest):
             api_secrets=setting.DBConns.secret(api_key)#返回api_secret
             if api_secrets !=0:
                 payload=test_data.add_XUJ_data
-                ship_data=test_data.ship_data
+                ship_data=test_data.ship_data_1
                 api_sign=setting.api_signs.api_signs(payload,api_secrets)
                 api_sign_ship=setting.api_signs.api_signs(ship_data,api_secrets)
                 payload.setdefault('api_sign',api_sign)
@@ -509,9 +510,10 @@ class Test(interface_www.MyTest):
 
     def test_ship_sucess(self):
         '''发送消费券'''
-        order_sn=test_data.order_sn
+        order_sn=test_data.ship_order_sn
         order=common.common_Order.order()
         order.updatePayDPStatu(status=4,ly_order=str(order_sn))
+        order.Updatexux_Order(order_sn)
         api_key=setting.DBConns.Api_secret(**test_data.ship_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
