@@ -29,9 +29,9 @@ class order:
             # print  type(json_to_python)
             order = json_to_python['data']
             #print type(dp_order)
-            dp_order=order['order_id']
+            order=order['order_id']
             # print result
-            return dp_order
+            return order
         except:
             print (result)
 
@@ -47,6 +47,15 @@ class order:
             return order
         except:
             print (result)
+
+
+    def order_ly(self,result):
+        json_to_python = json.loads(result)
+        order=json_to_python['data']
+        order_id=order['order_id']
+        order_sn=order['order_sn']
+        return order_id,order_sn
+
 
 
     def Pms_code(self,result):
@@ -156,17 +165,27 @@ class order:
         #旅游订单'
         elif (status==4)and(ly_order!=None):
             order_sn=ly_order
+            print ly_order
             api_secrets=all_secrets.update_dpStatus
             payloads=common_data.data_updatePayStatus_ly
             payloads.setdefault('order_sn',order_sn) #插入订单号
             payload=payloads
-            #print payload
+            print payload
             api_sign=setting.api_signs.api_signs(payload,api_secrets)
             payload.setdefault('api_sign',api_sign)
-            r=requests.post(common_data.updatePayStatus_url, params=payload)
-            results= r.text
+            requests.post(common_data.updatePayStatus_url, params=payload)
+            print payload,2
+            #r=requests.post(common_data.updatePayStatus_url, params=payload)
+            #results= r.text
             #print results
             return order_sn
+
+        elif(status==5)and(ly_order!=None):
+            print ly_order,'入参'
+            api_sign=setting.api_signs.api_signs(ly_order,api_secrets)
+            ly_order.setdefault('api_sign',api_sign)
+            requests.post(common_data.updatePayStatus_url, params=ly_order)
+            print ly_order
 
     def batchSend(self,status=1):
         '''批量发放优惠卷接口'''
@@ -239,14 +258,4 @@ class order:
 
 
 
-
-# '''修改优惠劵状态'''
-# promotionCodes=Pms_code()
-# Pms_updateStatus={
-#     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
-#     'timestamp':times,
-#     'data':'{"promotionCode":"'+str(promotionCodes)+'","status":2,"orderId":"24594"}'
-#
-#
-# }
 

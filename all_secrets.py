@@ -12,3 +12,6 @@ ly_secrets='9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o'
 
 '''pms添加优惠劵secrets'''
 pms_secrets='dbe4568d7dafe2a31507e4248e0b18d0'
+
+'''www域旅游下单secrets'''
+www_secrets='RjdQPmDvyaysmolFPG3hpFa2UrMmCKVG'

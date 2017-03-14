@@ -10,7 +10,7 @@ import setting.api_signs
 import setting.result_jsons
 import setting.DBConns
 import interface_www
-import common.common_Order
+import all_secrets
 
 times= int(time.time())
 
@@ -267,36 +267,6 @@ class Test(interface_www.MyTest):
             else:
                 print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
 
-    def test_hipWithoutCoupon_sucess(self):
-        '''不输入消费券直接发货'''
-        order_sn=test_data.shipWithoutCoupon_order_sn
-        #print order_sn
-        order=common.common_Order.order()
-        order.updatePayDPStatu(status=4,ly_order=str(order_sn))
-        order.Updatexux_Order(order_sn)
-        api_key=setting.DBConns.Api_secret(**test_data.shipWithoutCoupon_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                payload=test_data.shipWithoutCoupon_data
-                api_sign=setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.shipWithoutCoupon_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
-
-
     def test_UserOrderNums_sucess(self):
         '''根据订单分类获取分类订单总数'''
         api_key=setting.DBConns.Api_secret(**test_data.UserOrderNums_data)#返回api_key
@@ -449,40 +419,6 @@ class Test(interface_www.MyTest):
             else:
                 print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
 
-
-    def test_add_XUJ_sucess(self):
-        '''重复发送消费券接口'''
-        order_sn=test_data.order_sn_add
-        order=common.common_Order.order()
-        order.updatePayDPStatu(status=4,ly_order=str(order_sn))
-        order.Updatexux_Order(order_sn)
-        api_key=setting.DBConns.Api_secret(**test_data.add_XUJ_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                payload=test_data.add_XUJ_data
-                ship_data=test_data.ship_data_1
-                api_sign=setting.api_signs.api_signs(payload,api_secrets)
-                api_sign_ship=setting.api_signs.api_signs(ship_data,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                ship_data.setdefault('api_sign',api_sign_ship)
-                requests.post(self.ship_url, params=ship_data)#需要先存在发货单，所以需要先调用发货接口，让订单先存在发货单
-                r=requests.post(self.add_XUJ_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
-
-
     def test_verify_sucess(self):
         '''验证使用消费券'''
         api_key=setting.DBConns.Api_secret(**test_data.verify_data)#返回api_key
@@ -510,33 +446,66 @@ class Test(interface_www.MyTest):
 
     def test_ship_sucess(self):
         '''发送消费券'''
-        order_sn=test_data.ship_order_sn
-        order=common.common_Order.order()
-        order.updatePayDPStatu(status=4,ly_order=str(order_sn))
-        order.Updatexux_Order(order_sn)
-        api_key=setting.DBConns.Api_secret(**test_data.ship_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
+        api_secrets=all_secrets.www_secrets
+        payload=test_data.ship_data()
+        api_sign=setting.api_signs.api_signs(payload,api_secrets)
+        payload.setdefault('api_sign',api_sign)
+        r=requests.post(self.ship_url, params=payload)
+        print payload,'入参'
+        self.code=r.status_code
+        self.result=r.text
+        js=setting.result_jsons.result_json(self.result)
+        if js.has_key('msg')==True:
+            self.msgs=js.get('msg')
+            self.assertEquals(self.code,200)
+            self.assertEqual(self.msgs, 'SUCCESS')
         else:
-            api_secrets=setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                payload=test_data.ship_data
-                api_sign=setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.ship_url, params=payload)
-                #print payload
-                self.code=r.status_code
-                self.result=r.text
-                js=setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+            print 'NO msg'
 
+    def test_add_XUJ_sucess(self):
+        '''重复发送消费券接口'''
+        api_secrets=all_secrets.www_secrets
+        add_Tdata=test_data.add_data()
+        add_data=add_Tdata[0]
+        ship_data=add_Tdata[1]
+        print add_data
+        print ship_data
+        api_sign=setting.api_signs.api_signs(add_data,api_secrets)
+        api_sign_ship=setting.api_signs.api_signs(ship_data,api_secrets)
+        add_data.setdefault('api_sign',api_sign)
+        ship_data.setdefault('api_sign',api_sign_ship)
+        requests.post(self.ship_url, params=ship_data)
+        r=requests.post(self.add_XUJ_url, params=add_data)
+        print add_data,'重复发送消费券接口'
+        self.code=r.status_code
+        self.result=r.text
+        js=setting.result_jsons.result_json(self.result)
+        if js.has_key('msg')==True:
+            self.msgs=js.get('msg')
+            self.assertEquals(self.code,200)
+            self.assertEqual(self.msgs, 'SUCCESS')
+        else:
+            print 'NO msg'
+
+
+    def test_hipWithoutCoupon_sucess(self):
+        '''不输入消费券直接发货'''
+        api_secrets=all_secrets.www_secrets
+        payload=test_data.shipw_data()
+        print payload
+        api_sign=setting.api_signs.api_signs(payload,api_secrets)
+        payload.setdefault('api_sign',api_sign)
+        r=requests.post(self.shipWithoutCoupon_url, params=payload)
+        print payload,'不输入消费券直接发货'
+        self.code=r.status_code
+        self.result=r.text
+        js=setting.result_jsons.result_json(self.result)
+        if js.has_key('msg')==True:
+            self.msgs=js.get('msg')
+            self.assertEquals(self.code,200)
+            self.assertEqual(self.msgs, 'SUCCESS')
+        else:
+            print 'NO msg'
 
 
 

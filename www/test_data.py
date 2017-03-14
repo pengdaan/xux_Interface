@@ -4,6 +4,10 @@ import time
 import datetime
 import random
 import sys
+import common.common_data
+import all_secrets
+import setting.api_signs
+import requests
 sys.path.append('D:\\xux_Interface\\common')
 import common.common_Order
 times= int(time.time())
@@ -105,18 +109,6 @@ ChildOrderTour_data={
      'order_sn':'LY48414726526809 '
 }
 
-'''不输入消费券直接发货'''
-order_shipWithoutCoupon=common.common_Order.order()
-shipWithoutCoupon_results=order_shipWithoutCoupon.reateOrderTour()
-shipWithoutCoupon_orderId=order_shipWithoutCoupon.order_id(shipWithoutCoupon_results)
-shipWithoutCoupon_order_sn=order_shipWithoutCoupon.order_sn(shipWithoutCoupon_results)
-
-shipWithoutCoupon_data={
-     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-     'timestamp':times,
-     'order_sn':''+ str(shipWithoutCoupon_order_sn) + ' ',
-     'data':'{"supplierId":110,"orderId":'+ str(shipWithoutCoupon_orderId) + '}'
-}
 '''查询发货单列表'''
 query_data={
     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
@@ -180,43 +172,6 @@ ProductId_data={
 
 }
 
-order_add=common.common_Order.order()
-add_results=order_add.reateOrderTour()
-add_orderId=order_add.order_id(add_results)
-order_sn_add=order_add.order_sn(add_results)
-coupon=random.randint(1000000, 10000000)
-coupons='CS'+str(coupon)
-coupons_ship_1='TS'+str(coupon)
-'''重复发送消费券接口'''
-add_XUJ_data={
-     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-     'timestamp':times,
-     'data':'{"supplierId":110,"orderId":"'+ str(add_orderId) + '","coupons":["'+str(coupons)+'"]}'
-}
-ship_data_1={
-     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-     'timestamp':times,
-     'data':'{"supplierId":110,"orderId":"'+ str(add_orderId) + '","coupons":["'+str(coupons_ship_1)+'"]}'
-
-}
-
-
-order_ship=common.common_Order.order()
-ship_results=order_ship.reateOrderTour()
-ship_orderId=order_ship.order_id(ship_results)
-ship_order_sn=order_ship.order_sn(ship_results)
-coupon=random.randint(1000000, 10000000)
-coupons_ship='CS'+str(coupon)
-'''发送消费券【旅游不发货直接发卷】'''
-ship_data={
-     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-     'timestamp':times,
-     'data':'{"supplierId":110,"orderId":"'+ str(ship_orderId) + '","coupons":["'+str(coupons_ship)+'"]}'
-
-}
-
-
-
 '''验证使用消费券'''
 verify_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
@@ -226,6 +181,108 @@ verify_data={
 }
 
 
+'''不输入消费券直接发货'''
+def shipw_data():
+    order=common.common_Order.order()
+    results=order.reateOrderTour()
+    data=order.order_ly(results)
+    orderId=data[0]
+    order_sn=data[1]
+    data_updatePayStatus_ly = {
+        'api_key':'b47d4503ce201db6df525911812dd089',
+        'timestamp':times,
+        'order_amount':'11',
+        'trade_no':'2015122921001003610003783823',
+        'pay_serial_no':'2015122964844',
+        'pay_id':'1',
+        'order_status':'1',
+    }
+    shipWithoutCoupon_data={
+        'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+        'timestamp':times,
+        'order_sn':''+ str(order_sn) + ' ',
+        'data':'{"supplierId":110,"orderId":'+ str(orderId) + '}'
+    }
+    PayStatus_ly=data_updatePayStatus_ly
+    PayStatus_ly.setdefault('order_sn',order_sn)
+    api_sign=setting.api_signs.api_signs(PayStatus_ly,all_secrets.www_secrets)
+    PayStatus_ly.setdefault('api_sign',api_sign)
+    requests.post(common.common_data.updatePayStatus_url, params=PayStatus_ly)
+    print PayStatus_ly
+    return shipWithoutCoupon_data
+
+'''重复发送消费券接口'''
+def add_data():
+    order=common.common_Order.order()
+    results=order.reateOrderTour()
+    data=order.order_ly(results)
+    orderId=data[0]
+    order_sn=data[1]
+    coupon=random.randint(1000000, 10000000)
+    coupons_ship='CS'+str(coupon)
+    coupons='KS'+str(coupon)
+    data_updatePayStatus_ly = {
+        'api_key':'b47d4503ce201db6df525911812dd089',
+        'timestamp':times,
+        'order_amount':'11',
+        'trade_no':'2015122921001003610003783823',
+        'pay_serial_no':'2015122964844',
+        'pay_id':'1',
+        'order_status':'1',
+    }
+    ship_data={
+            'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+            'timestamp':times,
+            'data':'{"supplierId":110,"orderId":'+ str(orderId) + ',"coupons":["'+str(coupons_ship)+'"]}'
+        }
+    add_XUJ_data={
+            'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+            'timestamp':times,
+            'data':'{"supplierId":110,"orderId":"'+ str(orderId) + '","coupons":["'+str(coupons)+'"]}'
+        }
+    PayStatus_ly=data_updatePayStatus_ly
+    PayStatus_ly.setdefault('order_sn',order_sn)
+    api_sign=setting.api_signs.api_signs(PayStatus_ly,all_secrets.www_secrets)
+    PayStatus_ly.setdefault('api_sign',api_sign)
+    requests.post(common.common_data.updatePayStatus_url, params=PayStatus_ly)
+    print PayStatus_ly
+    return add_XUJ_data,ship_data
+
+
+'''发送消费券'''
+def ship_data():
+    order=common.common_Order.order()
+    results=order.reateOrderTour()
+    data=order.order_ly(results)
+    orderId=data[0]
+    order_sn=data[1]
+    coupon=random.randint(1000000, 10000000)
+    coupons_ship='CS'+str(coupon)
+    data_updatePayStatus_ly = {
+        'api_key':'b47d4503ce201db6df525911812dd089',
+        'timestamp':times,
+        'order_amount':'11',
+        'trade_no':'2015122921001003610003783823',
+        'pay_serial_no':'2015122964844',
+        'pay_id':'1',
+        'order_status':'1',
+    }
+    ship_data={
+        'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+        'timestamp':times,
+        'data':'{"supplierId":110,"orderId":'+ str(orderId) + ',"coupons":["'+str(coupons_ship)+'"]}'
+    }
+    PayStatus_ly=data_updatePayStatus_ly
+    PayStatus_ly.setdefault('order_sn',data[1])
+    api_sign=setting.api_signs.api_signs(PayStatus_ly,all_secrets.www_secrets)
+    PayStatus_ly.setdefault('api_sign',api_sign)
+    requests.post(common.common_data.updatePayStatus_url, params=PayStatus_ly)
+    api_sign_data=setting.api_signs.api_signs(ship_data,all_secrets.www_secrets)
+    ship_data.setdefault('api_sign',api_sign_data)
+    print PayStatus_ly
+    print order_sn,orderId
+    print ship_data
+    return ship_data
 
 
 
