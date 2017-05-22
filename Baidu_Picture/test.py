@@ -27,16 +27,19 @@ class HTTPSHandlerV3(urllib2.HTTPSHandler):
 
 if __name__ == "__main__":
     urllib2.install_opener(urllib2.build_opener(HTTPSHandlerV3()))
-    r = urllib2.urlopen("https://tieba.baidu.com/p/5114724523")
+    r = urllib2.urlopen("http://tieba.baidu.com/p/5114724523")
     print(r.read())
     html=r.read()
+    r.close()
     #reg = '<img class="BDE_Image" src="(.+?\.jpg)" '
-    #reg = r'src="(imgsa.baidu.com(.*?).jpg)" '
-    imgre = re.compile(r'.*/(.*?)\.jpg',re.S)
+    #reg = r'src="(.*?\.jpg)" '
+    #imgre = re.compile(r'class="BDE_Image" src="(.+?\.jpg)"')
+    imgre = re.compile('class="BDE_Image" (?:[a-zA_Z0-9="^>]+ )*src="(.*?)" ')
     #imgre = re.compile(reg)
     imglist = re.findall(imgre,html)
     print imglist
-    x = 1
-    for imgurl in imglist:
-        urllib.urlretrieve(imgurl,'%s.jpg' % x)
-        x+=1
+    img_counter = 0
+    for img_link in imglist:
+        img_name = '%s.jpg' % img_counter
+        urllib.urlretrieve(img_link, "D://xux_project//Baidu_Picture//image//%s" %img_name)
+        img_counter += 1
