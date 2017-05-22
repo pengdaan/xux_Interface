@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'leo'
-from XSX_UITest.common.XUX_BasePage import BasePage
-
 import time
+
+from XSX_UITest.common.XUX_BasePage import BasePage
 class XUXShopPage(BasePage):
     def __init__(self, driver, baseUrl):
         """

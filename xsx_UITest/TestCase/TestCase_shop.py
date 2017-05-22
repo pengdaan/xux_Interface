@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 __author__ = 'leo'
 import unittest
-from time import sleep
+
 from XSX_UITest.common.Common_Driver import AutomateDriver
 from XSX_UITest.keyword.XUX_ShoppPage import XUXShopPage
+
 
 """
 1. 导入 unittest
