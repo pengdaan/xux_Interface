@@ -80,7 +80,8 @@ def fetch_pictures(url,p):
             # 遍历图片地址列表存储图片
             for i in range(len(picture_url_list)):
                 # 设置图片名字为页码数+序号
-                picture_name = str(p) + "__" + str(i + 1) + '.jpg'
+                #picture_name = str(p) + "__" + str(i + 1) + '.jpg'
+                picture_name =str(i + 10) + '.jpg'
                 try:
                     # 存储图片
                     urllib.request.urlretrieve(picture_url_list[i], picture_name)
