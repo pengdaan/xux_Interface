@@ -4,7 +4,7 @@ import time
 import sys
 sys.path.append('..')#.. 代表当前路径的上一级路径
 import unittest
-from xux_Interface.setting.HTMLTestRunner import HTMLTestRunner
+from XSX_InTerFace.Setting.HTMLTestRunner import HTMLTestRunner
 test_dir='/xux_project/xux_UITest/TestCase'
 test_filename='/xux_project/xux_UITest/Test_Report/'
 discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py')

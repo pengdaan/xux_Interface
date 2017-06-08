@@ -3,7 +3,7 @@ import urllib.request
 import re
 import os
 
-def judge_url():
+def TieBa_url():
     #设定布尔中间变量
     jude=False
     if not jude :
@@ -99,7 +99,7 @@ def fetch_pictures(url,p):
 
 def get():
     # 获取地址
-    url = judge_url()
+    url = TieBa_url()
     # 建立存放的文件夹
     create_folder(url)
     # 获取页码存储图片
@@ -110,6 +110,6 @@ if __name__ == '__main__':
 
 
 
+
 #'测试环境为python3.4，使用python2.X，请把urllib.request改为urllib2'
 #地址：http://www.itwendao.com/article/detail/87042.html
-
