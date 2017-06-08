@@ -199,9 +199,9 @@ class Template_mixin(object):
     <title>%(title)s</title>
     <meta name="generator" content="%(generator)s"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="/xux_project/xux_Interface/setting/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/xux_project/xux_Interface/setting/css/jquery.min.js"></script>
-    <script src="/xux_project/xux_Interface/setting/css/bootstrap.min.js"></script>
+    <link href="/xux_project/xux_Interface/Setting/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/xux_project/xux_Interface/Setting/css/jquery.min.js"></script>
+    <script src="/xux_project/xux_Interface/Setting/css/bootstrap.min.js"></script>
     %(stylesheet)s
 </head>
 <body >

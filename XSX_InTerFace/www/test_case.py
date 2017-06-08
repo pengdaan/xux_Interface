@@ -6,15 +6,12 @@ import os
 
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,parentdir)
-import requests,time
-import test_data
-import  XSX_InTerFace.Setting.api_signs
-import  XSX_InTerFace.Setting.result_jsons
-import  XSX_InTerFace.Setting.DBConns
+import XSX_InTerFace.Setting.api_signs
+import XSX_InTerFace.Setting.result_jsons
+import XSX_InTerFace.Setting.DBConns
 import interface_www
 import XSX_InTerFace.Common.All_secrets
 import requests, time
-from XSX_InTerFace.order import interface_order
 import test_data
 import XSX_InTerFace.Common.All_secrets
 import XSX_InTerFace.Common.XSX_Driver
@@ -26,105 +23,37 @@ class Test(interface_www.MyTest):
     '''www接口'''
     def test_PromotionNums_sucess(self):
         '''获取秒杀订单实际秒杀购买数'''
-        api_key=  XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.PromotionNums_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=  XSX_InTerFace.Setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                print api_secrets
-                payload= test_data.PromotionNums_data
-                api_sign=  XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.PromotionNums_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=  XSX_InTerFace.Setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+        PromotionNums=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.PromotionNums_data
+        PromotionNums.send_data(Test_data,self.PromotionNums_url,api_secrets)
+
 
     def test_updateRemindMsg_sucess(self):
         '''更新订单客服留言接口'''
-        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.updateRemindMsg_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=  XSX_InTerFace.Setting.DBConns.secret(api_key)#返回api_secret
-            print api_secrets
-            if api_secrets !=0:
-                payload= test_data.updateRemindMsg_data
-                api_sign=  XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.updateRemindMsg_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=  XSX_InTerFace.Setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        UpdateRemindMsg=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        Test_data=test_data.updateRemindMsg_data
+        UpdateRemindMsg.send_data(Test_data,self.updateRemindMsg_url,api_secrets)
 
 
     def test_RemindMsg_sucess(self):
         '''获取订单客服留言接口'''
-        api_key=  XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.RemindMsg_data)#返回api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=  XSX_InTerFace.Setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                payload= test_data.RemindMsg_data
-                api_sign=  XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.RemindMsg_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=  XSX_InTerFace.Setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        RemindMsg=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        Test_data=test_data.RemindMsg_data
+        RemindMsg.send_data(Test_data,self.RemindMsg_url,api_secrets)
 
 
     def test_createOrderTour_sucess(self):
         '''旅游创建订单'''
-        api_key=  XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.createOrderTour_data)#返回api_key
-        print api_key
-        if api_key == None:
-            print(u"api_key 不存在，请检查接口数据！")
-        else:
-            api_secrets=  XSX_InTerFace.Setting.DBConns.secret(api_key)#返回api_secret
-            if api_secrets !=0:
-                payload= test_data.createOrderTour_data
-                api_sign=  XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
-                payload.setdefault('api_sign',api_sign)
-                r=requests.post(self.createOrderTour_url, params=payload)
-                self.code=r.status_code
-                self.result=r.text
-                js=  XSX_InTerFace.Setting.result_jsons.result_json(self.result)
-                if js.has_key('msg')==True:
-                        self.msgs=js.get('msg')
-                        self.assertEquals(self.code,200)
-                        self.assertEqual(self.msgs, 'SUCCESS')
-                else:
-                        print 'NO msg'
-            else:
-                print (u"该 api_secret 不存在，请检查数据库是否连接正确！")
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        CreateOrderTour=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        Test_data=test_data.createOrderTour_data
+        CreateOrderTour.send_data(Test_data,self.createOrderTour_url,api_secrets)
 
+
+?//////
     def test_OutOrderSn_sucess(self):
         '''对接要出发回调设置外部订单号'''
         api_key=  XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.OutOrderSn_data)#返回api_key
