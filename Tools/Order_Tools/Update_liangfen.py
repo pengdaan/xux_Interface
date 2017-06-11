@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = 'leo'
-import ToolsDB
+from Tools.Order_Tools import ToolsDB
 
-'''该脚本用于修改普通订单的审核状态，（主要针对供应商发货，以及直邮商品，其他不可以用）
-   把未审核的的订单变更为已审核审核
-    1、更新order_info的 status状态
-    2、更新confirm_time=当前的时间
+'''该脚本用于修改良粉账号，通过修改数据库把良粉账号修改成非良粉账号 ==！
+   良粉会员身份清除
+    1、删掉入会订单
+    2、删掉会员表
 ''',
 
 
@@ -41,7 +41,7 @@ def Updete_LF(DB):
                     DB.delete_one(delete_user_id)
                     DB.delete_one(delete_order_sn)
                     DB.commit()
-                    print '该用户良粉身份已经删除 --！'
+                    print '该用户良粉身份已经删除，需要退出登录，重新登录查看'
                     Updete_LF(DB)
                 else:
                     print '删除良粉会员失败，请联系管理员！'

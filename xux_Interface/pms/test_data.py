@@ -19,12 +19,15 @@ def addTime():#当前时间戳增加15分钟
     timestamp=int(time.mktime(dtime2.timetuple()))
     return timestamp
 
-def PmsCode():
-    P_list=random.randint(20000, 30000)
-    return P_list
+def Pms_Code():
+    P_list = range(10000,20000)
+    result = random.sample(P_list, 1)
+    return result[0]
+
+
 
 add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取当前时间。
-promotionNames=str(PmsCode()) + 'Test_AddPms'
+promotionNames=str(Pms_Code()) + 'Test_AddPms'
 
 Title=str(add_time)+'Test_AddPms'
 dingjintuanTitle = str(add_time)+'Test_DJTuan'
@@ -144,11 +147,12 @@ def updateDepositMission_data(update_code,Title,startAt,endAt,fromAt,toAt):
 
 
 '''修改优惠劵状态'''
+
 def Pms_updateStatus(promotionCodes):
     Pms_updateStatus={
         'api_key':'647b00ec1fe6990b1b97263b05341b6b',
         'timestamp':times,
-        'data':'{"promotionCode":"'+str(promotionCodes)+'","status":2,"orderId":"28701"}'
+        'data':'{"promotionCode":"'+str(promotionCodes)+'","status":2,"orderId":"24594"}'
     }
     return Pms_updateStatus
 
@@ -164,20 +168,18 @@ NameRepeat_data={
 
 
 '''批量发放优惠卷接口'''
-def BatchSend_data(id):
-    batchSend_data={
-        'api_key':'647b00ec1fe6990b1b97263b05341b6b',
-        'timestamp':times,
-        'data':'{"promotionId":'+str(id)+',"num":1,"mark":"","type":0,"userIds":[1181],"adminId":1}'
-    }
-    return batchSend_data
+batchSend_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":495,"num":1,"mark":"","type":0,"userIds":[1181],"adminId":1}'
+}
 
 '''发放优惠卷接口'''
-def Pmssend_data(id):
+def Pmssend_data(pms_id):
     Pmssend_data={
         'api_key':'647b00ec1fe6990b1b97263b05341b6b',
         'timestamp':times,
-        'data':'{"promotionId":'+str(id)+',"num":10,"mark":"","type":1,"userId":1181,"adminId":1}'
+        'data':'{"promotionId":"' + str(pms_id) + '",,"num":10,"mark":"","type":1,"userId":1181,"adminId":1}'
     }
     return Pmssend_data
 

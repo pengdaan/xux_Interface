@@ -4,15 +4,15 @@ import json
 
 import requests
 
-import api_sign
+from Tools.xux_Interface import api_sign
 
 
 def xux_prot():
 
-    #url='http://www.xiaoshuxiong.com/api/delivery/shipByOrder'
+    #url='http://XUX_www.xiaoshuxiong.com/api/delivery/shipByOrder'
     url='http://order.api.xiaoshuxiong.com/Order/createOrderXsx ' #小树熊下单
-    #url='http://order.api.xiaoshuxiong.com/order/receiveOrderReturn'
-    #url='http://order.api.xiaoshuxiong.com/order/applyRefund'
+    #url='http://XUX_OrderApi.api.xiaoshuxiong.com/XUX_OrderApi/receiveOrderReturn'
+    #url='http://XUX_OrderApi.api.xiaoshuxiong.com/XUX_OrderApi/applyRefund'
     payloads= api_sign.payload
 
     api_signs = api_sign.api_sign()
@@ -29,4 +29,6 @@ def xux_prot():
             print (result)
 
 xux_prot()
+
+
 

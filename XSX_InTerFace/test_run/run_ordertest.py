@@ -5,8 +5,8 @@ import sys
 
 sys.path.append('..')#.. 代表当前路径的上一级路径
 import unittest
-from XSX_InTerFace.Setting.HTMLTestRunner import HTMLTestRunner
-test_dir='/xux_project/XSX_InTerFace/order'
+from XSX_InTerFace.Setting.HTMLTestRunnerCN import HTMLTestRunner
+test_dir='/xux_project/XSX_InTerFace/XUX_OrderApi'
 test_filename='/xux_project/XSX_InTerFace/report/'
 discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py')
 
@@ -15,7 +15,7 @@ if __name__ =="__main__":
     filename =test_filename+now+'_result.html'
     fp=open(filename,'wb')
     runner =HTMLTestRunner(stream=fp,
-                           title='order_Interface Test Test_Report',
+                           title='order_Interface Test report',
                            description='Implementation Example whith:'
                            )
     runner.run(discover)

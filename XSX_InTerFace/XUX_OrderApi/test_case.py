@@ -6,7 +6,7 @@ import os
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,parentdir)
 import requests, time
-from XSX_InTerFace.order import interface_order
+from XSX_InTerFace.XUX_OrderApi import interface_order
 import test_data
 import XSX_InTerFace.Common.All_secrets
 import XSX_InTerFace.Common.XSX_Driver

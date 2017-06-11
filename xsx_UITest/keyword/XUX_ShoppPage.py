@@ -2,7 +2,7 @@
 __author__ = 'leo'
 import time
 
-from XSX_UITest.common.XUX_BasePage import BasePage
+from XSX_UITest.Common.XUX_BasePage import BasePage
 class XUXShopPage(BasePage):
     def __init__(self, driver, baseUrl):
         """

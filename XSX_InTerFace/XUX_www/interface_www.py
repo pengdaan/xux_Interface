@@ -4,8 +4,7 @@ import unittest
 
 class MyTest(unittest.TestCase):
     def setUp(self):
-
-        #www域接口
+        '''www域接口'''
         self.PromotionNums_url='http://www.xiaoshuxiong.com/api/order/getPromotionNums'
         self.updateRemindMsg_url='http://www.xiaoshuxiong.com/api/order/updateRemindMsg'
         self.OrderByProductId_url='http://www.xiaoshuxiong.com/api/order/getOrderByProductId'
@@ -28,6 +27,16 @@ class MyTest(unittest.TestCase):
         self.ship_url='http://www.xiaoshuxiong.com/api/ocoupon/ship'
         self.getStocks_url='http://open.xiaoshuxiong.com/openapi/external/ppg/goods/getStock'
         self.InventoryBatchSn_url='http://www.xiaoshuxiong.com/api/goods/decreaseInventoryBatchSn'
+        self.createOrderXsx_url='http://order.api.xiaoshuxiong.com/Order/createOrderXsx'
+
+
+
+
+
+
+
+
+
 
 
 

@@ -14,7 +14,7 @@ if __name__ =="__main__":
     filename =test_filename+now+'_result.html'
     fp=open(filename,'wb')
     runner =HTMLTestRunner(stream=fp,
-                           title='dp_Interface Test Test_Report',
+                           title='dp_Interface Test report',
                            description='Implementation Example whith:'
                            )
     runner.run(discover)

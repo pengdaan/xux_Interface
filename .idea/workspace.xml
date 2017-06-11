@@ -17,8 +17,10 @@
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_applyRefund_sucess.coverage" NAME="Unittest Test.test_applyRefund_sucess Coverage Results" MODIFIED="1496718969003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_post_orderDP_sucess.coverage" NAME="Unittest Test.test_post_orderDP_sucess Coverage Results" MODIFIED="1486439353294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_ChildOrderTour_sucess.coverage" NAME="Unittest Test.test_ChildOrderTour_sucess Coverage Results" MODIFIED="1491553851770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_hipWithoutCoupon_sucess.coverage" NAME="Unittest Test.test_hipWithoutCoupon_sucess Coverage Results" MODIFIED="1497104208110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_ProductId_sucess.coverage" NAME="Unittest Test.test_ProductId_sucess Coverage Results" MODIFIED="1491554548249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_BatchSn_sucess.coverage" NAME="Unittest Test.test_BatchSn_sucess Coverage Results" MODIFIED="1495441897514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xux_Interface/www" />
+    <SUITE FILE_PATH="coverage/xux_project$api_sign.coverage" NAME="api_sign Coverage Results" MODIFIED="1497173402906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools/xux_Interface" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_BatchSn_sucess.coverage" NAME="Unittest Test.test_BatchSn_sucess Coverage Results" MODIFIED="1497022168980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$create_data__1_.coverage" NAME="create_data (1) Coverage Results" MODIFIED="1488442556522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_query_sucess.coverage" NAME="Unittest Test.test_query_sucess Coverage Results" MODIFIED="1491554084106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_updateDepositMission_sucess.coverage" NAME="Unittest Test.test_updateDepositMission_sucess Coverage Results" MODIFIED="1496832435692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
@@ -27,13 +29,16 @@
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderBySn2_sucess.coverage" NAME="Unittest Test.test_OrderBySn2_sucess Coverage Results" MODIFIED="1496734218609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
     <SUITE FILE_PATH="coverage/xux_Interface$DBConns.coverage" NAME="DBConns Coverage Results" MODIFIED="1485243827694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/setting" />
     <SUITE FILE_PATH="coverage/xux_Interface$create_data.coverage" NAME="create_data Coverage Results" MODIFIED="1488439886018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_AllStatus_sucess.coverage" NAME="Unittest Test.test_AllStatus_sucess Coverage Results" MODIFIED="1497018027061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Pmsoperate_sucess.coverage" NAME="Unittest Test.test_Pmsoperate_sucess Coverage Results" MODIFIED="1486712678247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createDepositMission_sucess__1_.coverage" NAME="Unittest Test.test_createDepositMission_sucess (1) Coverage Results" MODIFIED="1496751255161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
     <SUITE FILE_PATH="coverage/xux_project$T3.coverage" NAME="T3 Coverage Results" MODIFIED="1495506285674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baidu_Picture" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_ship_sucess.coverage" NAME="Unittest Test.test_ship_sucess Coverage Results" MODIFIED="1497105477406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_project$test.coverage" NAME="test Coverage Results" MODIFIED="1496487225665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baidu_Picture" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_normalShip_sucess.coverage" NAME="Unittest Test.test_normalShip_sucess Coverage Results" MODIFIED="1496744575183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_normalShip_sucess.coverage" NAME="Unittest Test.test_normalShip_sucess Coverage Results" MODIFIED="1497170542761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_PmsMS_sucess.coverage" NAME="Unittest Test.test_PmsMS_sucess Coverage Results" MODIFIED="1493260013020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_cancelOrder_sucess.coverage" NAME="Unittest Test.test_cancelOrder_sucess Coverage Results" MODIFIED="1496716685777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_updatePayStatus_sucess.coverage" NAME="Unittest Test.test_updatePayStatus_sucess Coverage Results" MODIFIED="1497173936401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/XUX_www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_RemindMsg_sucess.coverage" NAME="Unittest Test.test_RemindMsg_sucess Coverage Results" MODIFIED="1491552058850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_G_dingdan_sucess.coverage" NAME="Unittest Test.test_G_dingdan_sucess Coverage Results" MODIFIED="1491554492860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OrderBySnDianping_sucess.coverage" NAME="Unittest Test.test_OrderBySnDianping_sucess Coverage Results" MODIFIED="1486439691340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp" />
@@ -41,7 +46,7 @@
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_batchSend_sucess.coverage" NAME="Unittest Test.test_batchSend_sucess Coverage Results" MODIFIED="1496893473031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Test_Config.coverage" NAME="Test_Config Coverage Results" MODIFIED="1494587326255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xsx_UITest/common" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_normalShip1_sucess.coverage" NAME="Unittest Test.test_normalShip1_sucess Coverage Results" MODIFIED="1496743780303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
-    <SUITE FILE_PATH="coverage/xux_project$run_alltest__1_.coverage" NAME="run_alltest (1) Coverage Results" MODIFIED="1495007102091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xux_Interface/test_run" />
+    <SUITE FILE_PATH="coverage/xux_project$run_alltest__1_.coverage" NAME="run_alltest (1) Coverage Results" MODIFIED="1497173676327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/test_run" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_updateRemindMsg_sucess.coverage" NAME="Unittest Test.test_updateRemindMsg_sucess Coverage Results" MODIFIED="1491017176997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_De_AllStatus_sucess.coverage" NAME="Unittest Test.test_De_AllStatus_sucess Coverage Results" MODIFIED="1491554380871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_listGoodsPromotion_sucess.coverage" NAME="Unittest Test.test_listGoodsPromotion_sucess Coverage Results" MODIFIED="1496894764661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
@@ -56,33 +61,42 @@
     <SUITE FILE_PATH="coverage/xux_project$111.coverage" NAME="111 Coverage Results" MODIFIED="1495504836677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baidu_Picture" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Pmsupdate_sucess.coverage" NAME="Unittest Test.test_Pmsupdate_sucess Coverage Results" MODIFIED="1493368479670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_Pmsoperate_sucess.coverage" NAME="Unittest Test.test_Pmsoperate_sucess Coverage Results" MODIFIED="1496748210637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createOrderTour_sucess.coverage" NAME="Unittest Test.test_createOrderTour_sucess Coverage Results" MODIFIED="1496935696502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_updateDepositMission_sucess.coverage" NAME="Unittest Test.test_updateDepositMission_sucess Coverage Results" MODIFIED="1493375449635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_PromotionNums_sucess.coverage" NAME="Unittest Test.test_PromotionNums_sucess Coverage Results" MODIFIED="1496912778488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_PromotionNums_sucess.coverage" NAME="Unittest Test.test_PromotionNums_sucess Coverage Results" MODIFIED="1497105907328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$xux_prot.coverage" NAME="xux_prot Coverage Results" MODIFIED="1497173543218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tools/xux_Interface" />
     <SUITE FILE_PATH="coverage/xux_Interface$32131.coverage" NAME="32131 Coverage Results" MODIFIED="1493365421966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xsx_UITest/common" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Aship_sucess.coverage" NAME="Unittest Test.test_Aship_sucess Coverage Results" MODIFIED="1489078670987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_UserOrderNums_sucess.coverage" NAME="Unittest Test.test_UserOrderNums_sucess Coverage Results" MODIFIED="1496721501386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/ly" />
-    <SUITE FILE_PATH="coverage/xux_project$run_alltest__2_.coverage" NAME="run_alltest (2) Coverage Results" MODIFIED="1495011123624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xsx_UITest/Test_Run" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_UserOrderNums_sucess.coverage" NAME="Unittest Test.test_UserOrderNums_sucess Coverage Results" MODIFIED="1497017797138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$run_alltest__2_.coverage" NAME="run_alltest (2) Coverage Results" MODIFIED="1497169392730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_UITest/Test_Run" />
     <SUITE FILE_PATH="coverage/xux_Interface$test.coverage" NAME="test Coverage Results" MODIFIED="1494556445428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xsx_UITest" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_De_AllStatus_sucess.coverage" NAME="Unittest Test.test_De_AllStatus_sucess Coverage Results" MODIFIED="1497017893042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_UserOrderListTour_success.coverage" NAME="Unittest Test.test_UserOrderListTour_success Coverage Results" MODIFIED="1486438801233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ly" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_UserLimitedSpecialOrderNum_sucess.coverage" NAME="Unittest Test.test_UserLimitedSpecialOrderNum_sucess Coverage Results" MODIFIED="1496731611239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createOrderXsx_sucess__1_.coverage" NAME="Unittest Test.test_createOrderXsx_sucess (1) Coverage Results" MODIFIED="1496734021577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createOrderXsx_sucess__1_.coverage" NAME="Unittest Test.test_createOrderXsx_sucess (1) Coverage Results" MODIFIED="1497173371540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_add_XUJ_sucess.coverage" NAME="Unittest Test.test_add_XUJ_sucess Coverage Results" MODIFIED="1497104739617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_ship_sucess.coverage" NAME="Unittest Test.test_ship_sucess Coverage Results" MODIFIED="1489897240571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_RemindMsg_sucess.coverage" NAME="Unittest Test.test_RemindMsg_sucess Coverage Results" MODIFIED="1496935592625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_createDepositMission_sucess.coverage" NAME="Unittest Test.test_createDepositMission_sucess Coverage Results" MODIFIED="1493951677548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_project$t2.coverage" NAME="t2 Coverage Results" MODIFIED="1495504690933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baidu_Picture" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_normalShip_sucess.coverage" NAME="Unittest Test.test_normalShip_sucess Coverage Results" MODIFIED="1491550974440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Pms_listPromotion_sucess.coverage" NAME="Unittest Test.test_Pms_listPromotion_sucess Coverage Results" MODIFIED="1492769478761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_applyRefund_sucess__1_.coverage" NAME="Unittest Test.test_applyRefund_sucess (1) Coverage Results" MODIFIED="1496717558311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OrderByGoTime_sucess.coverage" NAME="Unittest Test.test_OrderByGoTime_sucess Coverage Results" MODIFIED="1486438374887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ly" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_De_AllSt1atus_sucess.coverage" NAME="Unittest Test.test_De_AllSt1atus_sucess Coverage Results" MODIFIED="1497017909593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_applyRefund_sucess__1_.coverage" NAME="Unittest Test.test_applyRefund_sucess (1) Coverage Results" MODIFIED="1489071753160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_query_sucess.coverage" NAME="Unittest Test.test_query_sucess Coverage Results" MODIFIED="1497017553380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_Create_Order_sucess.coverage" NAME="Unittest Test.test_Create_Order_sucess Coverage Results" MODIFIED="1497170672915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$run_all_test.coverage" NAME="run_all_test Coverage Results" MODIFIED="1484821180927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_run" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_receiveOrderReturn_sucess.coverage" NAME="Unittest Test.test_receiveOrderReturn_sucess Coverage Results" MODIFIED="1491549945217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_UserOrderListDP_sucess.coverage" NAME="Unittest Test.test_UserOrderListDP_sucess Coverage Results" MODIFIED="1486439458781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_Pmsupdate_sucess.coverage" NAME="Unittest Test.test_Pmsupdate_sucess Coverage Results" MODIFIED="1496912499099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_createOrderXsx_sucess.coverage" NAME="Unittest Test.test_createOrderXsx_sucess Coverage Results" MODIFIED="1493352917696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\xux_Interface\order" />
     <SUITE FILE_PATH="coverage/xux_project$Get_Picture.coverage" NAME="Get_Picture Coverage Results" MODIFIED="1495884689329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baidu_Picture" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_UserOrderListDP_sucess.coverage" NAME="Unittest Test.test_UserOrderListDP_sucess Coverage Results" MODIFIED="1496716259284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_UserOrderListDP_sucess.coverage" NAME="Unittest Test.test_UserOrderListDP_sucess Coverage Results" MODIFIED="1497169648171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$result_jsons.coverage" NAME="result_jsons Coverage Results" MODIFIED="1484884518790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/setting" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_PresellNumber_sucess.coverage" NAME="Unittest Test.test_PresellNumber_sucess Coverage Results" MODIFIED="1492158690663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderPromotionList_sucess.coverage" NAME="Unittest Test.test_OrderPromotionList_sucess Coverage Results" MODIFIED="1497101039688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_createPromotion_sucess.coverage" NAME="Unittest Test.test_createPromotion_sucess Coverage Results" MODIFIED="1493259959828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_Zy_test_LFinitiation.coverage" NAME="Unittest Test_Zy.test_LFinitiation Coverage Results" MODIFIED="1493360971032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xsx_UITest/common" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_add_XUJ_sucess.coverage" NAME="Unittest Test.test_add_XUJ_sucess Coverage Results" MODIFIED="1493367116084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
@@ -92,7 +106,7 @@
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_cancelOrder_sucess.coverage" NAME="Unittest Test.test_cancelOrder_sucess Coverage Results" MODIFIED="1488807849032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_NameRepeat_sucess.coverage" NAME="Unittest Test.test_NameRepeat_sucess Coverage Results" MODIFIED="1491041653396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_verify_sucess.coverage" NAME="Unittest Test.test_verify_sucess Coverage Results" MODIFIED="1491554596757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
-    <SUITE FILE_PATH="coverage/xux_project$run_dptest.coverage" NAME="run_dptest Coverage Results" MODIFIED="1496313788203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xux_Interface/test_run" />
+    <SUITE FILE_PATH="coverage/xux_project$run_dptest.coverage" NAME="run_dptest Coverage Results" MODIFIED="1497169206461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/test_run" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_updatePayStatus_sucess.coverage" NAME="Unittest Test.test_updatePayStatus_sucess Coverage Results" MODIFIED="1491555522629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_applyRefund_sucess.coverage" NAME="Unittest Test.test_applyRefund_sucess Coverage Results" MODIFIED="1489071420168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OrderPromotionList_sucess.coverage" NAME="Unittest Test.test_OrderPromotionList_sucess Coverage Results" MODIFIED="1491555055103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
@@ -101,20 +115,28 @@
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_Pmsadd_sucess.coverage" NAME="Unittest Test.test_Pmsadd_sucess Coverage Results" MODIFIED="1496824041787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createDepositMission_sucess.coverage" NAME="Unittest Test.test_createDepositMission_sucess Coverage Results" MODIFIED="1496751530256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
     <SUITE FILE_PATH="coverage/xux_project$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1495510304355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Baidu_Picture" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_updateRemindMsg_sucess.coverage" NAME="Unittest Test.test_updateRemindMsg_sucess Coverage Results" MODIFIED="1496935500783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_CouponCode_sucess.coverage" NAME="Unittest Test.test_CouponCode_sucess Coverage Results" MODIFIED="1497017571919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderByProductId_sucess.coverage" NAME="Unittest Test.test_OrderByProductId_sucess Coverage Results" MODIFIED="1497017723290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$UC_Tools.coverage" NAME="UC_Tools Coverage Results" MODIFIED="1493891546762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_qianbao" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_ChildOrderTour_sucess.coverage" NAME="Unittest Test.test_ChildOrderTour_sucess Coverage Results" MODIFIED="1497017231266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$run_wwwtest.coverage" NAME="run_wwwtest Coverage Results" MODIFIED="1489925682780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_run" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Pms_goodsId_sucess.coverage" NAME="Unittest Test.test_Pms_goodsId_sucess Coverage Results" MODIFIED="1492769255477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OrderByProductId_sucess.coverage" NAME="Unittest Test.test_OrderByProductId_sucess Coverage Results" MODIFIED="1491554205720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createOrderXsx_sucess__2_.coverage" NAME="Unittest Test.test_createOrderXsx_sucess (2) Coverage Results" MODIFIED="1497173662712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_post_orderDP_sucess__1_.coverage" NAME="Unittest Test.test_post_orderDP_sucess (1) Coverage Results" MODIFIED="1484883857871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_AddPms_sucess.coverage" NAME="Unittest Test.test_AddPms_sucess Coverage Results" MODIFIED="1491467743609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OutOrderSn_sucess.coverage" NAME="Unittest Test.test_OutOrderSn_sucess Coverage Results" MODIFIED="1491553822809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_project$test_data.coverage" NAME="test_data Coverage Results" MODIFIED="1496889796000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Pmsadd_sucess.coverage" NAME="Unittest Test.test_Pmsadd_sucess Coverage Results" MODIFIED="1488809184379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_UserOrderNums_sucess.coverage" NAME="Unittest Test.test_UserOrderNums_sucess Coverage Results" MODIFIED="1491554269439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_verify_sucess.coverage" NAME="Unittest Test.test_verify_sucess Coverage Results" MODIFIED="1497105799966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_createOrderTour_sucess.coverage" NAME="Unittest Test.test_createOrderTour_sucess Coverage Results" MODIFIED="1491552898588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_Pms_confict_sucess.coverage" NAME="Unittest Test.test_Pms_confict_sucess Coverage Results" MODIFIED="1492769883370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OrderBySnTour_sucess.coverage" NAME="Unittest Test.test_OrderBySnTour_sucess Coverage Results" MODIFIED="1486437984288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ly" />
     <SUITE FILE_PATH="coverage/xux_Interface$test_data.coverage" NAME="test_data Coverage Results" MODIFIED="1492161607701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_updateRemindMs1_sucess.coverage" NAME="Unittest Test.test_updateRemindMs1_sucess Coverage Results" MODIFIED="1496935507445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_ProductId_sucess.coverage" NAME="Unittest Test.test_ProductId_sucess Coverage Results" MODIFIED="1497101148930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_UserLimitedSpecialOrderNum_sucess.coverage" NAME="Unittest Test.test_UserLimitedSpecialOrderNum_sucess Coverage Results" MODIFIED="1491021490142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderBySnDp_sucess.coverage" NAME="Unittest Test.test_OrderBySnDp_sucess Coverage Results" MODIFIED="1496719345604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/Dp" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_OrderGoodsNumTour_sucess.coverage" NAME="Unittest Test.test_OrderGoodsNumTour_sucess Coverage Results" MODIFIED="1491548907910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
@@ -128,18 +150,22 @@
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderGoodsNumTour_sucess.coverage" NAME="Unittest Test.test_OrderGoodsNumTour_sucess Coverage Results" MODIFIED="1496732282813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
     <SUITE FILE_PATH="coverage/xux_Interface$order.coverage" NAME="order Coverage Results" MODIFIED="1488601563984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderByGoTime_sucess.coverage" NAME="Unittest Test.test_OrderByGoTime_sucess Coverage Results" MODIFIED="1496720700977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/ly" />
-    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_getStock_sucess.coverage" NAME="Unittest Test.test_getStock_sucess Coverage Results" MODIFIED="1495440174012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/xux_Interface/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OutOrderSn_sucess.coverage" NAME="Unittest Test.test_OutOrderSn_sucess Coverage Results" MODIFIED="1497017040237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_getStock_sucess.coverage" NAME="Unittest Test.test_getStock_sucess Coverage Results" MODIFIED="1497103888507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_batchSend_sucess.coverage" NAME="Unittest Test.test_batchSend_sucess Coverage Results" MODIFIED="1488813866956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$run_ordertest.coverage" NAME="run_ordertest Coverage Results" MODIFIED="1489070577693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_run" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderBySn_sucess.coverage" NAME="Unittest Test.test_OrderBySn_sucess Coverage Results" MODIFIED="1496734307875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
     <SUITE FILE_PATH="coverage/xux_Interface$common.coverage" NAME="common Coverage Results" MODIFIED="1488625142551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_UserOrderListTour_success.coverage" NAME="Unittest Test.test_UserOrderListTour_success Coverage Results" MODIFIED="1496721357939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/ly" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_G_dingdan_sucess.coverage" NAME="Unittest Test.test_G_dingdan_sucess Coverage Results" MODIFIED="1497101139053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_AddPms1_sucess.coverage" NAME="Unittest Test.test_AddPms1_sucess Coverage Results" MODIFIED="1491477698061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pms" />
     <SUITE FILE_PATH="coverage/xux_Interface$run_alltest.coverage" NAME="run_alltest Coverage Results" MODIFIED="1490175462944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_run" />
     <SUITE FILE_PATH="coverage/xux_Interface$run_pmstest.coverage" NAME="run_pmstest Coverage Results" MODIFIED="1493373262170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_run" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_receiveOrderReturn_sucess.coverage" NAME="Unittest Test.test_receiveOrderReturn_sucess Coverage Results" MODIFIED="1496732920439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/order" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_createOrderXsx_sucess__3_.coverage" NAME="Unittest Test.test_createOrderXsx_sucess (3) Coverage Results" MODIFIED="1497173649749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_PromotionNums_sucess.coverage" NAME="Unittest Test.test_PromotionNums_sucess Coverage Results" MODIFIED="1491551594870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_confirmOrder_sucess.coverage" NAME="Unittest Test.test_confirmOrder_sucess Coverage Results" MODIFIED="1493355260544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/order" />
+    <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_OrderPromotionList1_sucess.coverage" NAME="Unittest Test.test_OrderPromotionList1_sucess Coverage Results" MODIFIED="1497100960479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$Unittest_Test_test_hipWithoutCoupon_sucess.coverage" NAME="Unittest Test.test_hipWithoutCoupon_sucess Coverage Results" MODIFIED="1494922557535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/www" />
     <SUITE FILE_PATH="coverage/xux_Interface$api_signs.coverage" NAME="api_signs Coverage Results" MODIFIED="1493353603164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/setting" />
     <SUITE FILE_PATH="coverage/xux_project$Unittest_Test_test_PcodeList_sucess.coverage" NAME="Unittest Test.test_PcodeList_sucess Coverage Results" MODIFIED="1496894625773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XSX_InTerFace/pms" />
@@ -155,83 +181,11 @@
     <favorites_list name="xux_Interface" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="test_case.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XSX_InTerFace/www/test_case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10906">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding>
-                <element signature="e#53#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XSX_InTerFace/www/test_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="9842">
-              <caret line="171" column="49" selection-start-line="171" selection-start-column="49" selection-end-line="171" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_case.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XSX_InTerFace/order/test_case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1729">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-              <folding>
-                <element signature="e#53#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UC_Tools.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Qianbao_InterFace/UC_Tools.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9223301" vertical-offset="0" max-vertical-offset="5168">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_qianbao/UC_Tools.py" />
-        <option value="$PROJECT_DIR$/xsx_UITest/test.py" />
-        <option value="$PROJECT_DIR$/xsx_UITest/common/Test_Config.py" />
-        <option value="$PROJECT_DIR$/xsx_UITest/keyword/login.py" />
-        <option value="$PROJECT_DIR$/www/interface_www.py" />
-        <option value="$PROJECT_DIR$/all_secrets.py" />
-        <option value="$PROJECT_DIR$/setting/api_signs.py" />
-        <option value="$PROJECT_DIR$/www/test_case.py" />
-        <option value="$PROJECT_DIR$/www/test_data.py" />
-        <option value="$PROJECT_DIR$/111/www/test_case.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/common/common_Order.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/ly/test_case.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/order/test_case.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/pms/test_case.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/pms/test_data.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/test_run/run_alltest.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/test_run/run_lytest.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/test_run/run_ordertest.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/test_run/run_pmstest.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/test_run/run_wwwtest.py" />
-        <option value="$PROJECT_DIR$/xsx_UITest/Test_Run/run_alltest.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/www/interface_www.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/www/test_case.py" />
-        <option value="$PROJECT_DIR$/xux_Interface/www/test_data.py" />
-        <option value="$PROJECT_DIR$/Baidu_Picture/111.py" />
-        <option value="$PROJECT_DIR$/Baidu_Picture/t2.py" />
-        <option value="$PROJECT_DIR$/Baidu_Picture/T3.py" />
         <option value="$PROJECT_DIR$/Baidu_Picture/__init__.py" />
         <option value="$PROJECT_DIR$/xux_Interface/test_run/run_dptest.py" />
         <option value="$PROJECT_DIR$/xux_Interface/setting/HTMLTestRunnerCN.py" />
@@ -241,21 +195,48 @@
         <option value="$PROJECT_DIR$/xux_Interface/dp/test_case.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/dp/test_case.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/common/__init__.py" />
-        <option value="$PROJECT_DIR$/XSX_InTerFace/Dp/interface_dp.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/Dp/test_data.py" />
-        <option value="$PROJECT_DIR$/XSX_InTerFace/Dp/test_case.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/ly/interface_ly.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/ly/test_case.py" />
-        <option value="$PROJECT_DIR$/XSX_InTerFace/order/test_data.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/order/interface_order.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/order/test_case.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/Common/All_secrets.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/pms/interface_pms.py" />
         <option value="$PROJECT_DIR$/Baidu_Picture/test11.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/Common/XSX_Driver.py" />
-        <option value="$PROJECT_DIR$/XSX_InTerFace/pms/test_data.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/pms/test_case.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/www/interface_www.py" />
         <option value="$PROJECT_DIR$/XSX_InTerFace/www/test_case.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/order/test_data.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/pms/test_data.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/www/test_data.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/test_run/run_lytest.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/test_run/run_ordertest.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/test_run/run_wwwtest.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/test_run/run_dptest.py" />
+        <option value="$PROJECT_DIR$/xsx_UITest/Test_Run/run_alltest.py" />
+        <option value="$PROJECT_DIR$/XSX_UITest/Test_Run/run_alltest.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/test_run/run_alltest.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/Dp/interface_dp.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/Ly/interface_ly.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_Pms/interface_pms.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/Dp/test_case.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/test_case.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_www/test_case.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/interface_order.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_www/interface_www.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/dp/interface_dp.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/ly/interface_ly.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/pms/interface_pms.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/order/interface_order.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/pms/test_case.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/www/interface_www.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_Pms/test_case.py" />
+        <option value="$PROJECT_DIR$/Tools/xux_Interface/xux_prot.py" />
+        <option value="$PROJECT_DIR$/Tools/xux_Interface/api_sign.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/test_data.py" />
+        <option value="$PROJECT_DIR$/xux_Interface/order/test_data.py" />
+        <option value="$PROJECT_DIR$/XSX_InTerFace/XUX_www/test_data.py" />
       </list>
     </option>
   </component>
@@ -263,10 +244,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="250" />
-    <option name="y" value="22" />
-    <option name="width" value="1456" />
-    <option name="height" value="858" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1861" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -310,34 +291,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xux_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xux_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xux_Interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xux_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xux_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Baidu_Picture" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -358,35 +311,55 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xux_project\xux_Interface\pms" />
+      <recent name="D:\xux_project\xux_Interface\setting" />
       <recent name="D:\xux_project\XSX_InTerFace\common" />
       <recent name="D:\xux_project\XSX_InTerFace" />
       <recent name="D:\xux_project\xux_Interface\common" />
-      <recent name="D:\xux_project\xux_Interface\setting" />
-      <recent name="D:\xux_project\Baidu_Picture" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git" />
       <recent name="D:\xux_project" />
       <recent name="D:\xux_project\XSX_InTerFace\pms" />
       <recent name="D:\xux_project\xux_Interface\common" />
       <recent name="D:\xux_project\xux_Interface\dp" />
-      <recent name="D:\xux_Interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittest Test.test_PromotionNums_sucess">
-    <configuration default="false" name="Unittest Test.test_Pmsinfo_sucess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittest Test.test_updatePayStatus_sucess">
+    <configuration default="false" name="xux_prot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/pms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tools/xux_Interface" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xux_project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/pms/test_case.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tools/xux_Interface/xux_prot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittest Test.test_createOrderXsx_sucess (3)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="xux_project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/test_case.py" />
       <option name="CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test_Pmsinfo_sucess" />
+      <option name="METHOD_NAME" value="test_createOrderXsx_sucess" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -398,20 +371,20 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest Test.test_PcodeList_sucess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest Test.test_createOrderXsx_sucess (2)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/pms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xux_project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/pms/test_case.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/test_case.py" />
       <option name="CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test_PcodeList_sucess" />
+      <option name="METHOD_NAME" value="test_createOrderXsx_sucess" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -423,70 +396,40 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest Test.test_listGoodsPromotion_sucess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="run_alltest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/pms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/test_run" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xux_project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/pms/test_case.py" />
-      <option name="CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test_listGoodsPromotion_sucess" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/test_run/run_alltest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittest Test.test_Pmsupdate_sucess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittest Test.test_updatePayStatus_sucess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/pms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/XUX_www" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xux_project" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/pms/test_case.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/XUX_www/test_case.py" />
       <option name="CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test_Pmsupdate_sucess" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest Test.test_PromotionNums_sucess" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/XSX_InTerFace/www" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="xux_project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/XSX_InTerFace/www/test_case.py" />
-      <option name="CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test_PromotionNums_sucess" />
+      <option name="METHOD_NAME" value="test_updatePayStatus_sucess" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -734,19 +677,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_createOrderXsx_sucess" />
       <item index="1" class="java.lang.String" itemvalue="Python.run_alltest" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_Pmsinfo_sucess" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_PcodeList_sucess" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_listGoodsPromotion_sucess" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_Pmsupdate_sucess" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_PromotionNums_sucess" />
+      <item index="2" class="java.lang.String" itemvalue="Python.xux_prot" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_createOrderXsx_sucess (3)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_createOrderXsx_sucess (2)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.run_alltest (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_updatePayStatus_sucess" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_PromotionNums_sucess" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_Pmsupdate_sucess" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_listGoodsPromotion_sucess" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_PcodeList_sucess" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_Pmsinfo_sucess" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_updatePayStatus_sucess" />
+        <item index="1" class="java.lang.String" itemvalue="Python.run_alltest (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_createOrderXsx_sucess (2)" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittest Test.test_createOrderXsx_sucess (3)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.xux_prot" />
       </list>
     </recent_temporary>
   </component>
@@ -764,29 +707,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="250" y="22" width="1456" height="858" extended-state="0" />
+    <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22430556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3851175" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39614996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18482384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39827374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39333335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32522798" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39827374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -831,36 +774,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/XSX_InTerFace/www/interface_www.py</url>
-          <line>16</line>
+          <url>file://$PROJECT_DIR$/XSX_InTerFace/XUX_www/interface_www.py</url>
+          <line>15</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/XSX_InTerFace/XUX_www/test_case.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Dp/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="1653">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Setting/test_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.081023455" vertical-offset="0" max-vertical-offset="469">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Setting/result_jsons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12153518" vertical-offset="0" max-vertical-offset="532">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Setting/PayDBConns.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15778251" vertical-offset="2" max-vertical-offset="2432">
@@ -875,158 +802,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_pmstest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_ordertest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32409382" vertical-offset="0" max-vertical-offset="532">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/TestCase/TestCase_login.py">
+    <entry file="file://$PROJECT_DIR$/XSX_UITest/TestCase/TestCase_login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.673774" vertical-offset="785" max-vertical-offset="1254">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/common/HTMLTestRunner.py">
+    <entry file="file://$PROJECT_DIR$/XSX_UITest/Common/HTMLTestRunner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15998">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/common/XUX_BasePage.py">
+    <entry file="file://$PROJECT_DIR$/XSX_UITest/Common/XUX_BasePage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="739">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/common/Common_Driver.py">
+    <entry file="file://$PROJECT_DIR$/XSX_UITest/Common/Common_Driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025710419" vertical-offset="0" max-vertical-offset="5548">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/unittest/loader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326226" vertical-offset="3492" max-vertical-offset="5909">
-          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/TestCase/TestCase_shop.py">
+    <entry file="file://$PROJECT_DIR$/XSX_UITest/TestCase/TestCase_shop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="236" max-vertical-offset="969">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/HTMLParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1943" max-vertical-offset="7505">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/ssl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.519275" vertical-offset="1145" max-vertical-offset="8094">
-          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3317757" vertical-offset="2575" max-vertical-offset="7486">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30246913" vertical-offset="2494" max-vertical-offset="6289">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/Test_Run/run_alltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14578006" vertical-offset="0" max-vertical-offset="782">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_lytest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25979382" vertical-offset="26" max-vertical-offset="532">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_alltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31340206" vertical-offset="0" max-vertical-offset="551">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/www/interface_www.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5690722" vertical-offset="275" max-vertical-offset="988">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/urllib2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.90849674" vertical-offset="10012" max-vertical-offset="26771">
-          <caret line="517" column="0" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/keyword/XUX_LoginPage.py">
+    <entry file="file://$PROJECT_DIR$/XSX_UITest/keyword/XUX_LoginPage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0568335" vertical-offset="781" max-vertical-offset="1520">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xsx_UITest/keyword/XUX_ShoppPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.13125846" vertical-offset="686" max-vertical-offset="1425">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_wwwtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6875" vertical-offset="0" max-vertical-offset="551">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Setting/HTMLTestRunnerCN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.25" vertical-offset="57" max-vertical-offset="14744">
-          <caret line="205" column="7" selection-start-line="205" selection-start-column="7" selection-end-line="205" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_dptest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60275865" vertical-offset="0" max-vertical-offset="725">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1051,155 +865,332 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/ly/interface_ly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68779343" vertical-offset="49" max-vertical-offset="475">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/ly/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="1216">
-          <caret line="23" column="107" selection-start-line="22" selection-start-column="6" selection-end-line="23" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/ly/test_data.py">
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Ly/test_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="5434">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Dp/interface_dp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="532">
-          <caret line="14" column="88" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/order/interface_order.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5093897" vertical-offset="87" max-vertical-offset="551">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Common/common_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.094431" vertical-offset="774" max-vertical-offset="3705">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/pms/interface_pms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64319247" vertical-offset="239" max-vertical-offset="665">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Baidu_Picture/Get_Picture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1379" max-vertical-offset="2261">
-          <caret line="73" column="129" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Dp/test_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1762" max-vertical-offset="4028">
+        <state vertical-scroll-proportion="0.6878307" vertical-offset="2100" max-vertical-offset="5325">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_lytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1565762" vertical-offset="0" max-vertical-offset="958">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_ordertest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1565762" vertical-offset="0" max-vertical-offset="958">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_pmstest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10438413" vertical-offset="0" max-vertical-offset="958">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_wwwtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49582464" vertical-offset="0" max-vertical-offset="958">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Setting/HTMLTestRunner_py3.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20900">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Setting/HTMLTestRunnerCN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5868795" vertical-offset="4080" max-vertical-offset="19400">
+          <caret line="205" column="7" selection-start-line="205" selection-start-column="7" selection-end-line="205" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_dptest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29982668" vertical-offset="2" max-vertical-offset="725">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/python27/Lib/unittest/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33275563" vertical-offset="4608" max-vertical-offset="7775">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/python27/Lib/site-packages/requests-2.1.0-py2.7.egg/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20277296" vertical-offset="2058" max-vertical-offset="3150">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Ly/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1550">
+          <caret line="23" column="107" selection-start-line="22" selection-start-column="6" selection-end-line="23" selection-end-column="107" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Dp/test_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="1653">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2200">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="e#53#68#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Common/common_Order.py">
+    <entry file="file://$PROJECT_DIR$/xux_Interface/setting/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1891" max-vertical-offset="5016">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="577">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/order/test_data.py">
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Dp/interface_dp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="3800">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725">
+          <caret line="14" column="88" selection-start-line="6" selection-start-column="8" selection-end-line="14" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/pms/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12998267" vertical-offset="225" max-vertical-offset="7200">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#53#68#0" expanded="true" />
+            <marker date="1497171150779" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_promotion_info..." />
+            <marker date="1497171150779" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_promotion..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/www/interface_www.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3032929" vertical-offset="0" max-vertical-offset="1325">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/pms/interface_pms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3032929" vertical-offset="0" max-vertical-offset="875">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_Pms/interface_pms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6932409" vertical-offset="75" max-vertical-offset="900">
+          <caret line="19" column="0" selection-start-line="6" selection-start-column="8" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/ly/interface_ly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51993066" vertical-offset="0" max-vertical-offset="625">
+          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Ly/interface_ly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43674177" vertical-offset="23" max-vertical-offset="600">
+          <caret line="11" column="87" selection-start-line="6" selection-start-column="8" selection-end-line="11" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/dp/interface_dp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3032929" vertical-offset="0" max-vertical-offset="700">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_Pms/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5500">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_Pms/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34142116" vertical-offset="3" max-vertical-offset="3725">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <marker date="1497171193013" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_promotion_info..." />
+            <marker date="1497171193013" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_promotion..." />
+            <marker date="1497171193013" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_promotion..." />
+            <marker date="1497171193013" expanded="true" signature="-1:-1" placeholder="SELECT promo..mall_promotion_code..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/order/interface_order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="750">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Common/XSX_Driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2423" max-vertical-offset="3629">
-          <caret line="141" column="72" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.51263535" vertical-offset="2466" max-vertical-offset="4775">
+          <caret line="110" column="47" selection-start-line="107" selection-start-column="8" selection-end-line="110" selection-end-column="47" />
           <folding>
             <element signature="e#44#53#0" expanded="true" />
+            <marker date="1497169050855" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_app..." />
+            <marker date="1497169050855" expanded="true" signature="-1:-1" placeholder="SELECT api_s..mall_app..." />
+            <marker date="1497169050855" expanded="true" signature="-1:-1" placeholder="UPDATE mall_..." />
+            <marker date="1497169050855" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..mall_promotion_info..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/pms/test_case.py">
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/interface_order.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11502347" vertical-offset="1189" max-vertical-offset="2869">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="61" max-vertical-offset="725">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/pms/test_data.py">
+    <entry file="file://$PROJECT_DIR$/xux_Interface/order/test_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="2632" max-vertical-offset="4218">
-          <caret line="146" column="4" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.5097002" vertical-offset="2211" max-vertical-offset="4600">
+          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tools/xux_Interface/xux_prot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72924185" vertical-offset="46" max-vertical-offset="900">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/XSX_InTerFace/Common/All_secrets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34257975" vertical-offset="0" max-vertical-offset="721">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4409171" vertical-offset="0" max-vertical-offset="675">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/www/test_case.py">
+    <entry file="file://$PROJECT_DIR$/Tools/xux_Interface/api_sign.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="10906">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.36101082" vertical-offset="1575" max-vertical-offset="2300">
+          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="898" max-vertical-offset="2225">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_OrderApi/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18772563" vertical-offset="1446" max-vertical-offset="5000">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/order/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.797834" vertical-offset="0" max-vertical-offset="5025">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/www/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.131769" vertical-offset="7275" max-vertical-offset="12950">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/test_run/run_alltest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33862433" vertical-offset="133" max-vertical-offset="700">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xux_Interface/www/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0141094" vertical-offset="850" max-vertical-offset="14150">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_www/interface_www.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1269841" vertical-offset="86" max-vertical-offset="1500">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_www/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.8906527" vertical-offset="236" max-vertical-offset="5350">
+          <caret line="75" column="69" selection-start-line="75" selection-start-column="69" selection-end-line="75" selection-end-column="69" />
           <folding>
             <element signature="e#53#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/www/test_data.py">
+    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/XUX_www/test_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2651" max-vertical-offset="9842">
-          <caret line="171" column="49" selection-start-line="171" selection-start-column="49" selection-end-line="171" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XSX_InTerFace/order/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="1729">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="e#53#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qianbao_InterFace/UC_Tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9223301" vertical-offset="0" max-vertical-offset="5168">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.42238268" vertical-offset="4591" max-vertical-offset="7250">
+          <caret line="195" column="27" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
           <folding />
         </state>
       </provider>

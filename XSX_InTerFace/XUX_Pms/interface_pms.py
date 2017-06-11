@@ -4,8 +4,7 @@ import unittest
 
 class MyTest(unittest.TestCase):
     def setUp(self):
-
-        #pms接口
+        '''pms接口'''
         self.PMSadd_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/add'
         self.PMSoperate_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/operate'
         self.CreateDepositMission_url ='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/createDepositMission'
@@ -18,6 +17,8 @@ class MyTest(unittest.TestCase):
         self.Pmsinfo_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/info'
         self.Pms_pcodeList_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/user/pcodeList'
         self.Pms_listGoodsPromotion_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/user/listGoodsPromotion'
+
+
 
 
 

@@ -9,8 +9,6 @@ import XSX_InTerFace.Setting.api_signs
 import XSX_InTerFace.Setting.result_jsons
 import XSX_InTerFace.Setting.DBConns
 import interface_pms
-import XSX_InTerFace.Common.common_Order
-import XSX_InTerFace.Common.common_data
 import time
 import test_data
 import XSX_InTerFace.Common.All_secrets

@@ -77,7 +77,7 @@ class order:
 
     def Updatexux_Order(self,XUXorder):
          #通过修改数据库更改订单状态为已审核状态，只能改普通的直邮订单
-         XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%(time)s' WHERE order_sn='%(order)s'"%{'time':times,"order":XUXorder}
+         XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%(time)s' WHERE order_sn='%(XUX_OrderApi)s'"%{'time':times,"XUX_OrderApi":XUXorder}
          mysql = xux_Interface.setting.DBConns.Mysql()
          mysql.get_one(XUXorders)
          mysql.commit()
@@ -143,7 +143,7 @@ class order:
             order_sns=DP_order
             #print order_sns,order_sns
             payloads= common_data.data_updatePayStatus
-            #order_sns=order.orderDP(self,common_data.data_OrderDPSuce)#生成订单号
+            #order_sns=XUX_OrderApi.orderDP(self,common_data.data_OrderDPSuce)#生成订单号
             payloads.setdefault('order_sn',order_sns) #插入订单号
             payload=payloads
             #print payload,'payload'

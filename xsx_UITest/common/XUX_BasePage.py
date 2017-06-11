@@ -5,8 +5,8 @@ class BasePage():
         """
         构造方法
         :param driver: 封装好的webdriver
-        :param baseUrl: 小树熊的基本url http://www.xioahsuxiong.com/
-        :param baseUrl: 小树熊mobile版的基本url http://www.xioahsuxiong.com/mobile
+        :param baseUrl: 小树熊的基本url http://XUX_www.xioahsuxiong.com/
+        :param baseUrl: 小树熊mobile版的基本url http://XUX_www.xioahsuxiong.com/mobile
         """
 
         self.baseUrl = baseUrl

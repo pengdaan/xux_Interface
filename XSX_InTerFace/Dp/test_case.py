@@ -14,6 +14,7 @@ import XSX_InTerFace.Common.XSX_Driver
 times= int(time.time())
 
 class Test(XSX_InTerFace.Dp.interface_dp.MyTest):
+    '''点评接口'''
 
     def test_Create_Order_sucess(self):
         '''创建点评订单'''

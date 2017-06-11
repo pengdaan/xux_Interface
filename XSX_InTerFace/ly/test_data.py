@@ -110,7 +110,7 @@ test_OrderBySnTour={
 data_createOrderXsx1 ={
     "_url": "/Order/createOrderXsx",
     "order_info": "{"
-                  "order:{serial_no:14841953352617914717,"
+                  "XUX_OrderApi:{serial_no:14841953352617914717,"
                          "user_id:1160,"
                          "uid:43507844,"
                          "source:wap,"
@@ -145,7 +145,7 @@ data_createOrderXsx1 ={
 
 data_createOrderXsx ={
     "_url": "/Order/createOrderXsx",
-    "order_info": "{\"order\":"
+    "order_info": "{\"XUX_OrderApi\":"
                   "{\"serial_no\":\"14841953352617914717\","
                   "\"user_id\":1160,\"uid\":43507844,"
                   "\"source\":\"wap\","

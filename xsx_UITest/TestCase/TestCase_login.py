@@ -3,7 +3,7 @@ __author__ = 'leo'
 import unittest
 from time import sleep
 
-from XSX_UITest.common.Common_Driver import AutomateDriver
+from XSX_UITest.Common.Common_Driver import AutomateDriver
 from XSX_UITest.keyword.XUX_LoginPage import XUXSubLoginPage
 
 
@@ -22,7 +22,7 @@ class XUXTests(unittest.TestCase):
         :return:
         """
         self.autoDriver = AutomateDriver()
-        self.baseUrl = "http://www.xiaoshuxiong.com"
+        self.baseUrl = "http://XUX_www.xiaoshuxiong.com"
 
     def tearDown(self):
         """

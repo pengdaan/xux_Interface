@@ -112,4 +112,4 @@ if __name__ == '__main__':
 
 
 #'测试环境为python3.4，使用python2.X，请把urllib.request改为urllib2'
-#地址：http://www.itwendao.com/article/detail/87042.html
+#地址：http://XUX_www.itwendao.com/article/detail/87042.html

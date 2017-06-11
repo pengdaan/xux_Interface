@@ -112,7 +112,7 @@ sys.setdefaultencoding('utf-8')
 # The redirectors below are used to capture output during testing. Output
 # sent to sys.stdout and sys.stderr are automatically captured. However
 # in some cases sys.stdout is already cached before HTMLTestRunner is
-# invoked (e.g. calling logging.basicConfig). In order to capture those
+# invoked (e.g. calling logging.basicConfig). In XUX_OrderApi to capture those
 # output, use the redirectors for the cached stream.
 #
 # e.g.
@@ -193,8 +193,8 @@ class Template_mixin(object):
     # HTML Template
 
     HTML_TMPL = r"""<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://XUX_www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://XUX_www.w3.org/1999/xhtml">
 <head>
     <title>%(title)s</title>
     <meta name="generator" content="%(generator)s"/>
@@ -350,7 +350,7 @@ table       { font-size: 100%; }
 
 
     # ------------------------------------------------------------------------
-    # Report
+    # report
     #
     # 汉化,加美化效果 --Findyou
     REPORT_TMPL = """
@@ -576,7 +576,7 @@ class HTMLTestRunner(Template_mixin):
 
 
     def sortResult(self, result_list):
-        # unittest does not seems to run in any particular order.
+        # unittest does not seems to run in any particular XUX_OrderApi.
         # Here at least we want to group them together by class.
         rmap = {}
         classes = []

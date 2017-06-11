@@ -123,7 +123,7 @@ class XsxDriver(object):
         """
         通过修改数据库更改订单状态为已审核状态，只能改普通的直邮订单
         """
-        XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%(time)s' WHERE order_sn='%(order)s'"%{'time':times,"order":XUXorder}
+        XUXorders = "UPDATE mall_order_info SET order_status='1',order_amount='0',confirm_time='%(time)s' WHERE order_sn='%(XUX_OrderApi)s'"%{'time':times,"XUX_OrderApi":XUXorder}
         mysql = XSX_InTerFace.Setting.DBConns.Mysql()
         mysql.get_one(XUXorders)
         mysql.commit()
