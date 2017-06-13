@@ -56,11 +56,7 @@ Test_data7={
 }
 
 
-headers={
-    'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
-    'token':'90ee1a3e38ff94e4a7998ac829b7434d'
 
-}
 #r=requests.post(url,params=uid)
 r=requests.post(url7,params=Test_data7,headers=headers)
 result=r.text

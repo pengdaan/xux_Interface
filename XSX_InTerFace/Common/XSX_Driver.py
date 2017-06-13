@@ -143,7 +143,6 @@ class XsxDriver(object):
         mysql = XSX_InTerFace.Setting.DBConns.Mysql()
         datas=mysql.get_one(data)
         mysql.commit()
-        #print datas['id']
         return datas['title']
 
 

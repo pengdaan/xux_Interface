@@ -18,6 +18,5 @@ class MyTest(unittest.TestCase):
 
 
     def tearDown(self):
-        pass
 
-        #print(self.code,self.msgs)
+        print self.msgs
