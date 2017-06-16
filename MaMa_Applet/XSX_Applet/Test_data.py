@@ -8,7 +8,7 @@ def headers(token):
     """
     headers={
     'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
-    'token':''+token+'',
+    'WX-SESSION-KEY':''+token+'',
     }
     return headers
 
@@ -81,4 +81,58 @@ update={
 '''检查是否有待支付订单或重复提交'''
 checkRepost={
     'is_cart':'1'
+}
+
+'''立即购买提交订单并支付'''
+submitOrder={
+    'goods_id':'33768',
+    'goods_number':'1',
+    'attr_id':'120587',
+    'pid':'undefined',
+    'address_id':'1767'
+
+}
+
+
+'''立即购买结算页接口'''
+buynow={
+    'goods_id':'33768',
+    'goods_number':'1',
+    'attr_id':'120587',
+    'promotion_id':'595',
+    'promotion_type':'8'
+
+}
+
+'''地址管理-删除地址'''
+Address_delete={
+    'consignee':'子曦',
+    'mobile':'13728142737',
+    'province':'440000',
+    'city':'440100',
+    'district':'440106',
+    'address':'万菱汇 43楼',
+    'is_customs':'3',
+    'address_type':'3'
+
+}
+
+'''地址管理-获取单个地址'''
+RowByID={
+
+    'address_id':'1767'
+
+}
+'''地址管理-设默认地址'''
+setDedault={
+
+     'address_id':'1767'
+}
+'''我的优惠券-优惠券兑换'''
+coupon_Code={
+    'code':'XL3CIV5UR4'
+}
+
+Ly_data={
+    'data':'{"formId":"d708508ec4e8d56fd92c65feb5bb2fe9","travellers":[{"travellerType":3,"travellerName":"彭子曦","mobile":"13728142737","email":"","idCard":""}],"source":"wxapp","postscript":"","goods":[{"skuId":106306,"number":1}]'
 }
