@@ -8,7 +8,7 @@ def headers(token):
     """
     headers={
     'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
-    'WX-SESSION-KEY':''+token+'',
+    'token':''+token+'',
     }
     return headers
 
@@ -100,7 +100,7 @@ buynow={
     'goods_number':'1',
     'attr_id':'120587',
     'promotion_id':'595',
-    'promotion_type':'8'
+    'promotion_type':'1'
 
 }
 
@@ -133,6 +133,39 @@ coupon_Code={
     'code':'XL3CIV5UR4'
 }
 
-Ly_data={
-    'data':'{"formId":"d708508ec4e8d56fd92c65feb5bb2fe9","travellers":[{"travellerType":3,"travellerName":"彭子曦","mobile":"13728142737","email":"","idCard":""}],"source":"wxapp","postscript":"","goods":[{"skuId":106306,"number":1}]'
+'''我的返现-返现分页'''
+distribution={
+    'type':1,
+    'page_num':1,
+    'page_size':1
+}
+
+'''我的返现-页面'''
+distribution_view={
+    'type':3,
+
+}
+'''用户操作 - 发送手机绑定验证码'''
+BindPhoneCode={
+    'phone':'13728142737'
+}
+
+'''用户操作 - 检查手机绑定'''
+
+def checkBindPhone(code):
+    checkBindPhone={
+        'phone':'13728142737',
+        'code':''+code+''
+    }
+    return checkBindPhone
+
+'''获取订单去支付信息'''
+OrderPayInfo={
+    'order_sn':'XS79414955414080'
+}
+
+
+'''获取订单去支付信息'''
+Ordercancel={
+    'order_sn':'XS79414955414080'
 }

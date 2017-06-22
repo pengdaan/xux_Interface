@@ -260,16 +260,142 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
         Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
         coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.coupon_Code,self.coupon_pageUrl,headers=Headers)
 
-
-    def test_LY_sucess(self):
-        '''我的优惠券-优惠券分页'''
+    def test_couponview_sucess(self):
+        '''我的优惠券-页面'''
         coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
         Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
         Token=coupon_page.Get_data(Uid,self.Token_url)
         Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
-        Tokens='7bedb350c031ae40abab984c563d282d'
         Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
-        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.aaa,self.LY,headers=Headers)
+        coupon_page.Get_data(None,self.couponviewUrl,headers=Headers)
+
+    def test_distribution_sucess(self):
+        '''我的返现-返现分页'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid(uid='43507844')
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.distribution,self.distributionUrl,headers=Headers)
+
+
+    def test_distribution_view_sucess(self):
+        '''我的返现-页面'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid(uid='43507844')
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.distribution_view,self.distributionViewUrl,headers=Headers)
+
+
+    def test_Mycode_sucess(self):
+        '''我的邀请码'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(None,self.MycodeUrl,headers=Headers)
+
+    def test_centerView_sucess(self):
+        '''用户中心 - 页面'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(None,self.centerViewUrl,headers=Headers)
+
+    def test_userinfo_sucess(self):
+        '''用户信息'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(None,self.userinfoUrl,headers=Headers)
+
+    def test_BindPhoneCode_sucess(self):
+        '''用户操作 - 发送手机绑定验证码'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.BindPhoneCode,self.sendBindPhoneCodeUrl,headers=Headers)
+
+    def test_auth_sucess(self):
+        '''用户操作 - 检查手机绑定'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.checkBindPhone,self.authUrl,headers=Headers)
+
+    def test_doBindPhone_sucess(self):
+        '''用户操作 - 绑定手机'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        verify_code=coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.BindPhoneCode,self.sendBindPhoneCodeUrl,headers=Headers)
+        verify_codes=coupon_page.parse_data(verify_code,regular_data='.+verify_code:(.+?\d+),?.*')
+        Test_data=MaMa_Applet.XSX_Applet.Test_data.checkBindPhone(verify_codes)
+        coupon_page.Get_data(Test_data,self.doBindPhoneUrl,headers=Headers)
+
+    def test_joinView_sucess(self):
+        '''良粉省钱计划 - 页面 【多余待删除】'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(None,self.joinViewUrl,headers=Headers)
+
+
+    def test_JoinView_sucess(self):
+        '''良粉页 - 良粉省钱计划【入会页】'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(None,self.JoinViewUrl,headers=Headers)
+
+
+    def test_OrderPayInfo_sucess(self):
+        '''获取订单去支付信息'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.OrderPayInfo,self.OrderPayInfoUrl,headers=Headers)
+
+    def test_OrderList_sucess(self):
+        '''订单列表'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(None,self.OrderListUrl,headers=Headers)
+
+
+    def test_Ordercancel_sucess(self):
+        '''取消订单'''
+        coupon_page=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        Token=coupon_page.Get_data(Uid,self.Token_url)
+        Tokens=coupon_page.parse_data(Token,regular_data='.token:(.+?\d+,?.*\d)')
+        Headers=MaMa_Applet.XSX_Applet.Test_data.headers(Tokens)
+        coupon_page.Get_data(MaMa_Applet.XSX_Applet.Test_data.Ordercancel,self.OrdercancelUrl,headers=Headers)
+
+
+
 
 
 

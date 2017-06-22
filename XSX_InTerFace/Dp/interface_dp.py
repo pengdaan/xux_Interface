@@ -13,7 +13,12 @@ class MyTest(unittest.TestCase):
         self.applyRefund_url='http://order.api.xiaoshuxiong.com/order/applyRefund'
         self.OrderBySnDianping_url='http://www.xiaoshuxiong.com/api/order/getOrderBySnDianping'
         self.updatePayStatus_url='http://www.xiaoshuxiong.com/api/order/updatePayStatus'
-
+        self.updateCommentStatusUrl='http://www.xiaoshuxiong.com/api/Reservation/updateCommentStatus'
+        self.GoodsByIdsDpUrl='http://www.xiaoshuxiong.com/api/goods/getGoodsByIdsDp'
+        self.GoodsByIdsDpUrl='http://www.xiaoshuxiong.com/api/goods/getGoodsByIdsDp'
+        self.GoodsByIdsDetailDpUrl='http://www.xiaoshuxiong.com/api/goods/getGoodsByIdsDetailDp'
+        self.updateConsumeStatusUrl='http://www.xiaoshuxiong.com/api/Reservation/updateConsumeStatus'
+        self.GoodsBySupplierIdDpUrl='http://www.xiaoshuxiong.com/api/goods/getGoodsBySupplierIdDp'
 
 
 
