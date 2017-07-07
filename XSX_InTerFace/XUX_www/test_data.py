@@ -203,7 +203,29 @@ data_createOrderXsx ={
 
 }
 
-
+test_data='content=<Request>' \
+                  '<MailTotalCount></MailTotalCount>' \
+                  '<Sign_Code>M00136337385</Sign_Code>' \
+                  '<OutInFlag>5</OutInFlag>' \
+                  '<Cust_OrderCode>20170703151580697</Cust_OrderCode>' \
+                  '<WMS_OrderID>3204180232</WMS_OrderID>' \
+                  '<CustID>1300007873</CustID>' \
+                  '<TmsCode></TmsCode>' \
+                  '<TmsName></TmsName>' \
+                  '<MailNo>3204180232</MailNo>' \
+                  '<Weight>9.5900</Weight>' \
+                  '<Volume>0.0000</Volume>' \
+                  '<PlanID>00030010</PlanID>' \
+                  '<StockID>B03L00</StockID>' \
+                  '<InfoCode>0006</InfoCode>' \
+                  '<InfoContent>已发货</InfoContent>' \
+                  '<Reason></Reason>' \
+                  '<Message></Message>' \
+                  '<StatusTime>2017-07-01 16:03:39</StatusTime>' \
+                  '<Invoice_No></Invoice_No>' \
+                  '<InvoiceDate></InvoiceDate>' \
+                  '<OrderItems></OrderItems>' \
+                  '</Request>'
 
 
 

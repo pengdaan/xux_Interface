@@ -17,6 +17,13 @@ class MyTest(unittest.TestCase):
         self.Pmsinfo_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/info'
         self.Pms_pcodeList_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/user/pcodeList'
         self.Pms_listGoodsPromotion_url='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/user/listGoodsPromotion'
+        self.Pms_redemptionUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/redemption/create'
+        self.createWithGoodsUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/promotion/createWithGoods'
+        self.createActivityAll_Url='http://pms.api.xiaoshuxiong.com/pmsapi/action/exclusivePromotion/createActivity'
+        self.fullcutPromotionUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/fullcutPromotion/add'
+        self.confictUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/common/goods/promotion/confict'
+        self.MSUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/ms/save'
+        self.MS_GoodsUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/ms/goods/add'
 
 
 

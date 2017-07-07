@@ -3,7 +3,7 @@ __author__ = 'Administrator'
 import unittest
 import sys
 import os
-
+import requests
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,parentdir)
 import XSX_InTerFace.Setting.api_signs
@@ -192,6 +192,14 @@ class Test(interface_www.MyTest):
         Verify_ship.send_data(Test_data,self.ship_url,api_secrets)
         Verify_data=test_data.verify_data(Order_sn,coupon)
         Verify_ship.send_data(Verify_data,self.verify_url,api_secrets)
+
+
+    def test_KJ_data_sucess(self):
+        '''模拟科捷回推数据到open'''
+        Kj_data=test_data.test_data
+        KJurl=self.KJ_Url+Kj_data
+        r=requests.post(KJurl)
+        print r.text
 
 
 

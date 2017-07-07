@@ -7,8 +7,8 @@ def headers(token):
     模拟手机访浏览器访问小程序时的头文件
     """
     headers={
-    'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
-    'WX-SESSION-KEY':''+token+'',
+    #'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
+    'token':''+token+'',
     }
     return headers
 
@@ -39,7 +39,7 @@ Buy={
 '''商品详情获取推荐商品'''
 RecommendGoods={
     'goods_ids':'[777]',
-    'pageType':1
+    'pageType':'1'
 
 }
 '''良品tab'''''
@@ -51,7 +51,7 @@ TabQuery={
 }
 '''入会手机号校验接口'''
 mmcCheckMobile={
-    'mobile':13728142737
+    'mobile':'13728142737'
 
 }
 '''加入购物车接口'''
@@ -75,7 +75,7 @@ update={
     'number':'2',
     'promotion_type':'0',
     'promotion_id':'0',
-    'cart_id':'30728'
+    'cart_id':'30761'
 
 }
 '''检查是否有待支付订单或重复提交'''
@@ -96,13 +96,26 @@ submitOrder={
 
 '''立即购买结算页接口'''
 buynow={
-    'goods_id':'33768',
+    'goods_id':'777',
     'goods_number':'1',
-    'attr_id':'120587',
-    'promotion_id':'595',
-    'promotion_type':'8'
+    'attr_id':'2777',
+    'address_id':'1767',
+    'promotion_type':'0'
 
 }
+
+buynow_Test={
+    'goods_id':'777',
+    'goods_number':'1',
+    'attr_id':'2777',
+    'pid':'undefined',
+    'address_id':'1767'
+
+
+
+
+}
+
 
 '''地址管理-删除地址'''
 Address_delete={
@@ -113,9 +126,27 @@ Address_delete={
     'district':'440106',
     'address':'万菱汇 43楼',
     'is_customs':'3',
-    'address_type':'3'
+    'address_type':'3',
+    'address_id':1783
 
 }
+
+'''地址管理-新增地址'''
+Address_save={
+    'consignee':'子曦',
+    'mobile':'13728142737',
+    'province':'440000',
+    'city':'440100',
+    'district':'440106',
+    'address':'万菱汇 43楼',
+    'is_customs':'3',
+    'address_type':'3',
+
+
+}
+
+
+
 
 '''地址管理-获取单个地址'''
 RowByID={
@@ -129,10 +160,64 @@ setDedault={
      'address_id':'1767'
 }
 '''我的优惠券-优惠券兑换'''
-coupon_Code={
-    'code':'XL3CIV5UR4'
+def coupon_Code(data):
+    coupon_Code={
+        'code':''+data+''
+    }
+    return coupon_Code
+
+'''我的优惠券-优惠券分页'''
+oupon_page={
+    'page_num':1
 }
 
-Ly_data={
-    'data':'{"formId":"d708508ec4e8d56fd92c65feb5bb2fe9","travellers":[{"travellerType":3,"travellerName":"彭子曦","mobile":"13728142737","email":"","idCard":""}],"source":"wxapp","postscript":"","goods":[{"skuId":106306,"number":1}]'
+
+
+'''我的返现'''
+istribution_view={
+    'type':2,
 }
+
+'''用户操作 - 发送手机绑定验证码'''
+sendBindPhoneCode={
+    'phone':'13728142737'
+}
+
+'''用户操作 - 检查手机绑定'''
+checkBindPhone={
+    'phone':'13728142737'
+}
+
+'''用户操作 - 绑定手机'''
+doBindPhone={
+    'phone':'13728142737',
+    'code':'1581'
+
+}
+
+'''获取订单去支付信息'''
+getOrderPayInfo={
+    'order_sn':'XS89414643318620'
+}
+
+'''取消订单'''
+def order_cancel(order_sn):
+    order_cancel={
+        'order_sn':''+order_sn+''
+    }
+    return order_cancel
+
+
+'''订单操作 - 确认收货'''
+receiveConfirm={
+    'order_sn':'XS89414876019480'
+}
+
+
+Ly_data={
+    'data':'{"formId":"d708508ec4e8d56fd92c65feb5bb2fe9",'
+           '"travellers":[{"travellerType":3,"travellerName":"彭子曦","mobile":"13728142737","email":"","idCard":""}],'
+           '"source":"wxapp","postscript":"",'
+           '"goods":[{"skuId":106306,"number":1}]'
+}
+

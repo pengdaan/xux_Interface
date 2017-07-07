@@ -28,6 +28,8 @@ class MyTest(unittest.TestCase):
         self.getStocks_url='http://open.xiaoshuxiong.com/openapi/external/ppg/goods/getStock'
         self.InventoryBatchSn_url='http://www.xiaoshuxiong.com/api/goods/decreaseInventoryBatchSn'
         self.createOrderXsx_url='http://order.api.xiaoshuxiong.com/Order/createOrderXsx'
+        self.KJ_Url='http://open.xiaoshuxiong.com/openapi/openapi/orderStatus?'
+
 
 
 

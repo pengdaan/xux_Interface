@@ -25,6 +25,7 @@ add_time= time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))# 获取
 promotionNames=str(PmsCode()) + 'Test_AddPms'
 
 Title=str(add_time)+'Test_AddPms'
+PHT_Title=str(add_time)+'PHT'
 dingjintuanTitle = str(add_time)+'Test_DJTuan'
 
 
@@ -87,13 +88,24 @@ fromAt=str(int(endAt)+600)
 '''4.尾款结束时间为定金结束时间+15分钟'''
 toAt=str(int(fromAt)+600)
 
+
+'''秒杀预告时间'''
+MS_noticeTime=str(int(startAt)+60)
+'''秒杀开始时间'''
+MS_startAtime=str(int(MS_noticeTime)+60)
+'''秒杀结束时间'''
+MS_endAtime=str(int(MS_startAtime)+600)
+
+
+
+
 '''新增定金团接口'''
 CreateDepositMission_data={
      'api_key':'647b00ec1fe6990b1b97263b05341b6b',
      'timestamp':times,
      'data':'{'
-            '"photo":"images\/ms\/1484566379924518021.jpg",'
-            '"goodsId":777,'
+             '"photo":"images\/ms\/1499069899723595235.png",'
+             '"goodsId":33777,'
              '"title":"' + str(dingjintuanTitle) + '",'
              '"startAt":"'+ str(startAt) +'",'
              '"endAt":"'+ str(endAt) + '",'
@@ -101,16 +113,17 @@ CreateDepositMission_data={
              '"toAt":"'+ str(toAt) + '",'
              '"virtualHit":0,'
              '"products":[{"endPrice":"0.1",'
-             '"fixPrice":"0.1","goodsId":"777",'
+             '"fixPrice":"0.1","goodsId":"33777",'
              '"groupPrice":"0.2",'
              '"ladder":[{"personNumber":"1","price":"0.2"},'
              '{"personNumber":"2","price":"0.2"}],"productId":0},'
-             '{"endPrice":0.1,"fixPrice":0.1,"goodsId":"777","groupPrice":0.2,'
-             '"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10750"}],'
+             '{"endPrice":0.1,"fixPrice":0.1,"goodsId":"33777","groupPrice":0.2,'
+             '"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10984"}],'
              '"supportPromotion":0,"operator":1,"supportSpecial":1,"detail":"","sortOrder":0}'
 
 
 }
+
 
 '''修改定金团接口'''
 def updateDepositMission_data(update_code,Title,startAt,endAt,fromAt,toAt):
@@ -118,8 +131,8 @@ def updateDepositMission_data(update_code,Title,startAt,endAt,fromAt,toAt):
      'api_key':'647b00ec1fe6990b1b97263b05341b6b',
      'timestamp':times,
      'data':'{'
-            '"photo":"images\/ms\/1484566379924518021.jpg",'
-            '"goodsId":777,'
+             '"photo":"images\/ms\/1499069899723595235.png",'
+             '"goodsId":33777,'
              '"title":"' + str(Title) + '",'
              '"startAt":"'+ str(startAt) +'",'
              '"endAt":"'+ str(endAt) + '",'
@@ -127,17 +140,178 @@ def updateDepositMission_data(update_code,Title,startAt,endAt,fromAt,toAt):
              '"toAt":"'+ str(toAt) + '",'
              '"virtualHit":0,'
              '"products":[{"endPrice":"0.1",'
-             '"fixPrice":"0.1","goodsId":"777",'
+             '"fixPrice":"0.1","goodsId":"33777",'
              '"groupPrice":"0.2",'
              '"ladder":[{"personNumber":"1","price":"0.2"},'
              '{"personNumber":"2","price":"0.2"}],"productId":0},'
-             '{"endPrice":0.1,"fixPrice":0.1,"goodsId":"777","groupPrice":0.2,'
-             '"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10750"}],'
+             '{"endPrice":0.1,"fixPrice":0.1,"goodsId":"33777","groupPrice":0.2,'
+             '"ladder":[{"personNumber":"1","price":0.2},{"personNumber":"2","price":0.2}],"productId":"10984"}],'
              '"supportPromotion":0,"operator":1,"supportSpecial":1,"detail":"","sortOrder":0,"id":"'+str(update_code)+'"}'
     }
     return updateDepositMission_data
 
+'''添加拼货团'''
+createWithGoods_data={
+     'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+     'timestamp':times,
+     'data':'{"photo": "data/brandlogo/1499070837797883380.png",'
+            '"goodsId": 33778,'
+            '"title":"' + str(PHT_Title) + '",'
+            '"startAt":"'+ str(startAt) +'",'
+            '"endAt":"'+ str(endAt) + '",'
+            '"actionCount": 2,'
+            '"supportFreeShipping": 1,'
+            '"supportPromotion": 0,'
+            '"supportSpecial": 1,'
+            '"virtualHit": 0,'
+            '"products": [{"goodsId": "33778","productId": 0,"selfLimit": 0,"selfPrice": 0.1,"stock": 50},'
+            '{"goodsId": "33778","productId": "10985","selfLimit": 0,"selfPrice": 0.1,"stock": 50}],'
+            '"operator": 1,"detail": "","sortOrder": 0}'}
 
+'''添加限时专享_全部用户'''
+createActivityAll_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"goodsId": 33780,'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt) + '",'
+           '"operator": 1,'
+           '"supportFreeShipping": 0,'
+           '"rules": [{"userScope": "1","selfPrice": "20","stock": "200","selfLimit": "10",'
+           '"ruleDiscription": "ALL_User"}],"pregnantStock": 0}'
+}
+
+'''添加限时专享_良粉用户'''
+createActivityLF_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"goodsId":33781,'
+           '"noticeAt":0,'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt)+ '",'
+           '"operator":1,'
+           '"supportFreeShipping":0,'
+           '"rules":[{"userScope":"4","selfPrice":"20","stock":"500","selfLimit":"10",'
+           '"ruleDiscription":"LF_User"}],"pregnantStock":0}'
+
+}
+
+'''添加限时专享_妈妈良品新客'''
+createActivityNew_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"goodsId":33783,'
+           '"noticeAt":0,'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt)+ '",'
+           '"operator":1,'
+           '"supportFreeShipping":0,'
+           '"rules":[{"userScope":"3","selfPrice":"0","stock":"500","selfLimit":"10",'
+           '"ruleDiscription":"XINKE"}],"pregnantStock":0}'
+
+}
+
+
+'''添加限时专享_3个月没有购买行为'''
+createActivity3month_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"goodsId":33782,'
+           '"noticeAt":0,'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt)+ '",'
+           '"operator":1,'
+           '"supportFreeShipping":0,'
+           '"rules":[{"userScope":"2","selfPrice":"0","stock":"500","selfLimit":"10",'
+           '"ruleDiscription":"3month"}],"pregnantStock":0}'
+
+}
+
+'''添加限时专享_妈妈新会员'''
+createActivityNews_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"goodsId":33784,'
+           '"noticeAt":0,'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt)+ '",'
+           '"operator":1,'
+           '"supportFreeShipping":0,'
+           '"rules":[{"userScope":"5","selfPrice":"0","stock":"500","selfLimit":"10",'
+           '"ruleDiscription":"New_LF"}],"pregnantStock":0}'
+
+}
+
+'''满减满赠活动_满减'''
+fullcutPromotion_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionName":"New_TestMJ",'
+           '"promotionTitle":"New_TestMJ",'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt)+ '",'
+           '"goods":[{"type":"5","value":33785}],'
+           '"suitType":2,'
+           '"condition":[{"conditionType":1,"conditionValue":10,"benefitName":"","benefitType":3,"benefitValue":"10"}],'
+           '"operator":1}'
+
+}
+
+
+'''满减满赠活动_满赠'''
+fullcutPromotionZ_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionName":"New_TestMZ",'
+           '"promotionTitle":"New_TestMZ",'
+           '"startAt":"'+ str(startAt) +'",'
+           '"endAt":"'+ str(endAt)+ '",'
+           '"goods":[{"type":"5","value":33786}],'
+           '"suitType":2,'
+           '"condition":[{"conditionType":2,"conditionValue":1,"benefitName":"zengpin","benefitType":1,"benefitValue":"10983"}],'
+           '"operator":1}'
+
+}
+'''创建秒杀活动'''
+MS_save_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"msId":0,'
+           '"msTitle":"Test_MS",'
+           '"msPic":"",'
+           '"startTime":"' + str(MS_startAtime) + '",'
+           '"endTime":"' + str(MS_endAtime) + '",'
+           '"noticeTime":"' + str(MS_noticeTime) + '",'
+           '}'
+}
+
+'''添加秒杀商品到活动'''
+def MSgoods_data(msId):
+    MSgoods_data={
+        'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+        'timestamp':times,
+        'data':'{"goodsId":33779,'
+           '"sort":1,'
+           '"activity":"1",'
+           '"msId":"' + str(msId) + '",'
+           '"selfTitle":"MS_Goods01",'
+           '"goodsInfo":[{"msInventory":20,"msLimit":100,"msPrice":5,"msStock":20,"productId":0},'
+           '{"msInventory":10,"msLimit":100,"msPrice":"5.0","msStock":5,"productId":"10986"},'
+           '{"msInventory":10,"msLimit":100,"msPrice":"5.0","msStock":1,"productId":"10987"}]}'
+    }
+    return MSgoods_data
+
+
+'''添加预售'''
+confict_data={
+        'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+        'timestamp':times,
+        'data':'{"goodsId":33768,'
+               '"type":8,'
+               '"startAt":"'+ str(startAt) +'",'
+               '"endAt":"'+ str(endAt)+ '"}'
+
+}
 
 
 
@@ -211,4 +385,12 @@ listGoodsPromotion_data={
            '}]}'
 }
 
-
+redemption_data={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":805,'
+           '"sendNum":1,"mark":"\u6d4b\u8bd5\u6570\u636e",'
+           '"type":1,"adminId":1,'
+           '"generateWay":1,'
+           '"code":""}'
+}

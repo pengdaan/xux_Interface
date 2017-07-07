@@ -2,6 +2,8 @@
 import requests
 import json
 import re
+import MaMa_Applet.Common.DBConns
+import pickle
 __author__ = 'leo'
 class Applet_Driver(object):
     def __init__(self):
@@ -57,15 +59,45 @@ class Applet_Driver(object):
         如regular_data='.+order_status:(.+?\d+),?.*'
         处理json的特殊字符test_data.replac可以写多一点
         """
-        test_data=json.dumps(test_data)
+        test_data=json.dumps(test_data,ensure_ascii=False)#防止输出中文转换成Ascii 编号
         test_data = test_data.replace("\\", "")
         test_data = test_data.replace("\"", "")
         test_data = test_data.replace("\'", "")
         data=re.compile(regular_data).findall(test_data)
-        if data[0]==None:
+        if data==[]:
             print 'The data correspond to the requirement dont exist.'
         else:
             datas=data[0]
             datas=datas.replace("\\n", "")
             datas=datas.replace(" ", "")
+            datas =datas.replace("}", "")
+            datas =datas.replace(",", "")
             return datas
+
+    def Limit_data(self,sql_data,send_data):
+        data=sql_data
+        mysql = MaMa_Applet.Common.DBConns.Mysql()
+        datas=mysql.get_one(data)
+        if send_data in datas:
+            return datas[send_data]
+        else:
+            return 'The data does not exist'
+
+
+    def store(self,data_name,data,model):
+        '''持久化保存'''
+        test={data_name:data}
+        path='/xux_project/MaMa_Applet/Run_data/'
+        filename=path +'data_%s.pkl'% model
+        output=open(filename,'wb')
+        pickle.dump(test,output)
+
+
+    def load(self,value,model):
+        path='/xux_project/MaMa_Applet/Run_data/'
+        filename=path +'data_%s.pkl'% model
+        pkl_file=open(filename,'rb')
+        data=pickle.load(pkl_file)[value]
+        pkl_file.close()
+        print data
+        return data

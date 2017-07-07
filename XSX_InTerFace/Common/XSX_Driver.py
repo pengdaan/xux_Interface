@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'leo'
-
+import sys
+import pickle
+sys.path.append('..')
 import re
 import hashlib
 import XSX_InTerFace.Setting.DBConns
@@ -144,6 +146,29 @@ class XsxDriver(object):
         datas=mysql.get_one(data)
         mysql.commit()
         return datas['title']
+
+
+    def store(self,data_name,data,model):
+        '''持久化保存'''
+        test={data_name:data}
+        path='/xux_project/XSX_InTerFace/Run_data/'
+        filename=path +'data_%s.pkl'% model
+        output=open(filename,'wb')
+        pickle.dump(test,output)
+
+
+    def load(self,value,model):
+        path='/xux_project/XSX_InTerFace/Run_data/'
+        filename=path +'data_%s.pkl'% model
+        pkl_file=open(filename,'rb')
+        data=pickle.load(pkl_file)[value]
+        pkl_file.close()
+        return data
+
+
+
+
+
 
 
 

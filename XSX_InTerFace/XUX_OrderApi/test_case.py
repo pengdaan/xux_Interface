@@ -44,7 +44,12 @@ class Test(interface_order.MyTest):
         Test_data=test_data.data_createOrderXsx
         CreateOrder=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
         result=requests.post(self.createOrderXsx_url,params=Test_data)
-        CreateOrder.result_json(result.text)
+        results=CreateOrder.result_json(result.text)
+        Order_sn=CreateOrder.parse_data(results,regular_data='.+order_sn:(.+?\d+),?.*')
+        print Order_sn
+        CreateOrder.store(data_name='Order_sn',data=Order_sn,model='Order_sn')
+        CreateOrder.load(value='Order_sn',model='Order_sn')
+
 
     def test_OrderBySn_sucess(self):
         '''根据订单号获取订单详情接口'''

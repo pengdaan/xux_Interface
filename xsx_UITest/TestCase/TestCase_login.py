@@ -22,7 +22,7 @@ class XUXTests(unittest.TestCase):
         :return:
         """
         self.autoDriver = AutomateDriver()
-        self.baseUrl = "http://XUX_www.xiaoshuxiong.com"
+        self.baseUrl = "http://www.xiaoshuxiong.com"
 
     def tearDown(self):
         """

@@ -1,11 +1,21 @@
 # -*- coding: utf-8 -*-
 __author__ = 'leo'
 import unittest
-
+import MaMa_Applet.Common.Common_Applet
+import MaMa_Applet.XSX_Applet.Test_data
 class MyTest(unittest.TestCase):
     def setUp(self):
         '''Token创建'''
         self.Token_url='http://www.xiaoshuxiong.com/test.php?act=genXsxToken'
+        self.MaMa_Applet=MaMa_Applet.Common.Common_Applet.Applet_Driver()
+        self.Uid=MaMa_Applet.XSX_Applet.Test_data.uid()
+        self.Token=self.MaMa_Applet.Get_data(self.Uid,self.Token_url)
+        self.Tokens=self.MaMa_Applet.parse_data(self.Token,regular_data='.token:(.+?\d+,?.*)')
+        self.Headers=MaMa_Applet.XSX_Applet.Test_data.headers(self.Tokens)
+
+
+
+
         '''专场商品列表分页 None'''
         self.getMmcInfo_url='http://www.xiaoshuixong.com/mapi/mmc/getMmcInfo'
         '''专场商品列表基础信息 None'''
@@ -74,32 +84,33 @@ class MyTest(unittest.TestCase):
         self.coupon_CodeUrl='http://www.xiaoshuxiong.com/mapi/user/coupon/getByCode'
         '''我的优惠券-优惠券分页'''
         self.coupon_pageUrl='http://www.xiaoshuxiong.com/mapi/user/coupon/page'
-
-
+        '''我的返现-页面'''
+        self.distribution_viewUrl='http://www.xiaoshuxiong.com/mapi/user/distribution/view'
+        '''我的邀请码'''
+        self.MycodeUrl='http://www.xiaoshuxiong.com/mapi/user/inviteCode/getMycode'
+        '''用户信息'''
+        self.centerViewUrl='http://www.xiaoshuxiong.com/mapi/user/user/centerView'
+        '''用户信息'''
+        self.user_infoUrl='http://www.xiaoshuxiong.com/mapi/user/user/info'
+        '''用户操作 - 发送手机绑定验证码'''
+        self.sendBindPhoneCodeUrl='http://www.xiaoshuxiong.com/mapi/user/user/sendBindPhoneCode'
+        '''用户操作 - 检查手机绑定'''
+        self.checkBindPhoneUrl='http://www.xiaoshuxiong.com/mapi/user/user/checkBindPhone'
+        '''用户操作 - 绑定手机'''
+        self.doBindPhoneUrl='http://www.xiaoshuxiong.com/mapi/user/user/doBindPhone'
+        '''良粉页 - 良粉省钱计划【入会页】'''
+        self.joinViewUrl='http://www.xiaoshuxiong.com/mapi/user/mmcvip/joinView'
+        '''获取订单去支付信息'''
+        self.getOrderPayInfoUrl='http://www.xiaoshuxiong.com/mapi/user/order/getOrderPayInfo'
+        '''订单列表'''
+        self.getOrderListUrl='http://www.xiaoshuxiong.com/mapi/user/order/getOrderList'
+        '''订单操作 - 取消'''
+        self.cancelUrl='http://www.xiaoshuxiong.com/mapi/user/order/cancel'
+        '''订单操作 - 确认收货'''
+        self.receiveConfirmUrl='http://www.xiaoshuxiong.com/mapi/user/order/receiveConfirm'
+        '''旅游下单'''
         self.LY='http://m-ly.mama.cn/main/wxapp/order/submit'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def tearDown(self):
-        pass
-        #print(self.code,self.msgs)
+
+        self.msgs
