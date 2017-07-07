@@ -20,7 +20,11 @@
   <component name="ProjectModuleManager">
     <modules />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7 (G:\python27\python2.exe)" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7 (C:\Python27\python2.exe)" project-jdk-type="Python SDK" />
+>>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
   <component name="RunManager">
     <list size="0" />
   </component>
