@@ -84,7 +84,6 @@ class MyTest(unittest.TestCase):
         self.coupon_CodeUrl='http://www.xiaoshuxiong.com/mapi/user/coupon/getByCode'
         '''我的优惠券-优惠券分页'''
         self.coupon_pageUrl='http://www.xiaoshuxiong.com/mapi/user/coupon/page'
-<<<<<<< HEAD
         '''我的返现-页面'''
         self.distribution_viewUrl='http://www.xiaoshuxiong.com/mapi/user/distribution/view'
         '''我的邀请码'''
@@ -111,7 +110,6 @@ class MyTest(unittest.TestCase):
         self.receiveConfirmUrl='http://www.xiaoshuxiong.com/mapi/user/order/receiveConfirm'
         '''旅游下单'''
         self.LY='http://m-ly.mama.cn/main/wxapp/order/submit'
-=======
         '''我的优惠券-页面'''
         self.couponviewUrl='http://www.xiaoshuxiong.com/mapi/user/coupon/view'
         '''我的返现-返现分页'''
@@ -148,26 +146,6 @@ class MyTest(unittest.TestCase):
         self.OrderdetailUrl='http://www.xiaoshuxiong.com/mapi/user/order/detail'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
 
     def tearDown(self):
 

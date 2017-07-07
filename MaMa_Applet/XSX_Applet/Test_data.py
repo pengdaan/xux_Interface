@@ -7,11 +7,7 @@ def headers(token):
     模拟手机访浏览器访问小程序时的头文件
     """
     headers={
-<<<<<<< HEAD
-    #'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
-=======
     'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_2 like Mac OS X) AppleWebKit/603.2.4 (KHTML, like Gecko) Mobile/14F89 MicroMessenger/6.5.3 NetType/WIFI Language/zh_CN',
->>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
     'token':''+token+'',
     }
     return headers
@@ -100,9 +96,6 @@ submitOrder={
 
 '''立即购买结算页接口'''
 buynow={
-    'goods_id':'777',
-    'goods_number':'1',
-<<<<<<< HEAD
     'attr_id':'2777',
     'address_id':'1767',
     'promotion_type':'0'
@@ -116,13 +109,6 @@ buynow_Test={
     'pid':'undefined',
     'address_id':'1767'
 
-
-
-=======
-    'attr_id':'120587',
-    'promotion_id':'595',
-    'promotion_type':'1'
->>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
 
 }
 
@@ -198,7 +184,7 @@ checkBindPhone={
     'phone':'13728142737'
 }
 
-<<<<<<< HEAD
+
 '''用户操作 - 绑定手机'''
 doBindPhone={
     'phone':'13728142737',
@@ -225,12 +211,6 @@ receiveConfirm={
 }
 
 
-Ly_data={
-    'data':'{"formId":"d708508ec4e8d56fd92c65feb5bb2fe9",'
-           '"travellers":[{"travellerType":3,"travellerName":"彭子曦","mobile":"13728142737","email":"","idCard":""}],'
-           '"source":"wxapp","postscript":"",'
-           '"goods":[{"skuId":106306,"number":1}]'
-=======
 '''我的返现-返现分页'''
 distribution={
     'type':1,
@@ -248,14 +228,7 @@ BindPhoneCode={
     'phone':'13728142737'
 }
 
-'''用户操作 - 检查手机绑定'''
 
-def checkBindPhone(code):
-    checkBindPhone={
-        'phone':'13728142737',
-        'code':''+code+''
-    }
-    return checkBindPhone
 
 '''获取订单去支付信息'''
 OrderPayInfo={
@@ -266,6 +239,5 @@ OrderPayInfo={
 '''获取订单去支付信息'''
 Ordercancel={
     'order_sn':'XS79414955414080'
->>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
 }
 

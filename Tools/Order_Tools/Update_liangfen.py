@@ -6,7 +6,7 @@ from Tools.Order_Tools import ToolsDB
    良粉会员身份清除
     1、删掉入会订单
     2、删掉会员表
-''',
+'''
 
 
 
