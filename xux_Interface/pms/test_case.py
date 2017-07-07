@@ -5,9 +5,9 @@ import sys
 import os
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0,parentdir)
-import XSX_InTerFace.setting.api_signs
-import XSX_InTerFace.setting.result_jsons
-import XSX_InTerFace.setting.DBConns
+import XSX_InTerFace.Setting.api_signs
+import XSX_InTerFace.Setting.result_jsons
+import XSX_InTerFace.Setting.DBConns
 import interface_pms
 import xux_Interface.common.common_Order
 import xux_Interface.common.common_data
@@ -109,20 +109,20 @@ class Test(interface_pms.MyTest):
 
     def test_Pmsupdate_sucess(self):
         '''修改优惠劵状态'''
-        api_key= XSX_InTerFace.setting.DBConns.Api_secret(**test_data.Pms_updateStatus)#返回api_key
+        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.Pms_updateStatus)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
-            api_secrets= XSX_InTerFace.setting.DBConns.pmssecret(api_key)#返回api_secret
+            api_secrets= XSX_InTerFace.Setting.DBConns.pmssecret(api_key)#返回api_secret
             if api_secrets !=0:
                 payload= test_data.Pms_updateStatus
-                api_sign= XSX_InTerFace.setting.api_signs.api_signs(payload,api_secrets)
+                api_sign= XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.PmsUpdatestatus_url , params=payload)
                 #print payload
                 self.code=r.status_code
                 self.result=r.text
-                js= XSX_InTerFace.setting.result_jsons.result_json(self.result)
+                js= XSX_InTerFace.Setting.result_jsons.result_json(self.result)
                 if js.has_key('msg')==True:
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
@@ -141,21 +141,21 @@ class Test(interface_pms.MyTest):
         pmsNames=order.Pmsadd()
         pms_id=order.Pmsname_all(pmsNames)
         #pms_id=create_data.Pmsname_all(pmsNames)
-        api_key= XSX_InTerFace.setting.DBConns.Api_secret(**test_data.batchSend_data)#返回api_key
+        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.batchSend_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
-            api_secrets= XSX_InTerFace.setting.DBConns.pmssecret(api_key)#返回api_secret
+            api_secrets= XSX_InTerFace.Setting.DBConns.pmssecret(api_key)#返回api_secret
             #print api_secrets
             if api_secrets !=0:
                 payload=pms_id
-                api_sign= XSX_InTerFace.setting.api_signs.api_signs(payload,api_secrets)
+                api_sign= XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.BatchSend_url , params=payload)
                 #print payload
                 self.code=r.status_code
                 self.result=r.text
-                js= XSX_InTerFace.setting.result_jsons.result_json(self.result)
+                js= XSX_InTerFace.Setting.result_jsons.result_json(self.result)
                 if js.has_key('msg')==True:
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
@@ -172,20 +172,20 @@ class Test(interface_pms.MyTest):
         pmsNames=order.Pmsadd()
         pms_id=order.Pmsname_one(pmsNames)
         #print pms_id,'pms_id'
-        api_key= XSX_InTerFace.setting.DBConns.Api_secret(**test_data.Pmssend_data)#返回api_key
+        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.Pmssend_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
-            api_secrets= XSX_InTerFace.setting.DBConns.pmssecret(api_key)#返回api_secret
+            api_secrets= XSX_InTerFace.Setting.DBConns.pmssecret(api_key)#返回api_secret
             if api_secrets !=0:
                 payload=pms_id
-                api_sign= XSX_InTerFace.setting.api_signs.api_signs(payload,api_secrets)
+                api_sign= XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.Pmssend_url , params=payload)
                 #print payload
                 self.code=r.status_code
                 self.result=r.text
-                js= XSX_InTerFace.setting.result_jsons.result_json(self.result)
+                js= XSX_InTerFace.Setting.result_jsons.result_json(self.result)
                 if js.has_key('msg')==True:
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
@@ -200,21 +200,21 @@ class Test(interface_pms.MyTest):
 
     def test_Pmsinfo_sucess(self):
         '''获取指定优惠活动信息接口'''
-        api_key= XSX_InTerFace.setting.DBConns.Api_secret(**test_data.Pmsinfo_data)#返回api_key
+        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.Pmsinfo_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
-            api_secrets= XSX_InTerFace.setting.DBConns.pmssecret(api_key)#返回api_secret
+            api_secrets= XSX_InTerFace.Setting.DBConns.pmssecret(api_key)#返回api_secret
             #print api_secrets
             if api_secrets !=0:
                 payload= test_data.Pmsinfo_data
-                api_sign= XSX_InTerFace.setting.api_signs.api_signs(payload,api_secrets)
+                api_sign= XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.Pmsinfo_url , params=payload)
               #  print payload
                 self.code=r.status_code
                 self.result=r.text
-                js= XSX_InTerFace.setting.result_jsons.result_json(self.result)
+                js= XSX_InTerFace.Setting.result_jsons.result_json(self.result)
                 if js.has_key('msg')==True:
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
@@ -226,19 +226,19 @@ class Test(interface_pms.MyTest):
 
     def test_PcodeList_sucess(self):
         '''获取用户的优惠券列表接口'''
-        api_key= XSX_InTerFace.setting.DBConns.Api_secret(**test_data.pcodeList_data)#返回api_key
+        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.pcodeList_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
-            api_secrets= XSX_InTerFace.setting.DBConns.pmssecret(api_key)#返回api_secret
+            api_secrets= XSX_InTerFace.Setting.DBConns.pmssecret(api_key)#返回api_secret
             if api_secrets !=0:
                 payload= test_data.pcodeList_data
-                api_sign= XSX_InTerFace.setting.api_signs.api_signs(payload,api_secrets)
+                api_sign= XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.Pms_pcodeList_url , params=payload)
                 self.code=r.status_code
                 self.result=r.text
-                js= XSX_InTerFace.setting.result_jsons.result_json(self.result)
+                js= XSX_InTerFace.Setting.result_jsons.result_json(self.result)
                 if js.has_key('msg')==True:
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)
@@ -251,19 +251,19 @@ class Test(interface_pms.MyTest):
 
     def test_listGoodsPromotion_sucess(self):
         '''获取用户有效的优惠券列表接口'''
-        api_key= XSX_InTerFace.setting.DBConns.Api_secret(**test_data.listGoodsPromotion_data)#返回api_key
+        api_key= XSX_InTerFace.Setting.DBConns.Api_secret(**test_data.listGoodsPromotion_data)#返回api_key
         if api_key == None:
             print(u"api_key 不存在，请检查接口数据！")
         else:
-            api_secrets= XSX_InTerFace.setting.DBConns.pmssecret(api_key)#返回api_secret
+            api_secrets= XSX_InTerFace.Setting.DBConns.pmssecret(api_key)#返回api_secret
             if api_secrets !=0:
                 payload= test_data.listGoodsPromotion_data
-                api_sign= XSX_InTerFace.setting.api_signs.api_signs(payload,api_secrets)
+                api_sign= XSX_InTerFace.Setting.api_signs.api_signs(payload,api_secrets)
                 payload.setdefault('api_sign',api_sign)
                 r=requests.post(self.Pms_listGoodsPromotion_url , params=payload)
                 self.code=r.status_code
                 self.result=r.text
-                js= XSX_InTerFace.setting.result_jsons.result_json(self.result)
+                js= XSX_InTerFace.Setting.result_jsons.result_json(self.result)
                 if js.has_key('msg')==True:
                         self.msgs=js.get('msg')
                         self.assertEquals(self.code,200)

@@ -194,12 +194,220 @@ class Test(interface_www.MyTest):
         Verify_ship.send_data(Verify_data,self.verify_url,api_secrets)
 
 
+<<<<<<< HEAD
     def test_KJ_data_sucess(self):
         '''模拟科捷回推数据到open'''
         Kj_data=test_data.test_data
         KJurl=self.KJ_Url+Kj_data
         r=requests.post(KJurl)
         print r.text
+=======
+    def test_ByGoodsId_sucess(self):
+        '''获取商品信息'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.InfoByGoodsId
+        GetStock.send_data(Test_data,self.InfoByGoodsIdUrl,api_secrets)
+
+
+    def test_ByGoodsIds_sucess(self):
+        '''获取商品信息--批量'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.InfoByGoodsIds
+        GetStock.send_data(Test_data,self.InfoByGoodsIdsUrl,api_secrets)
+
+
+    def test_GoodsSkuByGoodsId_sucess(self):
+        '''获取sku价格和库存（通过商品id）'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.GoodsSkuByGoodsId
+        GetStock.send_data(Test_data,self.GoodsSkuByGoodsIdUrl,api_secrets)
+
+    def test_GoodsSkuByGoodsIds_sucess(self):
+        '''获取sku价格和库存（通过商品id）—批量'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.GoodsSkuByGoodsIds
+        GetStock.send_data(Test_data,self.GoodsSkuByGoodsIdsUrl,api_secrets)
+
+    def test_GoodsSkuByProductsId_sucess(self):
+        '''获取sku价格和库存（通过货品id）'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.GoodsSkuByProductsId
+        GetStock.send_data(Test_data,self.GoodsSkuByProductsIdUrl,api_secrets)
+
+    def test_GoodsSkuByProductsIds_sucess(self):
+        '''获取sku价格和库存（通过货品id）'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.update_dpStatus
+        Test_data=test_data.GoodsSkuByProductsIds
+        GetStock.send_data(Test_data,self.GoodsSkuByProductsIdsUrl,api_secrets)
+
+    def test_pageBatch_sucess(self):
+        '''进货价批量查询'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.pageBatch
+        GetStock.send_data(Test_data,self.pageBatchUrl,api_secrets)
+
+    def test_batchInsert_sucess(self):
+        '''进货价批量查询-批量'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.batchInsert
+        GetStock.send_data(Test_data,self.batchInsertUrl,api_secrets)
+
+    def test_PurchasePrice_page_sucess(self):
+        '''进货价查询'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.PurchasePrice_page
+        GetStock.send_data(Test_data,self.PurchasePrice_pageUrl,api_secrets)
+
+
+    def test_batchUpdate_page_sucess(self):
+        '''进货价编辑-批量'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.batchUpdate
+        GetStock.send_data(Test_data,self.batchUpdateUrl,api_secrets)
+
+
+    def test_ReferInfo_page_sucess(self):
+        '''获取供应商下面的分类以及品牌信息'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.ReferInfo
+        GetStock.send_data(Test_data,self.ReferInfoUrl,api_secrets)
+
+
+    def test_BrandBySupplierId_sucess(self):
+        '''获取供应商所属品牌信息___None'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.BrandBySupplierId
+        GetStock.send_data(Test_data,self.BrandBySupplierIdUrl,api_secrets)
+
+    def test_GoodsIdsbySnbc_sucess(self):
+        '''获取商品id列表'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.GoodsIdsbySnbc
+        GetStock.send_data(Test_data,self.GoodsIdsbySnbcUrl,api_secrets)
+
+    def test_BrandList_sucess(self):
+        '''获取商品品牌列表'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.BrandList
+        GetStock.send_data(Test_data,self.BrandListUrl,api_secrets)
+
+    def test_CatListTree_sucess(self):
+        '''获取商品所有分类(以树形展示返回)'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.getCatListTree
+        GetStock.send_data(Test_data,self.CatListTreeUrl,api_secrets)
+
+    def test_GoodsNbc_sucess(self):
+        '''获取商品的名称，品牌和分类名称 --批量'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.GoodsNbc
+        GetStock.send_data(Test_data,self.GoodsNbcUrl,api_secrets)
+
+    def test_GoodsBySupplierId_sucess(self):
+        '''获取商品详情接口'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.GoodsBySupplierId
+        GetStock.send_data(Test_data,self.GoodsBySupplierIdUrl,api_secrets)
+
+    def test_SkuListBySupplierId_sucess(self):
+        '''获取商家下面的SKU列表'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.SkuListBySupplierId
+        GetStock.send_data(Test_data,self.SkuListBySupplierIdUrl,api_secrets)
+
+    def test_GoodsListBySupplierId_sucess(self):
+        '''获取商家下面的商品列表'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.GoodsListBySupplierId
+        GetStock.send_data(Test_data,self.GoodsListBySupplierIdUrl,api_secrets)
+
+    def test_CatBySupplierId_sucess(self):
+        '''获取商家所属栏目分类信息___None'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.CatBySupplierId
+        GetStock.send_data(Test_data,self.CatBySupplierIdUrl,api_secrets)
+
+
+    def test_hygjList_sucess(self):
+        '''孕管首页获取清单商品信息'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.hygjList
+        GetStock.send_data(Test_data,self.hygjListUrl,api_secrets)
+
+
+    def test_SkuByPidsTour_sucess(self):
+        '''旅游--批量获取sku的信息'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.SkuByPidsTour
+        GetStock.send_data(Test_data,self.SkuByPidsTourUrl,api_secrets)
+
+
+    def test_CommonGoodsByGidsTour_sucess(self):
+        '''旅游--批量获取子商品的信息'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.CommonGoodsByGidsTour
+        GetStock.send_data(Test_data,self.CommonGoodsByGidsTourUrl,api_secrets)
+
+    def test_GroupGoodsByGidsTour_sucess(self):
+        '''旅游--批量获取组合商品的详情'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.ByGidsTour
+        GetStock.send_data(Test_data,self.GroupGoodsByGidsTourUrl,api_secrets)
+
+
+    def test_CatAttrByCatIdTour_sucess(self):
+        '''旅游--根据栏目ID获取筛选属性'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.CatAttrByCatIdTour
+        GetStock.send_data(Test_data,self.CatAttrByCatIdTourUrl,api_secrets)
+
+    def test_CatTour_sucess(self):
+        '''旅游--获取旅游栏目'''
+        GetStock=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets=XSX_InTerFace.Common.All_secrets.www_secrets
+        Test_data=test_data.CatTour
+        GetStock.send_data(Test_data,self.CatTourUrl,api_secrets)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
 
 
 

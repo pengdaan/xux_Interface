@@ -202,7 +202,12 @@ data_createOrderXsx ={
     "api_sign": "B73BD177D4C17426ACD08C0C9E2E29E4"
 
 }
+'''获取商品信息'''
+InfoByGoodsId={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'goods_id':'777'
 
+<<<<<<< HEAD
 test_data='content=<Request>' \
                   '<MailTotalCount></MailTotalCount>' \
                   '<Sign_Code>M00136337385</Sign_Code>' \
@@ -226,39 +231,197 @@ test_data='content=<Request>' \
                   '<InvoiceDate></InvoiceDate>' \
                   '<OrderItems></OrderItems>' \
                   '</Request>'
+=======
+}
+
+'''获取商品信息--批量'''
+InfoByGoodsIds={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'goods_ids':'777,778'
+>>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
+
+}
+
+'''获取sku价格和库存（通过商品id）'''
+GoodsSkuByGoodsId={
+        'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+        'goods_id':'777'
+
+
+}
+
+'''获取sku价格和库存（通过商品id）—批量'''
+GoodsSkuByGoodsIds={
+        'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+        'goods_ids':'777,778'
+
+
+}
+
+'''获取sku价格和库存（通过货品id）'''
+GoodsSkuByProductsId={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'product_id': '10750'
+
+}
+
+'''获取sku价格和库存（通过货品id）—批量）'''
+GoodsSkuByProductsIds={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'product_ids': '10750,10751'
+
+}
+'''进货价批量查询'''
+pageBatch={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'page_param':'[{"supplier_id":1343,"product_sn":"tour_162126"}]'
+
+}
+
+'''进货价新增-批量'''
+batchInsert={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'purchase_price':'[{"purchase_price":25.00,"sku_name":"广仁寺门票（一证一票） 2017-11-7",'
+                     '"supplier_id":1343,"product_sn":"tour_162127","effect_time":1498116035}]'}
 
 
 
+'''进货价查询'''
+PurchasePrice_page={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'page_num ':1,
+    'page_size ':15,
+    'supplier_id':1343,
+    'product_sn':"tour_162126"
+
+}
+'''进货价编辑-批量'''
+batchUpdate={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'purchase_price':'[{"purchase_price":25.00,"sku_name":"广仁寺门票（一证一票） 2017-11-7",'
+                        '"supplier_id":1343,"product_sn":"tour_162127",'
+                        '"effect_time":1498116035}]'
+}
+
+'''获取供应商下面的分类以及品牌信息'''
+ReferInfo={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'supplier_id':128
+}
+
+'''获取供应商所属品牌信息'''
+BrandBySupplierId={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'supplier_id':128
+
+}
+
+'''获取商品id列表'''
+GoodsIdsbySnbc={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'goods_name':'接口测试'
 
 
+}
+
+'''获取商品品牌列表'''
+BrandList={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times
 
 
+}
+'''获取商品所有分类(以树形展示返回)'''
+getCatListTree={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times
 
 
+}
 
+'''获取商品的名称，品牌和分类名称 --批量'''
+GoodsNbc={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'goods_ids':'777'
 
+}
 
+'''获取商品详情接口'''
+GoodsBySupplierId={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'supplier_id':128,
+     'goods_id':777
 
+}
+'''获取商家下面的SKU列表'''
+SkuListBySupplierId={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'supplier_id':128,
+     'page_num':1,
+     'page_size':15
 
+}
+'''获取商家下面的商品列表'''
+GoodsListBySupplierId={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'supplier_id':128,
+     'page_num':1,
+     'page_size':15
 
+}
 
+'''获取商家所属栏目分类信息'''
+CatBySupplierId={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'timestamp':times,
+     'supplier_id':128
+}
 
+'''孕管首页获取清单商品信息'''
+hygjList={
+    'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+    'timestamp':times,
+    'mode':1,
+    'day':1
 
+}
 
+'''旅游--批量获取sku的信息'''
+SkuByPidsTour={
+     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
+     'products_ids':'1343,1344'
 
+}
 
+'''旅游--批量获取子商品的信息'''
+CommonGoodsByGidsTour={
+    'api_key':'b47d4503ce201db6df525911812dd089',
+     'goods_ids':'1343'
 
+}
 
+'''旅游--批量获取组合商品的详情'''
+ByGidsTour={
+    'api_key':'b47d4503ce201db6df525911812dd089',
+     'goods_ids':'1343'
 
+}
+'''旅游--根据栏目ID获取筛选属性'''
+CatAttrByCatIdTour={
+    'api_key':'b47d4503ce201db6df525911812dd089',
+     'cat_id':'40'
 
+}
 
-
-
-
-
-
-
-
+'''旅游--获取旅游栏目'''
+CatTour={
+     'api_key':'b47d4503ce201db6df525911812dd089',
+}
 
 
 

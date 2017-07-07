@@ -66,7 +66,6 @@ class Test(XSX_InTerFace.Dp.interface_dp.MyTest):
         self.assertEqual(self.msgs, 'SUCCESS,code:0')
 
 
-
     def test_OrderBySnDp_sucess(self):
         '''获取订单详情-点评项目'''
         Data_OrderBySnDps=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
@@ -77,6 +76,57 @@ class Test(XSX_InTerFace.Dp.interface_dp.MyTest):
         self.assertEqual(self.msgs, 'SUCCESS,code:0')
 
 
+    def test_updateCommentStatus_sucess(self):
+        '''点评或旅游--更新评价状态'''
+        api_secrets=XSX_InTerFace.Common.All_secrets.dp_secrets
+        Create_Order=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        Create_Orders= Create_Order.send_data(test_data.data_OrderDPSuces,self.orderDP_url,api_secret=api_secrets)
+        order_sn=Create_Order.parse_data(Create_Orders,regular_data='.+order_sn:(.+?\d+),?.*')
+        data="SELECT * FROM mall_order_info where order_sn='%s'"%order_sn
+        order_id=Create_Order.Limit_data(data,send_data='order_id')
+        CommentStatus_data=test_data.updateCommentStatus(order_id)
+        Create_Order.send_data(CommentStatus_data,self.updateCommentStatusUrl,api_secret=api_secrets)
+        self.msgs=Create_Order.parse_data(Create_Orders,regular_data='.+msg:(.+?\d+),?.*')
+        self.assertEqual(self.msgs, 'SUCCESS,code:0')
+
+    def test_GoodsByIdsDp_sucess(self):
+        '''点评--批量商品基本信息-列表页'''
+        GoodsByIdsDps=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets= XSX_InTerFace.Common.All_secrets.dp_secrets
+        GoodsByIdsDp=test_data.GoodsByIdsDp
+        OrderBySnDp_data=GoodsByIdsDps.send_data(GoodsByIdsDp,self.GoodsByIdsDpUrl,api_secret=api_secrets)
+        self.msgs=GoodsByIdsDps.parse_data(OrderBySnDp_data,regular_data='.+msg:(.+?\d+),?.*')
+        self.assertEqual(self.msgs, 'OK,code:200')
+
+
+    def test_GoodsByIdsDetailDp_sucess(self):
+        '''点评--批量商品详细信息-详情页'''
+        GoodsByIdsDetailDps=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets= XSX_InTerFace.Common.All_secrets.dp_secrets
+        GoodsByIdsDetailDp=test_data.GoodsByIdsDetailDp
+        GoodsByIdsDetailDp=GoodsByIdsDetailDps.send_data(GoodsByIdsDetailDp,self.GoodsByIdsDetailDpUrl,api_secret=api_secrets)
+        self.msgs=GoodsByIdsDetailDps.parse_data(GoodsByIdsDetailDp,regular_data='.+msg:(.+?\d+),?.*')
+        self.assertEqual(self.msgs, 'OK,code:200')
+
+
+    def test_ConsumeStatus_sucess(self):
+        '''点评--批量商品详细信息-详情页'''
+        ConsumeStatus=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets= XSX_InTerFace.Common.All_secrets.dp_secrets
+        updateConsumeStatus=test_data.updateConsumeStatus
+        updateConsumeStatus=ConsumeStatus.send_data(updateConsumeStatus,self.updateConsumeStatusUrl,api_secret=api_secrets)
+        self.msgs=ConsumeStatus.parse_data(updateConsumeStatus,regular_data='.+msg:(.+?\d+),?.*')
+        self.assertEqual(self.msgs, 'OK,code:200')
+
+
+    def test_GoodsBySupplierIdDp_sucess(self):
+        '''点评--根据供应商ID获取商品-商户页'''
+        GoodsBySupplierIdDps=XSX_InTerFace.Common.XSX_Driver.XsxDriver()
+        api_secrets= XSX_InTerFace.Common.All_secrets.dp_secrets
+        GoodsBySupplierIdDp=test_data.GoodsBySupplierIdDp
+        GoodsBySupplierIdDp=GoodsBySupplierIdDps.send_data(GoodsBySupplierIdDp,self.GoodsBySupplierIdDpUrl,api_secret=api_secrets)
+        self.msgs=GoodsBySupplierIdDps.parse_data(GoodsBySupplierIdDp,regular_data='.+msg:(.+?\d+),?.*')
+        self.assertEqual(self.msgs, 'OK,code:200')
 
 
 

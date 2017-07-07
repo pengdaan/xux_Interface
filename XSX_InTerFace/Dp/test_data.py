@@ -119,15 +119,43 @@ data_updatePayStatus = {
 }
 
 
+'''点评或旅游--更新评价状态'''
+def updateCommentStatus(order_id):
+    updateCommentStatus={
+         'api_key':'b47d4503ce201db6df525911812dd089',
+         'order_id':''+str(order_id)+'',
+         'idtype':3
+
+    }
+    return updateCommentStatus
 
 
+'''点评--批量商品基本信息-列表页'''
+GoodsByIdsDp={
+     'api_key':'b47d4503ce201db6df525911812dd089',
+     'goods_ids':'846'
 
+}
 
+'''点评--批量商品详细信息-详情页'''
+GoodsByIdsDetailDp={
+    'api_key':'b47d4503ce201db6df525911812dd089',
+    'goods_ids':'846'
 
+}
 
+'''点评--更新到店状态'''
+updateConsumeStatus={
+        'api_key':'b47d4503ce201db6df525911812dd089',
+        'reservation_id':1
+}
 
+'''点评--根据供应商ID获取商品-商户页'''
+GoodsBySupplierIdDp={
+    'api_key':'b47d4503ce201db6df525911812dd089',
+    'supplier_id':122
 
-
+}
 
 
 
