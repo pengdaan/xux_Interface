@@ -24,8 +24,22 @@ class MyTest(unittest.TestCase):
         self.confictUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/common/goods/promotion/confict'
         self.MSUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/ms/save'
         self.MS_GoodsUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/ms/goods/add'
-
-
+        '''创建抽奖活动'''
+        self.PromotionUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/createPromotion'
+        '''判断用户是否具有抽奖资格'''
+        self.uerQualifiedUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/isUserQualified'
+        '''后台获取活动列表信息'''
+        self.listPromotionUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/listPromotion'
+        '''抽奖活动用户数-前台'''
+        self.userCountUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/userCount'
+        '''抽奖记录列表接口-前台'''
+        self.recordListUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/recordList'
+        '''抽奖记录列表接口-前台'''
+        self.AdminrecordListUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/admin/recordList'
+        '''用户抽奖'''
+        self.lotteryUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/lottery'
+        '''获取单个抽奖活动信息'''
+        self.getPromotionInfoUrl='http://pms.api.xiaoshuxiong.com/pmsapi/action/lottery/getPromotionInfo'
 
 
 

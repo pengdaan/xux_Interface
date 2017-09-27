@@ -15,7 +15,6 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
     def test_GoodsDetail_sucess(self):
         '''获取商品基本信息'''
 
-
         result=self.MaMa_Applet.Get_data(MaMa_Applet.XSX_Applet.Test_data.goodsDetail,self.goodsDetail_url,headers=self.Headers)
         self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+msg:(.*?\,)')
         msgs='ok'
@@ -50,7 +49,6 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
         result=self.MaMa_Applet.Get_data(None,self.index_url,headers=self.Headers)
         self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+msg:(.*?\,)')
         msgs='成功'
-        print msgs.decode('utf-8')
         self.assertEqual(self.msgs, msgs, "良品首页数据展示失败")
 
     def test_mmcCheckMobile_sucess(self):
@@ -71,8 +69,10 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
 
     def test_batchDelete_sucess(self):
         '''批量删除购物车接口'''
-
-        result=self.MaMa_Applet.Get_data(MaMa_Applet.XSX_Applet.Test_data.batchDelete,self.batchDelete_url,headers=self.Headers)
+        sql_data='select * from mall_cart where goods_id=777 ORDER BY rec_id DESC LIMIT 1'
+        card_id=self.MaMa_Applet.Limit_data(sql_data,send_data='rec_id')
+        batchDelete=MaMa_Applet.XSX_Applet.Test_data.batchDelete(card_id)
+        result=self.MaMa_Applet.Get_data(batchDelete,self.batchDelete_url,headers=self.Headers)
         self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+msg:(.*?\,)')
         msgs='OK'
         self.assertEqual(self.msgs, msgs, "批量删除购物车失败")
@@ -88,7 +88,11 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
     def test_Update_sucess(self):
         '''更新购物车接口'''
         self.MaMa_Applet.Get_data(MaMa_Applet.XSX_Applet.Test_data.add_Cart,self.add_Cart,headers=self.Headers)
-        result=self.MaMa_Applet.Get_data(MaMa_Applet.XSX_Applet.Test_data.update,self.update_url,headers=self.Headers)
+        sql_data='select * from mall_cart where goods_id=777 ORDER BY rec_id DESC LIMIT 1'
+        card_id=self.MaMa_Applet.Limit_data(sql_data,send_data='rec_id')
+        number=self.MaMa_Applet.Limit_data(sql_data,send_data='goods_number')
+        updates=MaMa_Applet.XSX_Applet.Test_data.update(card_id,number)
+        result=self.MaMa_Applet.Get_data(updates,self.update_url,headers=self.Headers)
         self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+msg:(.*?\,)')
         msgs='OK'
         self.assertEqual(self.msgs, msgs, "更新购物车失败")
@@ -167,7 +171,7 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
         msgs='SUCCESS'
         self.assertEqual(self.msgs, msgs, "地址管理-删除地址失败")
 
-    def test_Address_delete_sucess(self):
+    def test_Address_view_sucess(self):
         '''地址管理-地址列表'''
 
         result=self.MaMa_Applet.Get_data(None,self.address_viewUrl,headers=self.Headers)
@@ -275,7 +279,7 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
         '''用户操作 - 检查手机绑定'''
 
         result=self.MaMa_Applet.Post_data(MaMa_Applet.XSX_Applet.Test_data.checkBindPhone,self.checkBindPhoneUrl,headers=self.Headers)
-        self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+lginCode:(.*?\d+),?.*')
+        self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+loginCode:(.*?\d+),?.*')
         msgs='1'
         self.assertEqual(self.msgs, msgs, "用户操作 - 检查手机绑定接口调用失败")
 
@@ -284,7 +288,7 @@ class Test(MaMa_Applet.XSX_Applet.interface_Applet.MyTest):
         '''用户操作 - 绑定手机'''
 
         result=self.MaMa_Applet.Post_data(MaMa_Applet.XSX_Applet.Test_data.doBindPhone,self.doBindPhoneUrl,headers=self.Headers)
-        self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+ginCode:(.*?\d+),?.*')
+        self.msgs=self.MaMa_Applet.parse_data(result,regular_data='.+loginCode:(.*?\d+),?.*')
         msgs='1'
         self.assertEqual(self.msgs, msgs, "绑定手机接口调用失败")
 

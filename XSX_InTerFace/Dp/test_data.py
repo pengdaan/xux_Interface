@@ -29,7 +29,7 @@ dingjintuanTitle = str(add_time)+'Test_DJTuan'
 
 #成功创建订单，不发卷
 data_OrderDPSuces={
-         'uid':'43507844',
+    'uid':'43507844',
         'timestamp':times,
         'consignee':'么么22',
         'shop_id':'38021',

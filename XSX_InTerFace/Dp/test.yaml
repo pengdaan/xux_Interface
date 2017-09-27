@@ -1,0 +1,43 @@
+# Ranking of 1998 home runs
+#---
+#name: Tom Smith
+#age: 37
+#spouse:
+#    name: "Jane Smith"
+#    age: 25
+#children:
+# - name: Jimmy Smith
+#   age: 15
+# - name1: Jenny Smith
+#   age1: 12
+#
+## Team ranking
+#---
+#- Chicago Cubs
+#- St Louis Cardinals
+#---
+#version: '2.0'
+#products: '[{"product_id":"10852","goods_id":"846","product_sn":"product2016101010852","goods_name":"扣点商品001（xsx勿动）","shop_price":"10.00","goods_thumb":"//cdn-dianping.mama.cn/upload/201610/20161010/b02077e9907e75c58d15b8c6245bb175.jpg","supplier_id":"121","without_return":"0","goods_number":"1","use_coupon":"3","end_return_time":"0","return_anytime":"1","goods_attr_id":"3030","goods_attr":"默认属性:均码"}]'
+#mobile: '13728142737'
+#uid: '43507844'
+#shop_city: '289'
+#pay_expire: '7200'
+#consignee: 么么22
+#shop_id: '38021'
+#api_key: 8d46b75a4a0456a35302d2893ed072a3
+#source: wap
+---
+variable : 1
+default: &default_title 123
+title: *default_title
+#data: '*default_title'   +  '{"supplierId":110,"orderId":*default_title,"coupons":["*default_title"]}'
+data: '{"supplierId":110,"orderId":*default_title,"coupons":["*default_title"]}'
+#---
+#vars:
+#orderId : &orderId1 100
+#coupons : &coupons1 200
+#api_key: 9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o
+#data: '{"supplierId":110,"*orderId1":orderId,"coupons":["*coupons1"]}'
+#CaseName: 获取订单客服留言接口_订单号为空
+#code: 0
+foo: "{{ variable }}"

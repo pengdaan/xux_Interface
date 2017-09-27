@@ -28,9 +28,7 @@ class MyTest(unittest.TestCase):
         self.getStocks_url='http://open.xiaoshuxiong.com/openapi/external/ppg/goods/getStock'
         self.InventoryBatchSn_url='http://www.xiaoshuxiong.com/api/goods/decreaseInventoryBatchSn'
         self.createOrderXsx_url='http://order.api.xiaoshuxiong.com/Order/createOrderXsx'
-<<<<<<< HEAD
         self.KJ_Url='http://open.xiaoshuxiong.com/openapi/openapi/orderStatus?'
-=======
         self.InfoByGoodsIdUrl='http://www.xiaoshuxiong.com/api/goods/getInfoByGoodsId'
         self.InfoByGoodsIdsUrl='http://www.xiaoshuxiong.com/api/goods/getInfoByGoodsIds'
         self.GoodsSkuByGoodsIdUrl='http://www.xiaoshuxiong.com/api/goods/getGoodsSkuByGoodsId'
@@ -57,8 +55,10 @@ class MyTest(unittest.TestCase):
         self.GroupGoodsByGidsTourUrl='http://www.xiaoshuxiong.com/api/goods/getGroupGoodsByGidsTour'
         self.CatAttrByCatIdTourUrl='http://www.xiaoshuxiong.com/api/goods/getCatAttrByCatIdTour'
         self.CatTourUrl='http://www.xiaoshuxiong.com/api/goods/getCatTour'
+        self.AddCarUrl='http://cart.api.xiaoshuxiong.com/cartapi/center/addCart'
+        self.syncStockUrl='http://www.xiaoshuxiong.com/test/ApiProduct.php?fun=syncStock'
 
->>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
+
 
 
 

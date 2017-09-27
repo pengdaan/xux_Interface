@@ -63,21 +63,32 @@ add_Cart={
 }
 
 '''批量删除购物车商品'''
-batchDelete={
-    'del_list[0][product_id]':'10750',
-    'del_list[0][cart_id]':'30716'
-}
+def batchDelete(cart_id):
+    batchDelete={
+        'del_list[0][product_id]':'10750',
+        'del_list[0][cart_id]':''+str(cart_id)+''
+    }
+    return batchDelete
+
+
+
 
 '''更新购物车接口'''
-update={
-    'goods_id':'777',
-    'product_id':'10750',
-    'number':'2',
-    'promotion_type':'0',
-    'promotion_id':'0',
-    'cart_id':'30761'
+def update(cart_id,number):
+    numbers=number+1
+    print numbers
+    update={
+        'goods_id':'777',
+        'product_id':'10750',
+        'number':''+str(numbers)+'',
+        'promotion_type':'0',
+        'promotion_id':'0',
+        'cart_id':''+str(cart_id)+''
+    }
+    return update
 
-}
+
+
 '''检查是否有待支付订单或重复提交'''
 checkRepost={
     'is_cart':'1'
@@ -96,6 +107,8 @@ submitOrder={
 
 '''立即购买结算页接口'''
 buynow={
+    'goods_id':'777',
+    'goods_number':'1',
     'attr_id':'2777',
     'address_id':'1767',
     'promotion_type':'0'

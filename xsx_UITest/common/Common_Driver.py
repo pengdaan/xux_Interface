@@ -1,8 +1,12 @@
 # coding=utf-8
 import os
+import random
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.keys import Keys
+import sys
+sys.path.append('..')#.. 代表当前路径的上一级路径
+from selenium.webdriver.support import expected_conditions as EC
 
 class AutomateDriver(object):
     """
@@ -25,10 +29,6 @@ class AutomateDriver(object):
         #                            ' (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"')
         driver = webdriver.Chrome(executable_path=chrome_driver, chrome_options=chromeOptions)
 
-
-
-
-
         try:
             self.driver = driver
         except Exception:
@@ -47,11 +47,19 @@ class AutomateDriver(object):
         """
         self.driver.refresh()
 
+    def setwindows_size(self,x,y):
+        """
+        设置窗口大小
+        """
+        self.driver.set_window_size(x,y)
+
+
     def maximizeWindow(self):
         """
         最大化窗口
         """
         self.driver.maximize_window()
+
 
     def navigate(self, url):
         """
@@ -142,7 +150,7 @@ class AutomateDriver(object):
 
     def clickByText(self, text):
         """
-        Click the element by the link text
+        通过链接文本单击元素
 
         Usage:
         driver.click_text("新闻")
@@ -288,3 +296,28 @@ class AutomateDriver(object):
         el = self.getElement(selector)
         el.clear()
         el.send_keys(Keys.RETURN)
+
+    def screenshot(self):
+        """
+        屏幕截屏
+        """
+        Nu=random.randint(20000, 30000) #生成5位数的随机数
+        Picture='/xux_project/xux_UITest/Picture'
+        bug_Picture=Picture+Nu+'.jpg'
+        self.driver.get_screenshot_as_file(bug_Picture)
+
+
+
+
+
+
+    # def Title(self,title):
+    #    title=EC.title_is(title)
+    #    print title(driver)
+    #    if title!= True:
+    #        print('没有跳转到目标页')
+    #        exit(0)
+    #    else:
+    #        print title
+
+

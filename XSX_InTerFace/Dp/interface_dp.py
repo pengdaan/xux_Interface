@@ -24,4 +24,5 @@ class MyTest(unittest.TestCase):
 
     def tearDown(self):
 
+
         print self.msgs

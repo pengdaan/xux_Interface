@@ -51,23 +51,56 @@ data_OrderByProductId={
     'goods_id':'777',
 }
 
-'''旅游创建订单'''
-createOrderTour_data={
+'''旅游创建订单，已弃用'''
+createOrderTour_data1={
+    "_url": "/order/createOrderTour",
     "uid": "43507844",
-    "consignee": "刘德华",
+    "invoice_info": "{\"content\":\"\",\"type\":0}",
     "postscript": "",
-    "source_type": "1",
-    "version": "2.0",
-    "passenger": "[{\"contact_type\":2,\"email\":\"\",\"identit_card\":\"\",\"passenger_name\":\"刘德华\",\"passenger_type\":1,\"phone\":\"13728142737\"}]",
-    "timestamp": times,
+    "consignee": "彭先生",
+    "source_type": "5",
+    "promotion_info": "[]",
+    "version": "2.1",
+    "passenger": "[{\"contact_type\":2,\"email\":\"\",\"identit_card\":\"\",\"passenger_name\":\"彭先生\",\"passenger_type\":1,\"phone\":\"13728142738\"}]",
+    "timestamp": "1505383689",
+    #"timestamp": times,
     "track_param": "{}",
     "source": "pc",
-    "products": "[{\"base_day\":1,\"base_num\":1,\"extend_id\":\"\",\"extend_link\":\"\",\"go_time\":\"2017-01-19\",\"goods_attr\":\"主套餐1 2017-01-19\",\"goods_id\":1251,\"goods_name\":\"【东北 | 雪国列车】-出行1\",\"goods_number\":1,\"goods_thumb\":\"http://cdn-Ly.mama.cn/59bc4788c02a51deb4e93362e7350a54.gif\",\"item_id\":1798,\"item_name\":\"主套餐1\",\"item_num\":1,\"item_timestamp\":1484553897,\"item_type\":1,\"parent_id\":743,\"parent_name\":\"常用旅客---测试\",\"product_id\":131608,\"product_sn\":\"tour_131608\",\"purchaser_id\":5,\"purchaser_name\":\"总部—宋龙辉\",\"shop_price\":10.00,\"smsText\":\"\",\"smsType\":\"2\",\"supplier_id\":110,\"supplier_name\":\"旅游供应商(成本结算)\",\"ticket\":1,\"use_coupon\":1,\"without_return\":1},{\"base_day\":0,\"base_num\":1,\"extend_id\":\"\",\"extend_link\":\"\",\"go_time\":\"2017-01-19\",\"goods_attr\":\"N选1 2017-01-19\",\"goods_id\":1251,\"goods_name\":\"【东北 | 雪国列车】-出行1\",\"goods_number\":1,\"goods_thumb\":\"http://cdn-Ly.mama.cn/59bc4788c02a51deb4e93362e7350a54.gif\",\"item_id\":1799,\"item_name\":\"N选1\",\"item_num\":1,\"item_timestamp\":1484553924,\"item_type\":1,\"parent_id\":743,\"parent_name\":\"常用旅客---测试\",\"product_id\":131624,\"product_sn\":\"tour_131624\",\"purchaser_id\":5,\"purchaser_name\":\"总部—宋龙辉\",\"shop_price\":1.00,\"smsText\":\"\",\"smsType\":\"2\",\"supplier_id\":110,\"supplier_name\":\"旅游供应商(成本结算)\",\"ticket\":1,\"use_coupon\":1,\"without_return\":1},{\"base_day\":0,\"base_num\":1,\"extend_id\":\"\",\"extend_link\":\"\",\"go_time\":\"2017-01-19\",\"goods_attr\":\"包含 2017-01-19\",\"goods_id\":1251,\"goods_name\":\"【东北 | 雪国列车】-出行1\",\"goods_number\":1,\"goods_thumb\":\"http://cdn-Ly.mama.cn/59bc4788c02a51deb4e93362e7350a54.gif\",\"item_id\":1800,\"item_name\":\"包含\",\"item_num\":1,\"item_timestamp\":1484553929,\"item_type\":0,\"parent_id\":743,\"parent_name\":\"常用旅客---测试\",\"product_id\":131628,\"product_sn\":\"tour_131628\",\"purchaser_id\":5,\"purchaser_name\":\"总部—宋龙辉\",\"shop_price\":0.00,\"smsText\":\"\",\"smsType\":\"2\",\"supplier_id\":110,\"supplier_name\":\"旅游供应商(成本结算)\",\"ticket\":1,\"use_coupon\":1,\"without_return\":1}]",
-    "sms_param": "{\"delivery\":{\"1251\":{\"enabled\":0,\"supplier_phone\":\"111111\",\"destination\":\"深圳市南山区深南大道华侨城欢乐谷\"}}}",
-    "mobile": "13728142737",
-    "api_key": "9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o",
-
+    "products": "[{\"base_day\":1,\"base_num\":1,\"cat_id\":5,\"city\":537,\"coupons_opportunity\":21,\"district\":0,\"extend_id\":\"\",\"extend_link\":\"\",\"go_time\":\"2017-09-17\",\"goods_attr\":\"主套餐 2017-09-17\",\"goods_id\":3786,\"goods_name\":\"出境游-西安曲江国际旅行社有限公司-支付测试子商品\",\"goods_number\":1,\"goods_thumb\":\"http://cdn-ly.mama.cn/349946df7486ebe68df41de9f8ccfd8f.jpg\",\"is_main\":1,\"item_id\":28818,\"item_name\":\"主套餐\",\"item_num\":1,\"item_timestamp\":1505184429,\"item_type\":1,\"parent_id\":1739,\"parent_name\":\"出境游支付测试商品（勿动）-目的地\",\"product_id\":168213,\"product_sn\":\"tour_168213\",\"province\":35,\"purchaser_id\":20,\"purchaser_name\":\"重庆站\",\"receive_opportunity\":31,\"resource_id\":\"0\",\"shop_price\":0.10,\"smsText\":\"\",\"smsType\":\"1,2\",\"supplier_id\":1495,\"supplier_name\":\"西安曲江国际旅行社有限公司\",\"ticket\":4,\"use_coupon\":4,\"useday\":\"\",\"without_return\":1}]",
+    "sms_param": "{\"delivery\":{\"3786\":{\"enabled\":1,\"send_coupons\":4,\"supplier_phone\":\"8888888888\"}}}",
+    "mobile": "13728142738",
+    "appkey": "9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o",
+    #"sign": "6A4F51590E1F3B0064C9C8C99F84D63B"
 }
+
+createOrderTour_data={
+    "_url": "/order/createOrderTour",
+    "uid": "43507844",
+    "invoice_info": "{\"content\":\"\",\"type\":0}",
+    "postscript": "",
+    "consignee": "彭先生",
+    "source_type": "5",
+    "promotion_info": "[]",
+    "version": "2.1",
+    "passenger": "[{\"contact_type\":2,\"email\":\"\",\"identit_card\":\"\",\"passenger_name\":\"彭先生\",\"passenger_type\":1,\"phone\":\"13728142738\"}]",
+    "timestamp": "1505372929",
+    "track_param": "{}",
+    "source": "pc",
+    "products": "[{\"base_day\":1,\"base_num\":1,\"cat_id\":5,\"city\":537,\"coupons_opportunity\":21,\"district\":0,\"extend_id\":\"\",\"extend_link\":\"\",\"go_time\":\"2017-09-17\",\"goods_attr\":\"主套餐 2017-09-17\",\"goods_id\":3786,\"goods_name\":\"出境游-西安曲江国际旅行社有限公司-支付测试子商品\",\"goods_number\":1,\"goods_thumb\":\"http://cdn-ly.mama.cn/349946df7486ebe68df41de9f8ccfd8f.jpg\",\"is_main\":1,\"item_id\":28818,\"item_name\":\"主套餐\",\"item_num\":1,\"item_timestamp\":1505184429,\"item_type\":1,\"parent_id\":1739,\"parent_name\":\"出境游支付测试商品（勿动）-目的地\",\"product_id\":168213,\"product_sn\":\"tour_168213\",\"province\":35,\"purchaser_id\":20,\"purchaser_name\":\"重庆站\",\"receive_opportunity\":31,\"resource_id\":\"0\",\"shop_price\":0.10,\"smsText\":\"\",\"smsType\":\"1,2\",\"supplier_id\":1495,\"supplier_name\":\"西安曲江国际旅行社有限公司\",\"ticket\":4,\"use_coupon\":4,\"useday\":\"\",\"without_return\":1}]",
+    "sms_param": "{\"delivery\":{\"3786\":{\"enabled\":1,\"send_coupons\":4,\"supplier_phone\":\"8888888888\"}}}",
+    "mobile": "13728142738",
+    "appkey": "9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o",
+    "sign": "EFC15AACA09B3D33EE40014E66A0FDA0"
+}
+
+
+
+
+
+
+
+
+
 
 '''获取秒杀订单实际秒杀购买数'''
 PromotionNums_data={
@@ -103,7 +136,7 @@ def OutOrderSn_data(Order_sn):
 '''根据订单号获取订单列表'''
 ChildOrderTour_data={
      'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-     'order_sn':'LY48414726526809 '
+     'order_sn':'LY10514212034040'
 }
 
 
@@ -115,8 +148,6 @@ UserOrderNums_data={
       'order_cate_id':'[2001,2002,2003,2004]'
 
 }
-
-
 
 '''获取用户购买的促销订单信息'''
 OrderPromotionList_data={
@@ -206,8 +237,9 @@ data_createOrderXsx ={
 InfoByGoodsId={
     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
     'goods_id':'777'
+}
 
-<<<<<<< HEAD
+
 test_data='content=<Request>' \
                   '<MailTotalCount></MailTotalCount>' \
                   '<Sign_Code>M00136337385</Sign_Code>' \
@@ -231,16 +263,13 @@ test_data='content=<Request>' \
                   '<InvoiceDate></InvoiceDate>' \
                   '<OrderItems></OrderItems>' \
                   '</Request>'
-=======
-}
+
+
 
 '''获取商品信息--批量'''
 InfoByGoodsIds={
     'api_key':'9R3coFDrgBiEZUQG2PZmqTXMjiT2wU6o',
-    'goods_ids':'777,778'
->>>>>>> d9b1926d63bdfe279356feaa6bfa926bd4ddf105
-
-}
+    'goods_ids':'777,778'}
 
 '''获取sku价格和库存（通过商品id）'''
 GoodsSkuByGoodsId={
@@ -424,6 +453,47 @@ CatTour={
 }
 
 
+AddCart={
+    'timestamp':times,
+    'data':'{"goods_id":777,'
+           '"num":1,"session_id":"b318a3b72fe99fb9fccbe61bc0ae95ef",'
+           '"goods_arr_ids":[2777],"user_id":0,'
+           '"gift_code":"","product_id":"10750",'
+           '"goods_arrs":"\u9ed8\u8ba4\u5c5e\u6027\uff1a\u5747\u7801|",'
+           '"goods_price":40,"goods_sn":"XSX000777","goods_own_type":"1",'
+           '"goods_name":"\u3010\u666e\u3011\u63a5\u53e3\u6d4b\u8bd5\u5546\u54c1_\u52ff\u52a8\u52ff\u6539",'
+           '"market_price":"52.00","rec_type":"2","product_number":"7995","promotion_type":0,'
+           '"promotion_id":0,"promotion_dimension_id":0}',
+    'api_key':'b4c3ca6134255ce2e71586da794f4328'
+}
+
+'''对科捷回推回来的数据进行筛选，如果是系统内有记录的批次则同步'''
+yncStock_Data={
+    'timestamp':times,
+    'sku_list':'[{ "stock_id":"0600",'
+               '"sku_product_no":"233",'
+               '"sku_batch_no":"CG-00001",'
+               '"sku_inuse_inventory":"7.0000",'
+               '"sku_qty":"600.0000","goods_own_type":"2"},'
+               '{"stock_id":"0600",'
+               '"sku_product_no":"233",'
+               '"sku_batch_no":"CG-00001",'
+               '"sku_inuse_inventory":"0.0000",'
+               '"sku_qty":"200.0000",'
+               '"goods_own_type":"1"},'
+               '{"stock_id":"0600",'
+               '"sku_product_no":"20170518",'
+               '"sku_batch_no":"CG-00001",'
+               '"sku_inuse_inventory":"0.0000",'
+               '"sku_qty":"300.0000",'
+               '"goods_own_type":"1"},'
+               '{"stock_id":"0600",'
+               '"sku_product_no":"20170518",'
+               '"sku_batch_no":"CG-00001",'
+               '"sku_inuse_inventory":"0.0000",'
+               '"sku_qty":"40.0000",'
+               '"goods_own_type":"1"}]'
+}
 
 
 

@@ -19,3 +19,13 @@ www_secrets='RjdQPmDvyaysmolFPG3hpFa2UrMmCKVG'
 '''open域的secrets'''
 open_secrets='31526987c03cee9c8dffaa589a7e8923'
 
+'''Cart域的secrets'''
+cart_secrets='a0fa0924455874a52af0dae70775742c'
+
+'''supplier域的secrets'''
+supplier_secrets='f377d3d723c65c85c4bf1600a5aacd37'
+
+'''科捷回推secret'''
+Kj_secret='d8f8f57ff54a933779eb4af1f1b86e8f'
+
+YG_secrets='c4f7dd715af00de02d6053cffc670780'

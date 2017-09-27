@@ -6,6 +6,7 @@ sys.path.append('..')
 import re
 import hashlib
 import XSX_InTerFace.Setting.DBConns
+import XSX_InTerFace.Setting.SupplierDBConns
 import requests
 import json
 import time
@@ -75,6 +76,7 @@ class XsxDriver(object):
         重新组装测试数据，把生成的验签插入TestData
         """
         api_sign=self.api_signs(test_data,api_secret)
+        print(api_sign)
         test_data.setdefault('api_sign',api_sign)
         return test_data
 
@@ -101,12 +103,28 @@ class XsxDriver(object):
         return js
 
 
+    def Post_data(self,test_data,url,headers=None):
+        """
+        Post请求的方法
+        """
+        if headers==None:
+            r=requests.post(url, params=test_data)
+            result=r.text
+            js=self.result_json(result)
+        else:
+            r=requests.post(url, params=test_data,headers=headers)
+            result=r.text
+            js=self.result_json(result)
+        return js
+
+
     def parse_data(self,test_data,regular_data):
         """
         从输出结果的json中提取需要的内容，其中regular_data为正则表达式
         如regular_data='.+order_status:(.+?\d+),?.*'
         处理json的特殊字符test_data.replac可以写多一点
         """
+        print(test_data)
         test_data=json.dumps(test_data)
         test_data = test_data.replace("\\", "")
         test_data = test_data.replace("\"", "")
@@ -140,6 +158,16 @@ class XsxDriver(object):
             return 'The data does not exist'
 
 
+    def Supplier_data(self,sql_data,send_data):
+        data=sql_data
+        mysql = XSX_InTerFace.Setting.SupplierDBConns.Mysql()
+        datas=mysql.get_one(data)
+        if send_data in datas:
+            return datas[send_data]
+        else:
+            return 'The data does not exist'
+
+
     def Limit_Title(self):
         data="SELECT * FROM mall_promotion_info ORDER BY id DESC LIMIT 1"
         mysql = XSX_InTerFace.Setting.DBConns.Mysql()
@@ -148,22 +176,37 @@ class XsxDriver(object):
         return datas['title']
 
 
-    def store(self,data_name,data,model):
+    def store(self,data_name,data,model,status=None):
         '''持久化保存'''
-        test={data_name:data}
-        path='/xux_project/XSX_InTerFace/Run_data/'
-        filename=path +'data_%s.pkl'% model
-        output=open(filename,'wb')
-        pickle.dump(test,output)
+        if status==None:
+            test={data_name:data}
+            path='/xux_project/XSX_InTerFace/Run_data/'
+            filename=path +'data_%s.pkl'% model
+            output=open(filename,'wb')
+            pickle.dump(test,output)
+        elif status==1:
+            test=data
+            path='/xux_project/XSX_InTerFace/Run_data/'
+            filename=path +'data_%s.pkl'% model
+            output=open(filename,'wb')
+            pickle.dump(test,output)
 
 
-    def load(self,value,model):
+    def load(self,value,model,status=None):
         path='/xux_project/XSX_InTerFace/Run_data/'
         filename=path +'data_%s.pkl'% model
         pkl_file=open(filename,'rb')
-        data=pickle.load(pkl_file)[value]
-        pkl_file.close()
-        return data
+        if status==None:
+            data=pickle.load(pkl_file)[value]
+            pkl_file.close()
+            return data
+        elif status==1and value==None:
+            data=pickle.load(pkl_file)
+            pkl_file.close()
+            return data
+
+    def addWord(self,theIndex,word,pagenumber):
+        theIndex.setdefault(word, []).append(pagenumber)
 
 
 

@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 # 数据库配置文件
 import time
+
 import MySQLdb
 from DBUtils.PooledDB import PooledDB
+
 import Config
 
 
@@ -35,15 +37,16 @@ class Mysql(object):
                 creator=MySQLdb,
                 use_unicode=False,
                 cursorclass=DictCursor,
-                db=Config.MysqlConfig['db'],
-                host=Config.MysqlConfig['host'],
-                port=Config.MysqlConfig['port'],
-                user=Config.MysqlConfig['user'],
-                passwd=Config.MysqlConfig['passwd'],
-                charset=Config.MysqlConfig['charset'],
-                mincached=Config.MysqlConfig['mincached'],
-                maxcached=Config.MysqlConfig['maxcached'],
-                maxconnections=Config.MysqlConfig['maxconnections'])
+                db=Config.SupplierConfig['db'],
+                host=Config.SupplierConfig['host'],
+                port=Config.SupplierConfig['port'],
+                user=Config.SupplierConfig['user'],
+                passwd=Config.SupplierConfig['passwd'],
+                charset=Config.SupplierConfig['charset'],
+                mincached=Config.SupplierConfig['mincached'],
+                maxcached=Config.SupplierConfig['maxcached'],
+                maxconnections=Config.SupplierConfig['maxconnections']
+            )
         # 返回连接池中连接对象
         return Mysql.__mysql_pool.connection()
     def get_all(self, sql_command, cmd_param=None):

@@ -4,7 +4,7 @@ import unittest
 from time import sleep
 
 from XSX_UITest.Common.Common_Driver import AutomateDriver
-from XSX_UITest.keyword.XUX_LoginPage import XUXSubLoginPage
+from XSX_UITest.Page.XUX_LoginPage import XUXSubLoginPage
 
 
 """

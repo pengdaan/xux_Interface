@@ -394,3 +394,83 @@ redemption_data={
            '"generateWay":1,'
            '"code":""}'
 }
+
+'''创建抽奖活动'''
+def PromotionData():
+    PromotionData={
+        'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+        'timestamp':times,
+        'data':'{"name": "Test_Cj",'
+           '"title": "Test_Cj",'
+           '"startAt":'+str(startAt)+','
+           '"endAt": '+str(endAt)+','
+           '"dimensions": [{"detail": "","dimensionType": 6,"parentScope": 0,"scope": 1}],'
+           '"pushTimes": 50,"virtualHit": 5,'
+           '"detail": "1、抽奖活动入口不定期开放，抽到奖品的用户请及时领取，过期将被视作放弃。'
+           '\r\n2、奖品有限，派完即止。\r\n3、领取0元购商品、优惠券后，可在孕育管家【我的】-【我的订单】查看订单或优惠券。",'
+           '"awardList": [{"id": 0,"awardIndex": 1,'
+           '"type": 1,"val": "430","probability": 90,'
+           '"name": "27453Test_AddPms","imgUrl": "",'
+           '"linkUrl": "http://www.xiaoshuxiong.com/mobile/product.php?id=777"},'
+           '{"id": 0,"awardIndex": 2,"type": 2,"val": "322","probability": 10,'
+           '"name": "多条规则专享-全部+良粉新客","imgUrl": "data/images/hygj/lottery/1501726354956189803.png","linkUrl": ""},'
+           '{"type": 4,"probability": 0,"awardIndex": 3}],'
+           '"operator": 1,"status": 1,"type": 9,"chances": 1,"isReallocate": 1}'
+    }
+    return PromotionData
+
+'''判断用户是否具有抽奖资格'''
+UserQualifiedData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"uid":43507844,"promotionId":326}'
+
+}
+
+'''后台获取活动列表信息[type:9为抽奖活动]'''
+listPromotionData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"page":{"pageNo":1,"pageSize":15},"type":9}'
+}
+
+'''抽奖活动用户数-前台'''
+userCountData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":327}'
+
+
+}
+
+'''抽奖记录列表-前台'''
+recordListData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":326}'
+
+}
+
+'''抽奖记录列表-后台'''
+AdminrecordListData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":326}'
+
+}
+
+'''用户抽奖'''
+lotteryData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":326，"uid":43507844}'
+
+}
+
+'''抽奖记录列表-前台'''
+PromotionInfoData={
+    'api_key':'647b00ec1fe6990b1b97263b05341b6b',
+    'timestamp':times,
+    'data':'{"promotionId":326}'
+
+}

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 __author__ = 'leo'
 import time
-
 from XSX_UITest.Common.XUX_BasePage import BasePage
 
 
@@ -57,9 +56,6 @@ class XUXSubLoginPage(BasePage):
             self.driver.type("u", '3530904427')
             self.driver.type("p", 'qq111111')
             self.driver.click("id,go")
-
-
-
 
 
     def getMainPage(self):

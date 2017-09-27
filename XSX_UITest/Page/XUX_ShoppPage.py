@@ -53,8 +53,6 @@ class XUXShopPage(BasePage):
 
 
 
-
-
     def getMainPage(self):
         """
         打开小树熊主页

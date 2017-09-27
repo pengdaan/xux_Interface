@@ -12,7 +12,7 @@ discover=unittest.defaultTestLoader.discover(test_dir,pattern='test*.py')
 
 if __name__ =="__main__":
     now=time.strftime("%y-%m-%d %H_%M_%S", time.localtime())
-    filename ='/xux_project/XSX_InTerFace/report/'+now+'_result.html'
+    filename =test_filename+now+'_result.html'
     fp=open(filename,'wb')
     runner =HTMLTestRunner(stream=fp,
                            title='pms_Interface Test report',
